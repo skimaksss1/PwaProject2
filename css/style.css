@@ -178,6 +178,7 @@ body {
 
 .filterList{
     overflow-x: auto;
+    overflow-y: hidden;
     display: flex;
     align-items: flex-start;
     gap: 10px;
