@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darkhan</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    
+        <!-- для каждой страницы свой less файл. -->
+        <link rel="stylesheet/css" type="text/less" href="start.less" />
+        <link rel="stylesheet/css" type="text/less" href="reset.css" />
+        <!-- Скрипты не трогать -->
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+        <script>
+          //скрипты не трограть.
+          window.addEventListener("load", () => {
+            const app = Vue.createApp({
+              methods: {
+                tr(k) {
+                  return k;
+                },
+              },
+            });
+            app.mount("#dont_use_this_id_in_style");
+          });
+        </script>
+      </head>
 <body>
-    <section class="navigation">
+    <!-- <section class="navigation">
         <div class="container">
             <div class="nav">
                 <div class="navCont">
@@ -65,13 +80,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <div class="brow_empty"></div>
     <section class="main">
         <div class="container">
             <div class="mainLine">
                 <div class="pageTitle">
-                    <p>Лента</p>
+                    <p>{{tr('Лента')}}</p>
                 </div>
                 <div class="leftBtn-mainLine">
                     <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
