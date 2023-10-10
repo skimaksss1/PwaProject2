@@ -3,6 +3,8 @@
         "dev": "npx serve"
     },
     "dependencies": {
-        "less": "^4.2.0"
+        "@vue/cli": "^5.0.8",
+        "less": "^4.2.0",
+        "vue": "^3.2.36"
     }
 }

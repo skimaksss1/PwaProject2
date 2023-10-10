@@ -1,4 +1,4 @@
-cs<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -6,25 +6,24 @@ cs<!DOCTYPE html>
         <title>Document</title>
     
         <!-- для каждой страницы свой less файл. -->
-        <link rel="stylesheet/css" type="text/less" href="start.less" />
-        <link rel="stylesheet/css" type="text/less" href="reset.css" />
-        <!-- Скрипты не трогать -->
-        <script src="https://cdn.jsdelivr.net/npm/less"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
-        <script>
-          //скрипты не трограть.
-          window.addEventListener("load", () => {
-            const app = Vue.createApp({
-              methods: {
-                tr(k) {
-                  return k;
-                },
-              },
-            });
-            app.mount("#dont_use_this_id_in_style");
-          });
-        </script>
-      </head>
+    <link rel="stylesheet/less" type="text/less" href="start.less" />
+    <!-- Скрипты не трогать -->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+    <script>
+      //скрипты не трограть.
+      window.addEventListener("load", () => {
+        const app = Vue.createApp({
+          methods: {
+            tr(k) {
+              return k;
+            },
+          },
+        });
+        app.mount("#dont_use_this_id_in_style");
+      });
+    </script>
+  </head>
 <body>
     <!-- <section class="navigation">
         <div class="container">
