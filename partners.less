@@ -64,75 +64,6 @@
         opacity: 0.16;
     }
 }
-
-// .dropdown {
-//     width: 100%;
-//     margin: 0 auto;
-//     margin-bottom: 12px;
-//   }
-//   .dropdown dt a {
-//     display: block;
-//     height: 38px;
-//     width: 100%;
-//     border: 1px solid #565656;
-//     border-radius: 9px;
-//     text-decoration: none;
-//   }
-//   .dropdown dt a:hover, .dropdown dt a:active {
-//     border-color: #bdc3c7;
-//   }
-//   .dropdown dt span {
-//     display: block;
-//     background: url(img/polygon.svg) no-repeat scroll right center;
-//     border-right: 1em solid transparent;
-//     cursor: pointer;
-//     text-align: center;
-//     color: #E7FE55;
-//     font-size: 20px;
-//     font-weight: 300;
-//     letter-spacing: -1px;
-//     margin: 6px;
-//   }
-//   .dropdown dd {
-//     position: relative;
-//   }
-//   .dropdown dd ul {
-//     display: none;
-//     position: absolute;
-//     left: 0;
-//     top: -2.5em;
-//     width: 100%;
-//     list-style: none;
-//     background: #262626 none repeat scroll 0 0;
-//     border: 1px solid #565656;
-//     border-radius: 9px;
-//     text-align: center;
-//   }
-//   .dropdown dd ul li {
-//   border-bottom: #e7fe5229 1px solid;
-//   }
-//   .dropdown dd ul li:first-child a:hover {
-//     border-radius: 3px 3px 0 0;
-//   }
-//   .dropdown dd ul li:last-child a:hover {
-//     border-radius: 0 0 3px 3px;
-//   }
-//   .dropdown dd li a {
-//     display: block;
-//     padding: 0 1em;
-//     padding: 8px 0;
-//     text-decoration: none;
-//     font-size: 20px;
-//   }
-//   .dropdown dd li a:hover {
-//     color: #fff;
-//     cursor: pointer;
-//   }
-
-//   .selected, .default {
-//     color: #E7FE55;
-//   }
-
 .dropDown{
     margin-bottom: 12px;
     .dropdownSelect{
@@ -150,7 +81,7 @@
                 color: @common-color1;
             }
         }
-        .seelctActive::after{
+        .selctActive::after{
             content: '';
             background: url(img/polygon.svg) no-repeat;
             width: 13px;
@@ -190,10 +121,6 @@
         }
     }
 }
-
-
-
-
 .filterList{
     overflow-x: auto;
     overflow-y: hidden;
@@ -229,6 +156,23 @@
     border-radius: 29px;
     padding: 10px;
     padding-bottom: 16px;
+    position: relative;
+    .sale{
+        width: 75px;
+        height: 75px;
+        background-color: #9F55FE;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Atyp Display';
+        font-weight: 700;
+        font-size: 24px;
+        padding-bottom: 5px;
+        position: absolute;
+        right: -3px;
+        top: -10px;
+    }
     .cardImg{
         height: 160px;
         width: 100%;
@@ -257,9 +201,10 @@
         justify-content: space-between;
         .cardName{
             font-size: 24px;
-            font-weight: 700;
+            font-weight: 900;
             color: #E7FE55;
             margin-bottom: 12px;
+            font-family: 'Atyp Display';
         }
     }
     .cardDescription{
