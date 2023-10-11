@@ -30,11 +30,23 @@
 @main-color: #3f92d7;
 @inv-main-color: #0a65af;
 @text-color: #222;
-@text-color2: #eee;
-
+@text-color2: #eee; 
+@common-color1: #E7FE55;
+@common-color2: #565656;
+@common-color3: #262626;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar { /* chrome based */
+  width: 0px;  /* ширина scrollbar'a */
+  background: transparent;  /* опционально */
+}
 body {
   font-family: "SFProText";
-  color: #fff;
+  color: @text-color2;
   background-color: #161716;
    -webkit-tap-highlight-color:transparent;
 }
@@ -48,7 +60,9 @@ th {
     font-size: 0.8em;
   }
 }
-
+ul{
+  list-style: none;
+}
 button.d {
   border: none;
   padding: 0.4em 1em;
@@ -238,3 +252,7 @@ p.error {
   }
 }
 
+.container{
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
