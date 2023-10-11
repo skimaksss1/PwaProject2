@@ -7,7 +7,7 @@
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-    <link rel="stylesheet/less" type="text/less" href="partners.less" />
+    <link rel="stylesheet/less" type="text/less" href="stocks.less" />
     <!-- Скрипты не трогать -->
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
@@ -172,39 +172,20 @@
                     </div>
                 </div>
             </section>
-            <section class="filter">
+            <section class="banner">
                 <div class="container">
-                    <div class="filterList">
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector1.svg);"></div>
-                            <div class="filterName">{{tr('Аптека')}}</div>
+                    <div class="bannerList">
+                        <div class="banner-img" style="background-image: url(img/stocks.png);"></div>
+                        <div class="banner-dots">
+                            <div class="banner-dot active"></div>
+                            <div class="banner-dot"></div>
+                            <div class="banner-dot"></div>
                         </div>
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector2.svg);"></div>
-                            <div class="filterName">{{tr('Бытовая техника')}}</div>
-                        </div>
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector3.svg);"></div>
-                            <div class="filterName">{{tr('Красота и здоровье')}}</div>
-                        </div>
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector4.svg);"></div>
-                            <div class="filterName">{{tr('Одежда')}}</div>
-                        </div>
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector5.svg);"></div>
-                            <div class="filterName">{{tr('Аксессуары')}}</div>
-                        </div>
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector2.svg);"></div>
-                            <div class="filterName">{{tr('Аксессуары')}}</div>
-                        </div>
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector4.svg);"></div>
-                            <div class="filterName">{{tr('Аксессуары')}}</div>
+                        <div class="nextBtn">
+                            <img src="img/next_arrow.svg" alt="">
                         </div>
                     </div>
-                </div>
+                </div>    
             </section>
             <section class="cards">
                 <div class="container">
@@ -223,20 +204,27 @@
                                     <img src="img/Star_full.svg" alt="">                     
                                 </div>
                             </div>
-                            <div class="cardDescription">{{tr('Системы обеспечения безопасности')}}</div>
-                            <div class="discounts">
-                                <div class="discount">
-                                    <p>{{tr('Скидка на оборудование')}}</p>
-                                    <span>10%</span>
-                                </div>
-                                <div class="discount">
-                                    <p>{{tr('Скидка на оборудование')}}</p>
-                                    <span>10%</span>
+                            <div class="cardDescription">{{tr('Дорогие друзья!')}} <br> {{tr('Только сегодня, в честь нашего юбилея  мы объявляем 25% скидку на Wi-Fi камеры.')}} <br> {{tr('Успейте купить по самой выгодной цене в городе, от 9 790тг.! Количество камер ограничено!')}}</div>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="sale">25%</div>
+                        <div class="cardImg" style="background-image: url(img/cardImg.png);"></div>
+                        <div class="cardSlide-dots">
+                            <div class="slide-dot active"></div>
+                            <div class="slide-dot"></div>
+                            <div class="slide-dot"></div>
+                        </div>
+                        <div class="cardInfo">
+                            <div class="cardNameStar">
+                                <div class="cardName">ТОО App Trade</div>
+                                <div class="star fillStar">
+                                    <img src="img/Star_full.svg" alt="">                     
                                 </div>
                             </div>
-                        </div>
-                        <div class="nextBtn">
-                            <img src="img/next_arrow.svg" alt="">
+                            <div class="cardDescription">{{tr('Дорогие друзья!')}} <br> {{tr('Только сегодня, в честь нашего юбилея  мы объявляем 25% скидку на Wi-Fi камеры.')}} <br> {{tr('Успейте купить по самой выгодной цене в городе, от 9 790тг.! Количество камер ограничено!')}}</div>
+                            
                         </div>
                     </div>
                 </div>

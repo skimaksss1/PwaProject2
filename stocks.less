@@ -122,31 +122,45 @@
         }
     }
 }
-.filterList{
-    overflow-x: auto;
-    overflow-y: hidden;
-    display: flex;
-    align-items: flex-start;
-    gap: 19px;
-    margin-bottom: 25px;
-    .filterItem{
+.banner{
+    .bannerList{
+        position: relative;   
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        gap: 12px;
-        .filterCircle{
-            height: 63px;
-            width: 63px;
-            border: #E7FE55 1px solid;
-            border-radius: 100%;
-            background: center no-repeat;
+        margin-bottom: 20px;
+        .banner-img {
+            width: 100%;
+            height: 115px;
+            border-radius: 18px;
+            border: 1px solid @common-color1;
+            background-position: center;
+        } 
+        .banner-dots{
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+            margin: 5px 0;
+            position: absolute;
+            bottom: 3px;
+            .banner-dot{
+                width: 5px;
+                height: 5px;
+                background-color: #fff;
+                border-radius: 100%;
+            }
+            .banner-dot.active{
+                background-color: #E7FE55;
+            }
         }
-        .filterName{
-            text-align: center;
-            font-weight: 500;
-            font-size: 10px;
-            line-height: 76.1%;
+        .nextBtn {
+            margin-top: 20px;
+            margin-right: 8px;
+            display: flex;
+            justify-content: flex-end;
+            height: 15px;
+            position: absolute;
+            right: 12px;
+            bottom: 10px;
         }
     }
 }
@@ -211,8 +225,9 @@
     }
     .cardDescription{
         font-size: 17px;
-        font-weight: 400;
+        font-weight: 300;
         margin-bottom: 16px;
+        letter-spacing: -0.55px;
     }
     .discounts{
         display: flex;
