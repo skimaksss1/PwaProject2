@@ -36,4 +36,4 @@ dropdowns.find("dd ul li a").click(function(){
 $(document).bind('click', function(e){
 	if (! $(e.target).parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
 });
-},500))
+},1000))
