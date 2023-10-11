@@ -7,7 +7,7 @@
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-    <link rel="stylesheet/less" type="text/less" href="stocks.less" />
+    <link rel="stylesheet/less" type="text/less" href="favourites.less" />
     <!-- Скрипты не трогать -->
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
@@ -159,7 +159,7 @@
                     </dl> -->
                     <div class="dropdownSelect">
                         <div class="selctActive">
-                            <span>{{tr('Акции')}}</span>
+                            <span>{{tr('Избранное')}}</span>
                         </div>
                         <div class="selecting" style="display: none;">
                             <ul>
@@ -171,21 +171,6 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="banner">
-                <div class="container">
-                    <div class="bannerList">
-                        <div class="banner-img" style="background-image: url(img/stocks.png);"></div>
-                        <div class="banner-dots">
-                            <div class="banner-dot active"></div>
-                            <div class="banner-dot"></div>
-                            <div class="banner-dot"></div>
-                        </div>
-                        <div class="nextBtn">
-                            <img src="img/next_arrow.svg" alt="">
-                        </div>
-                    </div>
-                </div>    
             </section>
             <section class="cards">
                 <div class="container">
@@ -204,8 +189,20 @@
                                     <img src="img/Star_full.svg" alt="">                     
                                 </div>
                             </div>
-                            <div class="cardDescription">{{tr('Дорогие друзья!')}} <br> {{tr('Только сегодня, в честь нашего юбилея  мы объявляем 25% скидку на Wi-Fi камеры.')}} <br> {{tr('Успейте купить по самой выгодной цене в городе, от 9 790тг.! Количество камер ограничено!')}}</div>
-                            
+                            <div class="cardDescription">{{tr('Системы обеспечения безопасности')}}</div>
+                            <div class="discounts">
+                                <div class="discount">
+                                    <p>{{tr('Скидка на оборудование')}}</p>
+                                    <span>10%</span>
+                                </div>
+                                <div class="discount">
+                                    <p>{{tr('Скидка на оборудование')}}</p>
+                                    <span>10%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nextBtn">
+                            <img src="img/next_arrow.svg" alt="">
                         </div>
                     </div>
                     <div class="card">
@@ -223,8 +220,20 @@
                                     <img src="img/Star_full.svg" alt="">                     
                                 </div>
                             </div>
-                            <div class="cardDescription">{{tr('Дорогие друзья!')}} <br> {{tr('Только сегодня, в честь нашего юбилея  мы объявляем 25% скидку на Wi-Fi камеры.')}} <br> {{tr('Успейте купить по самой выгодной цене в городе, от 9 790тг.! Количество камер ограничено!')}}</div>
-                            
+                            <div class="cardDescription">{{tr('Системы обеспечения безопасности')}}</div>
+                            <div class="discounts">
+                                <div class="discount">
+                                    <p>{{tr('Скидка на оборудование')}}</p>
+                                    <span>10%</span>
+                                </div>
+                                <div class="discount">
+                                    <p>{{tr('Скидка на оборудование')}}</p>
+                                    <span>10%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nextBtn">
+                            <img src="img/next_arrow.svg" alt="">
                         </div>
                     </div>
                 </div>
