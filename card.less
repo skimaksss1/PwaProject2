@@ -1,0 +1,243 @@
+@import url(common.less);
+
+body{
+    background-color: #252525;
+}
+.brow_empty{
+    height: 50px;
+    width: 100%;
+}
+.cardBg{
+    width: 100%;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .cardSlide-dots{
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        margin: 5px 0;
+        position: absolute;
+        bottom: 40px;
+        .slide-dot{
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 100%;
+        }
+        .slide-dot.active{
+            background-color: #E7FE55;
+        }
+    }
+    .cardContent{
+        position: relative;
+        display: flex;
+        justify-content: end;
+        height: 100%;
+        .sale{
+            width: 75px;
+            height: 75px;
+            background-color: #9F55FE;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Atyp Display';
+            font-weight: 700;
+            font-size: 24px;
+            padding-bottom: 5px;
+            position: absolute;
+            bottom: 50px;
+        }
+        
+    }
+}
+.card{
+    background-color: #252525;
+    width: 100%;
+    height: auto;
+    border-radius: 29px;
+    padding: 20px 0;
+    padding-bottom: 16px;
+    position: relative;
+    margin-bottom: 20px;
+    top: -35px;
+    .sale{
+        width: 75px;
+        height: 75px;
+        background-color: #9F55FE;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Atyp Display';
+        font-weight: 700;
+        font-size: 24px;
+        padding-bottom: 5px;
+        position: absolute;
+        right: -3px;
+        top: -10px;
+    }
+    .cardImg{
+        height: 160px;
+        width: 100%;
+        border-radius: 20px;
+        background-position: center;
+    }
+    .cardSlide-dots{
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        margin: 5px 0;
+        .slide-dot{
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 100%;
+        }
+        .slide-dot.active{
+            background-color: #E7FE55;
+        }
+    }
+}
+.cardInfo{
+    .cardNameStar{
+        display: flex;
+        justify-content: space-between;
+        .actionBtn{
+            display: flex;
+            gap: 20px;
+        }
+        .cardName{
+            font-size: 24px;
+            font-weight: 900;
+            color: #E7FE55;
+            margin-bottom: 12px;
+            font-family: 'Atyp Display';
+        }
+    }
+    .cardDescription{
+        font-size: 17px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    .cardSeparation{
+        margin-bottom: 25px;
+        hr{
+            border: 1px solid @common-color1;
+        }
+    }
+    .currentProm{
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 0;
+        font-size: 17px;
+        font-weight: 400;
+        .quantity {
+            font-size: 24px;
+            font-weight: 700;
+            color: @common-color1;
+            margin-right: 40px;
+        }
+    }
+    .locationInfo{
+        display: flex;
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+    .chart{
+        font-size: 16px;
+        .chartDate{
+            display: flex;
+            .weekDay{
+                display: block;
+                width: 74px;
+            }
+        }
+    }
+    .social{
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .saveContact{
+        width: 100%;
+        height: 50px;
+        border-radius: 58px;
+        background-color: @common-color1;
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .discounts{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .discount{
+            width: 100%;
+            height: 60px;
+            background-color: #9F55FE;
+            border-radius: 58px;
+            padding: 11px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .discount p{
+                font-weight: 700;
+                font-size: 20px;
+                width: 200px;
+                line-height: 96.9%;
+            }
+            .discount span{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 96.9%;
+            }
+        }
+    }
+}
+.nextBtn{
+    margin-top: 20px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: flex-end;
+}
+.navigation{
+    position: absolute;
+    width: 100%;
+    bottom: 22px;
+    z-index: 1;
+    .nav{
+        .navCont{
+            height: 83px;
+            width: 100%;
+            background: linear-gradient( 30deg, #414141c7, #6a6a6ab4);
+            backdrop-filter: blur(1rem);
+            border-radius: 83px;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .navItem.navActive{
+                height: 64px;
+                width: 64px;
+                background-color: #fff;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .navItem.navActive svg path{
+                    fill: #000;
+                }
+            }
+        }
+    }
+}
