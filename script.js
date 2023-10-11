@@ -1,4 +1,5 @@
-var dropdowns = $(".dropdown");
+addEventListener('load',()=>setTimeout(()=>{
+	var dropdowns = $(".dropdown");
 
 // Onclick on a dropdown, toggle visibility
 dropdowns.find("dt").click(function(){
@@ -35,3 +36,4 @@ dropdowns.find("dd ul li a").click(function(){
 $(document).bind('click', function(e){
 	if (! $(e.target).parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
 });
+},0))
