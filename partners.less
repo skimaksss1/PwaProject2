@@ -30,7 +30,13 @@
 }
 .history{
     overflow-x: auto;
+    -webkit-overflow-scrolling: auto;
     margin-bottom: -14px;
+    #element::-webkit-scrollbar {
+        width: 0px;
+        height: 0;
+        background-color: transparent;
+      }
     .historyList{
         display: flex;
         align-items: center;
@@ -39,7 +45,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 12px;
+            gap: 8px;
             .historyCircle{
                 height: 79px;
                 width: 79px;
@@ -128,13 +134,13 @@
     display: flex;
     align-items: flex-start;
     gap: 19px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     .filterItem{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 12px;
+        gap: 8px;
         .filterCircle{
             height: 63px;
             width: 63px;
@@ -167,7 +173,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Atyp Display';
         font-weight: 700;
         font-size: 24px;
         padding-bottom: 5px;
@@ -203,10 +208,9 @@
         justify-content: space-between;
         .cardName{
             font-size: 24px;
-            font-weight: 900;
+            font-weight: 700;
             color: #E7FE55;
             margin-bottom: 12px;
-            font-family: 'Atyp Display';
         }
     }
     .cardDescription{
