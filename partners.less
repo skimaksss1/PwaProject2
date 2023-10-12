@@ -131,12 +131,13 @@
     }
 }
 .filterList{
-    overflow-x: auto;
-    overflow-y: hidden;
+    padding-bottom: 30px;
+    overflow: auto;
+    clip-path: inset(0 0 30px 0);
+    margin-bottom: -30px;
     display: flex;
     align-items: flex-start;
     gap: 19px;
-    margin-bottom: 10px;
     .filterItem{
         display: flex;
         flex-direction: column;
