@@ -29,8 +29,11 @@
     }
 }
 .history{
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: auto;
+    padding-bottom: 30px;
+    white-space: nowrap;
+    overflow: auto;
+    clip-path: inset(0 0 30px 0);
+    margin-bottom: -30px;
     .historyList{
         display: flex;
         align-items: center;
@@ -123,12 +126,13 @@
     }
 }
 .filterList{
-    overflow-x: auto;
-    overflow-y: hidden;
+    padding-bottom: 30px;
+    overflow: auto;
+    clip-path: inset(0 0 30px 0);
+    margin-bottom: -20px;
     display: flex;
     align-items: flex-start;
     gap: 19px;
-    margin-bottom: 25px;
     .filterItem{
         display: flex;
         flex-direction: column;
