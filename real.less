@@ -1,0 +1,44 @@
+@import url(common.less);
+
+.brow_empty{
+    height: 50px;
+    width: 100%;
+}
+.real{
+  .realMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+      font-weight: 500;
+      font-size: 21px;
+    }
+  }
+  .realTitle{
+    font-size: 28px;
+    color: @common-color1;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  .inputsBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 15px;
+    .inputTitle{
+      display: block;
+      margin-bottom: -2px;
+    }
+    input{
+      height: 50px;
+      width: 100%;
+      border-radius: 26px;
+      background-color: @common-color3;
+      outline: none;
+      border: none;
+      padding: 15px 22px;
+      font-size: 24px;
+    }
+  }
+}
