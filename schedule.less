@@ -1,0 +1,120 @@
+@import url(common.less);
+
+.brow_empty{
+    height: 50px;
+    width: 100%;
+}
+.main{
+  margin: 12px 0 16px 0;
+  height: 35px;
+  .mainLine{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      height: 35px;
+      .rightBtn-mainLine{
+          display: flex;
+          align-items: center;
+          gap: 20px;
+      }
+      .done{
+        color: @common-color1;
+        font-size: 17px;
+        font-weight: 500;
+      }
+      .pageTitle{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+    }
+  }
+
+  .schedule {
+    .scheduleLine{
+      background-color: #1E1E1E;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 32px;
+      border-radius: 26px;
+      margin-bottom: 12px;
+      &:nth-last-child(1){
+        margin-bottom: 0;
+      }
+      .weekDay{
+        color: #686868;
+        font-size: 28px;
+        font-weight: 500;
+        text-transform: uppercase;
+        width: 50px;
+      }
+      .dayTime{
+        color: #fff;
+        font-size: 28px;
+        font-weight: 500;
+        width: 200px;
+      }
+    }
+    .checkboxLine{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 30px;
+      .squaredThree{
+        width: 20px;
+        position: relative;
+        label {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #353535;
+          border-radius: 4px;
+          box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+          &:after {
+            content: '';
+            width: 9px;
+            height: 5px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            border: 3px solid #fcfff4;
+            border-top: none;
+            border-right: none;
+            background: transparent;
+            opacity: 0;
+            transform: rotate(-45deg);
+          }
+          &:hover::after {
+            opacity: 0;
+          }
+        }
+        input[type=checkbox] {
+          visibility: hidden;
+          width: 20px;
+          height: 20px;
+        &:checked + label:after {
+          opacity: 1;
+        } 
+        &:checked + label {
+          background-color: #A2BB01;
+        }     
+      }
+    }
+    
+    span{
+      font-size: 12px;
+      font-weight: 600;
+      color: #7D7D7D;
+    }
+  }
+}
