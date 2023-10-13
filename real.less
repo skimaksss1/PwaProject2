@@ -25,7 +25,11 @@
     display: flex;
     flex-direction: column;
     gap: 7px;
-    margin-bottom: 15px;
+    margin-bottom:24px;
+    position: relative;
+    .inputsBlock{
+      margin-bottom: 0;
+    }
     .inputTitle{
       display: block;
       margin-bottom: -2px;
@@ -39,6 +43,177 @@
       border: none;
       padding: 15px 22px;
       font-size: 24px;
+      position: relative;
+      color: #fff;
+    }
+    .inputWrapper{
+      .inputPhone{
+        position: relative;
+        img{
+          position: absolute;
+          top: 23px;
+          z-index: 1;
+          left: 55px;
+        }
+      }
+      .inputPhone::after{
+        content: "";
+        background-image: url(img/telephone_grey.svg);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 17px;
+        bottom: 15px;
+      }
+      .inputPhone::before{
+        content: "";
+        background-image: url(img/flag.png);
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 19px;
+        position: absolute;
+        left: 17px;
+        bottom: 15px;
+        z-index: 1;
+      }
+      input{
+        padding-left: 67px;
+      }
+    }
+
+
+    .dropdownSelect{
+        position: relative;
+        z-index: 1;
+        .selctActive{
+          height: 50px;
+          width: 100%;
+          border-radius: 26px;
+          background-color: @common-color3;
+          outline: none;
+          border: none;
+          padding: 10px 22px;
+          font-size: 24px;
+          position: relative;
+          color: #686868;
+            // span{
+            //     color: @common-color1;
+            // }
+        }
+        .selctActive::after{
+            content: '';
+            background: url(img/polygon.svg) no-repeat;
+            width: 13px;
+            height: 11px;
+            position: absolute;
+            right: 12px;
+            top: 20px;
+        }
+        .selecting{
+            // height: 169px;
+            width: 100%;
+            background-color: @common-color3;
+            outline: 1px solid @common-color2;
+            border-radius: 26px;
+            position: absolute;
+            top: 0;
+            ul{
+                li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 50px;
+                    border-bottom: #e7fe552a 1px solid;
+                }
+                :nth-child(1){
+                    color: @common-color1;
+                }
+                :nth-child(1)::after{
+                    content: '';
+                    background: url(img/polygon.svg) no-repeat;
+                    width: 13px;
+                    height: 11px;
+                    position: absolute;
+                    right: 12px;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+
+  }
+  .checkboxLine{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 10px;
+    .squaredThree{
+      width: 20px;
+      position: relative;
+      label {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #353535;
+        border-radius: 4px;
+        box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+        &:after {
+          content: '';
+          width: 9px;
+          height: 5px;
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          border: 3px solid #fcfff4;
+          border-top: none;
+          border-right: none;
+          background: transparent;
+          opacity: 0;
+          transform: rotate(-45deg);
+        }
+        &:hover::after {
+          opacity: 0;
+        }
+      }
+      input[type=checkbox] {
+        visibility: hidden;
+        width: 20px;
+        height: 20px;
+        &:checked + label:after {
+          opacity: 1;
+        } 
+        &:checked + label {
+          background-color: #A2BB01;
+        }     
+      }
+    }
+    
+    span{
+      font-size: 12px;
+      font-weight: 600;
+      color: #7D7D7D;
     }
   }
+  .chbxList{
+    margin-top: 0;
+  }
+  .saveContact{
+    width: fit-content;
+    height: 50px;
+    border-radius: 58px;
+    background-color: #E7FE55;
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 100px;
+}
 }

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
     
-        <link rel="stylesheet/less" type="text/less" href="real.less" />
+        <link rel="stylesheet/less" type="text/less" href="succesreg.less" />
         <!-- для каждой страницы свой less файл. -->
     <link rel="stylesheet/less" type="text/less" href="forBusiness.less" />
     <!-- Скрипты не трогать -->
@@ -83,122 +83,27 @@
                 </div>
             </section> -->
             <div class="brow_empty"></div>
-            <div class="real">
-                <div class="containerLow">
-                    <div class="realMain">
-                        <img src="img/real.png" alt="">
-                        <div class="enter">
-                            <span>Войти</span>
-                        </div>
-                    </div>
-                    <div class="realTitle">Добро пожаловать <br> в Real Business!</div>
-                    <div class="inputsBlock">
-                        <span class="inputTitle">Данные руководителя</span>
-                        <input type="text" placeholder="Имя">
-                        <input type="text" placeholder="Фамилия">
-                        <input type="text" placeholder="Пол">
-                    </div>
-                    <div class="inputsBlock ">
-                        <span class="inputTitle">Номер телефона</span>
-                        <div class="inputWrapper">
-                            <div class="inputPhone">
-                                <img src="img/rectDown.svg" alt="">
-                                <input type="text" placeholder="+7" class="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="inputsBlock">
-                        <span class="inputTitle">Данные компании</span>
-                        <input type="text" placeholder="Форма собственности">
-                        <input type="text" placeholder="Наименование компании">
-                        <input type="text" placeholder="Сфера деятельности">
-                        <input type="text" placeholder="Сайт компании">
-                    </div>
-                    <div class="inputsBlock">
-                        <span class="inputTitle">Банковские реквизиты</span>
-                        <input type="text" placeholder="БИН">
-                        <input type="text" placeholder="ИИК">
-                        <input type="text" placeholder="БИК">
-                        <div class="checkboxLine">
-                            <div class="squaredThree">
-                                <input type="checkbox" value="None" id="chkbx1" name="chkbx1" checked />
-                                <label for="chkbx1"></label>
-                            </div>
-                            <span>Являюсь плательщиком НДС</span>
-                        </div>
-                    </div>
-                    <div class="inputsBlock">
-                        <span class="inputTitle">Местоположение</span>
-                        <input type="text" placeholder="Страна">
-                        <input type="text" placeholder="Область">
-                        <input type="text" placeholder="Город">
-                        <input type="text" placeholder="Адрес">
-                    </div>
-                    <div class="inputsBlock">
-                        <span class="inputTitle">Тарифный план</span>
-                        
+                <div class="real">
+                    <div class="containerLow">
+                        <div class="realSucces">
 
-                        <div class="dropdownSelect">
-                            <div class="selctActive">
-                                <span>Standart</span>
+                            <div class="realMain">
+                                <img src="img/real.png" alt="">
+                                <!-- <div class="enter">
+                                    <span>Войти</span>
+                                </div> -->
                             </div>
-                            <div class="selecting" style="display: none;">
-                                <ul>
-                                    <li>Standart</li>
-                                    <li>Business</li>
-                                    <li>Premium</li>
-                                </ul>
-                            </div>
+                            <div class="succesText">
+                                <p class="orderSending">
+                                    Ваша заявка <br>успешно отправлена! 
+                                </p>
+                            <p class="orderDecription">
+                                Мы свяжемся с вами <br>в ближайшее время! 
+                            </p>
                         </div>
-               
-                    </div>
-                    <div class="inputsBlock">
-                        <span class="inputTitle">Контактное лицо</span>
-                        <input type="text" placeholder="Имя">
-                        <input type="text" placeholder="Фамилия">
-                    </div>
-                    <div class="inputsBlock ">
-                        <span class="inputTitle">Номер телефона</span>
-                        <div class="inputWrapper">
-                            <div class="inputPhone">
-                                <img src="img/rectDown.svg" alt="">
-                                <input type="text" placeholder="+7" class="">
-                            </div>
+                        <div class="saveContact">
+                            {{tr('На главную')}}
                         </div>
-                        
-                        <div class="inputsBlock">
-                            <input type="text" placeholder="E-mail">
-                        </div>
-                    </div>
-                    <div class="inputsBlock">
-                        <div class="checkboxLine chbxList">
-                            <div class="squaredThree">
-                                <input type="checkbox" value="None" id="chkbx2" name="chkbx2" checked />
-                                <label for="chkbx2"></label>
-                            </div>
-                            <span>Согласен с хранением моих персональных данных</span>
-                        </div>
-                    </div>
-                    <div class="inputsBlock">
-                        <div class="checkboxLine chbxList">
-                            <div class="squaredThree">
-                                <input type="checkbox" value="None" id="chkbx3" name="chkbx3" checked />
-                                <label for="chkbx3"></label>
-                            </div>
-                            <span>Подтверждаю что компания не находится под санкциями, в том числе международными</span>
-                        </div>
-                    </div>
-                    <div class="inputsBlock">
-                        <div class="checkboxLine chbxList">
-                            <div class="squaredThree">
-                                <input type="checkbox" value="None" id="chkbx4" name="chkbx4" checked />
-                                <label for="chkbx4"></label>
-                            </div>
-                            <span>Согласен и принимаю условия пользовательского соглашения и присоединяюсь к публичной офферте </span>
-                        </div>
-                    </div>
-                    <div class="saveContact">
-                        {{tr('Отправить')}}
                     </div>
                 </div>
             <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
