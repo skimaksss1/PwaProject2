@@ -1,0 +1,143 @@
+@import url(common.less);
+
+.brow_empty{
+    height: 50px;
+    width: 100%;
+}
+.main{
+  margin: 12px 0 16px 0;
+  height: 35px;
+  .mainLine{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      height: 35px;
+      .rightBtn-mainLine{
+          display: flex;
+          align-items: center;
+          gap: 20px;
+      }
+      .done{
+        color: @common-color1;
+        font-size: 17px;
+        font-weight: 500;
+      }
+      .pageTitle{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+    }
+  }
+
+.contacts {
+  margin-top: 30px;
+  .contact{
+    margin-bottom: 30px;
+    &:nth-last-child(1){
+      margin-bottom: 0;
+    }
+    span{
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .inputDescription{
+      font-size: 13px;
+      color: #7D7D7D;
+      margin-top: 10px;
+      margin-bottom: 16px;
+    }
+    .contactLine{
+      position: relative;
+      .inputWrapper{
+        .inputPhone{
+          position: relative;
+          img{
+            position: absolute;
+            top: 23px;
+            z-index: 1;
+            left: 55px;
+          }
+        }
+        .inputPhone::after{
+          content: "";
+          background-image: url(img/telephone_grey.svg);
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          right: 17px;
+          bottom: 15px;
+        }
+        .inputPhone::before{
+          content: "";
+          background-image: url(img/flag.png);
+          background-repeat: no-repeat;
+          width: 50px;
+          height: 19px;
+          position: absolute;
+          left: 17px;
+          bottom: 15px;
+          z-index: 1;
+        }
+        input{
+          padding-left: 67px;
+        }
+      }
+      input{
+        background-color: @common-color3;
+        width: calc(100% - 45px);
+        height: 50px;
+        border-radius: 26px;
+        border: none;
+        outline: none;
+        padding: 5px 50px;
+        color: #fff;
+        font-size: 24px;
+      }
+      img{
+        position: absolute;
+        top: 12.5px;
+        left: 16px;
+      }
+      .contactBtns{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 4.5px;
+        right: 0;
+        .btnMinus{
+          position: relative;
+          color: #A1A1A1 !important;
+        }
+        .btnMinus, .btnPlus{
+          width: 40px;
+          height: 40px;
+          background-color: #2F2F2F;
+          color: #686868;
+          font-size: 31px;
+          font-weight: 600;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .inputFull{
+      input{
+        width: 100% !important;
+      }
+      .contactBtns{
+        top: 4.5px !important;
+        right: 5.5px !important;
+      }
+    }
+  }
+}

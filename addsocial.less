@@ -1,0 +1,94 @@
+@import url(common.less);
+
+.brow_empty{
+    height: 50px;
+    width: 100%;
+}
+.main{
+  margin: 12px 0 16px 0;
+  height: 35px;
+  .mainLine{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      height: 35px;
+      .rightBtn-mainLine{
+          display: flex;
+          align-items: center;
+          gap: 20px;
+      }
+      .done{
+        color: @common-color1;
+        font-size: 17px;
+        font-weight: 500;
+      }
+      .pageTitle{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+    }
+  }
+
+.socialnetwork {
+  margin-top: 30px;
+  .snetwork{
+    margin-bottom: 30px;
+    &:nth-last-child(1){
+      margin-bottom: 0;
+    }
+    span{
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .snetworkLine{
+      position: relative;
+      input{
+        background-color: @common-color3;
+        width: calc(100% - 45px);
+        height: 50px;
+        border-radius: 26px;
+        border: none;
+        outline: none;
+        padding: 5px 50px;
+        color: #fff;
+        font-size: 24px;
+      }
+      img{
+        position: absolute;
+        top: 12.5px;
+        left: 16px;
+      }
+      .snetworkBtns{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 4.5px;
+        right: 0;
+        .btnMinus{
+          position: relative;
+          color: #A1A1A1 !important;
+        }
+        .btnMinus, .btnPlus{
+          width: 40px;
+          height: 40px;
+          background-color: #2F2F2F;
+          color: #686868;
+          font-size: 31px;
+          font-weight: 600;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
