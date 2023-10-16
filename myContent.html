@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="windows-1251" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-    <link rel="stylesheet/less" type="text/less" href="addcontact.less" />
-    <!-- Скрипты не трогать -->
-    <script src="https://cdn.jsdelivr.net/npm/less"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
-    <script>
-      //скрипты не трограть.
-      window.addEventListener("load", () => {
-        const app = Vue.createApp({
-          methods: {
-            tr(k) {
-              return k;
+        <link rel="stylesheet/less" type="text/less" href="myContent.less" />
+        <!-- Скрипты не трогать -->
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+        <script>
+        //скрипты не трограть.
+        window.addEventListener("load", () => {
+            const app = Vue.createApp({
+            methods: {
+                tr(k) {
+                return k;
+                },
             },
-          },
+            });
+            app.mount("#dont_use_this_id_in_style");
         });
-        app.mount("#dont_use_this_id_in_style");
-      });
-    </script>
-  </head>
+        </script>
+    </head>
     <body>
         <div class="page" id="dont_use_this_id_in_style">
             <!-- <section class="navigation">
@@ -87,14 +87,14 @@
                 <div class="container">
                     <div class="mainLine">
                         <div class="pageTitle">
-                            <p>{{tr('Добавить контакты')}}</p>
+                            <p>{{tr('Мой контент')}}</p>
                         </div>
                         <div class="leftBtn-mainLine">
                             <img src="img/backpage.svg" alt="">             
                         </div>
-                        <div class="done">
-                            <span>{{tr('Готово')}}</span>
-                        </div>
+                        <!-- <div class="lang">
+                            <span>KZ</span>
+                        </div> -->
                         <!-- <div class="rightBtn-mainLine">
                             <img src="img/sorting.svg" alt="">
                             <img src="img/filtering.svg" alt="">      
@@ -102,87 +102,161 @@
                     </div>
                 </div>
             </section>
-            <div class="contacts">
+            <div class="content">
                 <div class="container">
-                    <div class="contact">
-                        <span>{{tr('Телефон для связи')}}</span>
-                        <div class="contactLine ">
-                            <div class="inputWrapper">
-                                <div class="inputPhone">
-                                    <img src="img/rectDown.svg" alt="">
-                                    <input type="text" placeholder="+7" value="+7 777 111 22 33" class="">
+                    <div class="myContent">
+                        <div class="photoEdit">
+                            <span>+</span>
+                        </div>
+                        <div class="historyAdd">
+                            <span>{{tr('Добавть историю')}}</span>
+                            <div class="editHistory">{{tr('Архив историй')}}</div>
+                        </div>
+                    </div>
+                    <div class="separation">
+                        <hr>
+                    </div>
+                    <div class="addBanner">
+                        {{tr('Добавть баннер')}}
+                    </div>
+                    <div class="publish">
+                        <a href="" class="publishingTop">
+                            <span>{{tr('Опубликовать в ТОПЕ')}}</span>
+                            <div class="publishPrice">
+                                <span>1000 {{tr('тенге')}}/1 {{tr('день')}}</span>
+                                <img src="img/top.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="" class="publishingStandart">
+                            <span>{{tr('Опубликовать')}}</span>
+                            <div class="publishPrice">
+                                <span>500 {{tr('тенге')}}/1 {{tr('день')}}</span>
+                                <img src="img/standart.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="whatIsIt">{{tr('Что это такое?')}}</div>
+                    <div class="addAction">
+                        <span class="addActionTitle">{{tr('Добавть акцию')}}</span>
+                        <div class="imageGallery">
+                            <div class="cardItem">
+                                <div class="imageCard addImage">+</div>
+                            </div>
+                            <div class="cardItem">
+                                <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                            </div>
+                            <div class="cardItem">
+                                <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                            </div>
+                            <div class="cardItem">
+                                <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                            </div>
+                            <div class="cardItem">
+                                <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                            </div>
+                            <div class="cardItem">
+                                <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                            </div>
+                        </div>
+                        <div class="textarea">
+                            <textarea class="captionAction" name="" id="" cols="30" rows="10" placeholder="Описание акции"></textarea>
+                            <span>0/140</span>
+                        </div>
+                        <a href="#" class="addActionBtn">{{tr('Добавить акцию')}}</a>
+                    </div>
+                    <div class="myDiscounts">
+                        <div class="myDiscount">
+                            <span>{{tr('Мои скидки')}}</span>
+                            <div class="addBtn">+</div>
+                        </div>
+                        <div class="discountLine">
+                            <div class="ammoundDiscount">
+                                15%
+                            </div>
+                            <span>{{tr('Вся бытовая техника')}}</span>
+                        </div>
+                    </div>
+                    <div class="separation">
+                        <hr>
+                    </div>
+                    <div class="informAccordion">
+                        <div class="informItem">
+                            <div class="informAtr">
+                                <span class="informName greyColor">{{tr('Уведомления')}}</span>
+                                <div class="notification">
+                                    +4
                                 </div>
                             </div>
-                            <div class="contactBtns"> 
-                                <div class="btnMinus">-</div>
+                            <div class="informAtr">
+                                <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.01229 9.1622e-08C5.74707 8.84593e-08 5.49272 0.100096 5.30518 0.27827C5.11765 0.456443 5.01229 0.698099 5.01229 0.950074L5.01229 15.7578L1.71929 12.6293C1.62704 12.5386 1.5167 12.4662 1.39469 12.4164C1.27269 12.3666 1.14147 12.3404 1.00869 12.3393C0.87591 12.3382 0.744232 12.3623 0.621336 12.41C0.498439 12.4578 0.386787 12.5284 0.292894 12.6176C0.199001 12.7068 0.124747 12.8128 0.0744665 12.9296C0.0241857 13.0464 -0.00111584 13.1715 3.79766e-05 13.2976C0.00119179 13.4238 0.028779 13.5484 0.081188 13.6643C0.133597 13.7803 0.209778 13.8851 0.305288 13.9727L5.30459 18.7225C5.49263 18.9002 5.74706 19 6.01229 19C6.27751 19 6.53195 18.9002 6.71999 18.7225L11.7193 13.9727C11.9014 13.7936 12.0022 13.5536 12 13.3045C11.9977 13.0553 11.8925 12.8171 11.7071 12.6409C11.5217 12.4648 11.2709 12.3648 11.0087 12.3627C10.7465 12.3605 10.4939 12.4563 10.3053 12.6293L7.01229 15.7578L7.01229 0.950074C7.01229 0.698099 6.90693 0.456443 6.7194 0.27827C6.53186 0.100096 6.27751 9.47847e-08 6.01229 9.1622e-08Z" fill="#858585"/>
+                                </svg>                         
                             </div>
-                        </div> 
-                        <div class="contactLine ">
-                            <div class="inputWrapper">
-                                <div class="inputPhone">
-                                    <img src="img/rectDown.svg" alt="">
-                                    <input type="text" placeholder="" value="+7 777 111 22 44" class="">
+                        </div>
+                        <span class="disclosure" style="display: none;">
+                            <div class="realLine">
+                                <img src="img/realIcon.png" alt="">
+                                <div>
+                                    <span>{{tr('Вам поступило вознаграждение от Real 1700 ед.')}}</span>
+                                    <div class="disclosureDate">23.08.23</div>
                                 </div>
                             </div>
-                            <div class="contactBtns">
-                                <div class="btnMinus">-</div>
-                            </div>
-                        </div>
-                        <div class="contactLine ">
-                            <div class="inputWrapper">
-                                <div class="inputPhone">
-                                    <img src="img/rectDown.svg" alt="">
-                                    <input type="text" placeholder="+7" value="" class="">
-                                </div>
-                            </div>
-                            <div class="contactBtns">
-                                <div class="btnPlus">+</div>
-                            </div>
+                        </span>
+                    </div>
+                    <div class="separation">
+                        <hr>
+                    </div>
+                    <div class="favourites">
+                        <span class="favouritesTitle">{{tr('В избранных')}}</span>
+                        <div class="favouritesFlex">
+                            <span class="favouritesCaption">{{tr('Вашу компанию добавили в избранное следующее количество пользователей')}}</span>
+                            <span class="favouritesAmount">117</spamn>
                         </div>
                     </div>
-                    <div class="contact">
-                        <span>{{tr('Номер WhatsApp')}}</span>
-                        <div class="contactLine">
-                            <img src="img/whatsapp2.svg" alt="">
-                            <input type="text" value="+7 777 111 22 33" >
-                            <div class="contactBtns"> 
-                                <div class="btnMinus">-</div>
+                    <div class="separation">
+                        <hr>
+                    </div>
+                    <div class="purchase">
+                        <span class="purchaseTitle">{{tr('История покупок')}}</span>
+                        <div class="purchaseGallery">
+                            <div class="cardItem">
+                                <div class="purchaseCard" style=""></div>
                             </div>
-                        </div> 
-                        <div class="contactLine">
-                            <img src="img/whatsapp2.svg" alt="">
-                            <input type="text">
-                            <div class="contactBtns"> 
-                                <div class="btnPlus">+</div>
+                            <div class="cardItem">
+                                <div class="purchaseCard" style=""></div>
                             </div>
+                            <div class="cardItem">
+                                <div class="purchaseCard" style=""></div>
+                            </div>
+                            <div class="cardItem">
+                                <div class="purchaseCard" style=""></div>
+                            </div>
+                            
                         </div>
                     </div>
-                    <div class="contact">
-                        <span>E-mail</span>
-                        <div class="contactLine">
-                            <img src="img/mail2.svg" alt="" style="top: 17px;">
-                            <input type="text" value="info@real.kz" >
-                            <div class="contactBtns"> 
-                                <div class="btnMinus">-</div>
-                            </div>
+                    <div class="basket">
+                        <div class="basketFlex">
+                            <span class="basketTitle">{{tr('Корзина')}}</span>
+                            <span class="ammountItem">5</span>
                         </div>
-                        <div class="contactLine">
-                            <img src="img/mail2.svg" alt="" style="top: 17px;">
-                            <input type="text">
-                            <div class="contactBtns"> 
-                                <div class="btnPlus">+</div>
+                        <div class="basketGallery">
+                            <div class="cardItem">
+                                <div class="basketCard" style=""></div>
                             </div>
+                            <div class="cardItem">
+                                <div class="basketCard" style=""></div>
+                            </div>
+                            <div class="cardItem">
+                                <div class="basketCard" style=""></div>
+                            </div>
+                            <div class="cardItem">
+                                <div class="basketCard" style=""></div>
+                            </div>
+                            
                         </div>
                     </div>
-                    <div class="contact">
-                        <span>{{tr('Адрес')}}</span>
-                        <div class="contactLine ">
-                            <img src="img/location2.svg" alt="">
-                            <input type="text">
-                        </div>
-                    </div>
-                    
                 </div>
+            </div>
             </div>
             <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
             <script src="script.js"></script>

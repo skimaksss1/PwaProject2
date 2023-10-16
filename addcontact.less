@@ -55,6 +55,7 @@
     }
     .contactLine{
       position: relative;
+      margin-bottom: 12px;
       .inputWrapper{
         .inputPhone{
           position: relative;
@@ -91,7 +92,7 @@
       }
       input{
         background-color: @common-color3;
-        width: calc(100% - 45px);
+        width: calc(100% - 60px);
         height: 50px;
         border-radius: 26px;
         border: none;
@@ -110,17 +111,17 @@
         align-items: center;
         gap: 10px;
         position: absolute;
-        top: 4.5px;
+        top: 0;
         right: 0;
         .btnMinus{
           position: relative;
           color: #A1A1A1 !important;
         }
         .btnMinus, .btnPlus{
-          width: 40px;
-          height: 40px;
-          background-color: #2F2F2F;
-          color: #686868;
+          width: 50px;
+          height: 50px;
+          background-color: #262626;
+          color: #A1A1A1;
           font-size: 31px;
           font-weight: 600;
           border-radius: 100%;
@@ -128,15 +129,9 @@
           align-items: center;
           justify-content: center;
         }
-      }
-    }
-    .inputFull{
-      input{
-        width: 100% !important;
-      }
-      .contactBtns{
-        top: 4.5px !important;
-        right: 5.5px !important;
+        .btnMinus{
+          padding-bottom: 5px;
+        }
       }
     }
   }

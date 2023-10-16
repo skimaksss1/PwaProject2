@@ -7,7 +7,7 @@
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-    <link rel="stylesheet/less" type="text/less" href="addcontact.less" />
+    <link rel="stylesheet/less" type="text/less" href="adddiscount.less" />
     <!-- Скрипты не трогать -->
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
@@ -87,7 +87,7 @@
                 <div class="container">
                     <div class="mainLine">
                         <div class="pageTitle">
-                            <p>{{tr('Добавить контакты')}}</p>
+                            <p>{{tr('Добавить скидки')}}</p>
                         </div>
                         <div class="leftBtn-mainLine">
                             <img src="img/backpage.svg" alt="">             
@@ -102,88 +102,77 @@
                     </div>
                 </div>
             </section>
-            <div class="contacts">
+            <div class="addDiscount">
                 <div class="container">
-                    <div class="contact">
-                        <span>{{tr('Телефон для связи')}}</span>
-                        <div class="contactLine ">
-                            <div class="inputWrapper">
-                                <div class="inputPhone">
-                                    <img src="img/rectDown.svg" alt="">
-                                    <input type="text" placeholder="+7" value="+7 777 111 22 33" class="">
-                                </div>
-                            </div>
-                            <div class="contactBtns"> 
-                                <div class="btnMinus">-</div>
-                            </div>
-                        </div> 
-                        <div class="contactLine ">
-                            <div class="inputWrapper">
-                                <div class="inputPhone">
-                                    <img src="img/rectDown.svg" alt="">
-                                    <input type="text" placeholder="" value="+7 777 111 22 44" class="">
-                                </div>
-                            </div>
-                            <div class="contactBtns">
-                                <div class="btnMinus">-</div>
-                            </div>
-                        </div>
-                        <div class="contactLine ">
-                            <div class="inputWrapper">
-                                <div class="inputPhone">
-                                    <img src="img/rectDown.svg" alt="">
-                                    <input type="text" placeholder="+7" value="" class="">
-                                </div>
-                            </div>
-                            <div class="contactBtns">
-                                <div class="btnPlus">+</div>
-                            </div>
+                    <div class="nameDiscount">
+                        <span class="title">{{tr('Наименование скидки')}}</span>
+                        <div class="textarea">
+                            <textarea class="captionAction" name="" id="" cols="30" rows="10" placeholder="Описание акции"></textarea>
+                            <span>0/40</span>
                         </div>
                     </div>
-                    <div class="contact">
-                        <span>{{tr('Номер WhatsApp')}}</span>
-                        <div class="contactLine">
-                            <img src="img/whatsapp2.svg" alt="">
-                            <input type="text" value="+7 777 111 22 33" >
-                            <div class="contactBtns"> 
-                                <div class="btnMinus">-</div>
-                            </div>
-                        </div> 
-                        <div class="contactLine">
-                            <img src="img/whatsapp2.svg" alt="">
-                            <input type="text">
-                            <div class="contactBtns"> 
-                                <div class="btnPlus">+</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact">
-                        <span>E-mail</span>
-                        <div class="contactLine">
-                            <img src="img/mail2.svg" alt="" style="top: 17px;">
-                            <input type="text" value="info@real.kz" >
-                            <div class="contactBtns"> 
-                                <div class="btnMinus">-</div>
-                            </div>
-                        </div>
-                        <div class="contactLine">
-                            <img src="img/mail2.svg" alt="" style="top: 17px;">
-                            <input type="text">
-                            <div class="contactBtns"> 
-                                <div class="btnPlus">+</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact">
-                        <span>{{tr('Адрес')}}</span>
-                        <div class="contactLine ">
-                            <img src="img/location2.svg" alt="">
-                            <input type="text">
-                        </div>
+                    <div class="procentDiscount">
+                        <span class="title">{{tr('Наименование скидки')}}</span>
+                        <input type="text">
                     </div>
                     
+                    <div class="addDiscountBtn">
+                        {{tr('Добавить скидку')}}
+                    </div>
+                    <div class="currentContent">
+                        <span>{{tr('Действующие скидки')}}</span>
+                        <div class="discountLine">
+                            <div class="ammoundDiscount">
+                                15%
+                            </div>
+                            <span>Вся бытовая техника марки Samsung Electronics</span>
+                            <div class="edit">
+                                <img src="img/pencil_white.svg" alt="">
+                            </div>
+                            <div class="delete">
+                                <img src="img/trash.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="discountLine">
+                            <div class="ammoundDiscount">
+                                15%
+                            </div>
+                            <span>{{tr('Вся бытовая техника марки Samsung Electronics')}}</span>
+                            <div class="edit">
+                                <img src="img/pencil_white.svg" alt="">
+                            </div>
+                            <div class="delete">
+                                <img src="img/trash.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="discountLine">
+                            <div class="ammoundDiscount">
+                                15%
+                            </div>
+                            <span>{{tr('Вся бытовая техника марки Samsung Electronics')}}</span>
+                            <div class="edit">
+                                <img src="img/pencil_white.svg" alt="">
+                            </div>
+                            <div class="delete">
+                                <img src="img/trash.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="discountLine">
+                            <div class="ammoundDiscount">
+                                15%
+                            </div>
+                            <span>{{tr('Вся бытовая техника марки Samsung Electronics')}}</span>
+                            <div class="edit">
+                                <img src="img/pencil_white.svg" alt="">
+                            </div>
+                            <div class="delete">
+                                <img src="img/trash.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
             <script src="script.js"></script>
         </div>

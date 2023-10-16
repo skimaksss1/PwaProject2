@@ -24,7 +24,7 @@
         app.mount("#dont_use_this_id_in_style");
       });
     </script>
-  </head>
+    </head>
     <body>
         <div class="page" id="dont_use_this_id_in_style">
             <!-- <section class="navigation">
@@ -88,18 +88,18 @@
                     <div class="realMain">
                         <img src="img/real.png" alt="">
                         <div class="enter">
-                            <span>Войти</span>
+                            <span>{{tr('Войти')}}</span>
                         </div>
                     </div>
-                    <div class="realTitle">Добро пожаловать <br> в Real Business!</div>
+                    <div class="realTitle">{{tr('Добро пожаловать')}} <br> {{tr('в Real Business!')}}</div>
                     <div class="inputsBlock">
-                        <span class="inputTitle">Данные руководителя</span>
+                        <span class="inputTitle"></span>{{tr('Данные руководителя')}}</span>
                         <input type="text" placeholder="Имя">
                         <input type="text" placeholder="Фамилия">
                         <input type="text" placeholder="Пол">
                     </div>
                     <div class="inputsBlock ">
-                        <span class="inputTitle">Номер телефона</span>
+                        <span class="inputTitle">{{tr('Номер телефона')}}</span>
                         <div class="inputWrapper">
                             <div class="inputPhone">
                                 <img src="img/rectDown.svg" alt="">
@@ -108,14 +108,14 @@
                         </div>
                     </div>
                     <div class="inputsBlock">
-                        <span class="inputTitle">Данные компании</span>
+                        <span class="inputTitle">{{tr('Данные компании')}}</span>
                         <input type="text" placeholder="Форма собственности">
                         <input type="text" placeholder="Наименование компании">
                         <input type="text" placeholder="Сфера деятельности">
                         <input type="text" placeholder="Сайт компании">
                     </div>
                     <div class="inputsBlock">
-                        <span class="inputTitle">Банковские реквизиты</span>
+                        <span class="inputTitle">{{tr('Банковские реквизиты')}}</span>
                         <input type="text" placeholder="БИН">
                         <input type="text" placeholder="ИИК">
                         <input type="text" placeholder="БИК">
@@ -124,18 +124,18 @@
                                 <input type="checkbox" value="None" id="chkbx1" name="chkbx1" checked />
                                 <label for="chkbx1"></label>
                             </div>
-                            <span>Являюсь плательщиком НДС</span>
+                            <span>{{tr('Являюсь плательщиком НДС')}}</span>
                         </div>
                     </div>
                     <div class="inputsBlock">
-                        <span class="inputTitle">Местоположение</span>
+                        <span class="inputTitle">{{tr('Местоположение')}}</span>
                         <input type="text" placeholder="Страна">
                         <input type="text" placeholder="Область">
                         <input type="text" placeholder="Город">
                         <input type="text" placeholder="Адрес">
                     </div>
                     <div class="inputsBlock">
-                        <span class="inputTitle">Тарифный план</span>
+                        <span class="inputTitle">{{tr('Тарифный план')}}</span>
                         
 
                         <div class="dropdownSelect">
@@ -153,12 +153,12 @@
                
                     </div>
                     <div class="inputsBlock">
-                        <span class="inputTitle">Контактное лицо</span>
+                        <span class="inputTitle">{{tr('Контактное лицо')}}</span>
                         <input type="text" placeholder="Имя">
                         <input type="text" placeholder="Фамилия">
                     </div>
                     <div class="inputsBlock ">
-                        <span class="inputTitle">Номер телефона</span>
+                        <span class="inputTitle">{{tr('Номер телефона')}}</span>
                         <div class="inputWrapper">
                             <div class="inputPhone">
                                 <img src="img/rectDown.svg" alt="">
@@ -176,7 +176,7 @@
                                 <input type="checkbox" value="None" id="chkbx2" name="chkbx2" checked />
                                 <label for="chkbx2"></label>
                             </div>
-                            <span>Согласен с хранением моих персональных данных</span>
+                            <span>{{tr('Согласен с хранением моих персональных данных')}}</span>
                         </div>
                     </div>
                     <div class="inputsBlock">
@@ -185,7 +185,7 @@
                                 <input type="checkbox" value="None" id="chkbx3" name="chkbx3" checked />
                                 <label for="chkbx3"></label>
                             </div>
-                            <span>Подтверждаю что компания не находится под санкциями, в том числе международными</span>
+                            <span>{{tr('Подтверждаю что компания не находится под санкциями, в том числе международными')}}</span>
                         </div>
                     </div>
                     <div class="inputsBlock">
@@ -194,7 +194,7 @@
                                 <input type="checkbox" value="None" id="chkbx4" name="chkbx4" checked />
                                 <label for="chkbx4"></label>
                             </div>
-                            <span>Согласен и принимаю условия пользовательского соглашения и присоединяюсь к публичной офферте </span>
+                            <span>{{tr('Согласен и принимаю условия пользовательского соглашения и присоединяюсь к публичной офферте')}} </span>
                         </div>
                     </div>
                     <div class="saveContact">

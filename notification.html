@@ -7,7 +7,7 @@
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-    <link rel="stylesheet/less" type="text/less" href="addcontact.less" />
+    <link rel="stylesheet/less" type="text/less" href="notifications.less" />
     <!-- Скрипты не трогать -->
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
@@ -87,13 +87,10 @@
                 <div class="container">
                     <div class="mainLine">
                         <div class="pageTitle">
-                            <p>{{tr('Добавить контакты')}}</p>
+                            <p>{{tr('Уведомления')}}</p>
                         </div>
                         <div class="leftBtn-mainLine">
                             <img src="img/backpage.svg" alt="">             
-                        </div>
-                        <div class="done">
-                            <span>{{tr('Готово')}}</span>
                         </div>
                         <!-- <div class="rightBtn-mainLine">
                             <img src="img/sorting.svg" alt="">
@@ -102,88 +99,39 @@
                     </div>
                 </div>
             </section>
-            <div class="contacts">
+            <section class="notification">
                 <div class="container">
-                    <div class="contact">
-                        <span>{{tr('Телефон для связи')}}</span>
-                        <div class="contactLine ">
-                            <div class="inputWrapper">
-                                <div class="inputPhone">
-                                    <img src="img/rectDown.svg" alt="">
-                                    <input type="text" placeholder="+7" value="+7 777 111 22 33" class="">
-                                </div>
-                            </div>
-                            <div class="contactBtns"> 
-                                <div class="btnMinus">-</div>
-                            </div>
-                        </div> 
-                        <div class="contactLine ">
-                            <div class="inputWrapper">
-                                <div class="inputPhone">
-                                    <img src="img/rectDown.svg" alt="">
-                                    <input type="text" placeholder="" value="+7 777 111 22 44" class="">
-                                </div>
-                            </div>
-                            <div class="contactBtns">
-                                <div class="btnMinus">-</div>
+                    <div class="notificationBlock">
+                        <span class="notificationTitle">{{tr('На этой неделе')}}</span>
+                        
+                        <div class="realLine">
+                            <img src="img/realIcon.png" alt="">
+                            <div>
+                                <span>{{tr('Вам поступило вознаграждение от Real')}} 1700 ед.</span>
+                                <div class="disclosureDate">23.08.23</div>
                             </div>
                         </div>
-                        <div class="contactLine ">
-                            <div class="inputWrapper">
-                                <div class="inputPhone">
-                                    <img src="img/rectDown.svg" alt="">
-                                    <input type="text" placeholder="+7" value="" class="">
-                                </div>
-                            </div>
-                            <div class="contactBtns">
-                                <div class="btnPlus">+</div>
+                        <div class="realLine">
+                            <img src="img/realIcon.png" alt="">
+                            <div>
+                                <span>{{tr('Вам поступило вознаграждение от Real')}} 1700 ед.</span>
+                                <div class="disclosureDate">23.08.23</div>
                             </div>
                         </div>
                     </div>
-                    <div class="contact">
-                        <span>{{tr('Номер WhatsApp')}}</span>
-                        <div class="contactLine">
-                            <img src="img/whatsapp2.svg" alt="">
-                            <input type="text" value="+7 777 111 22 33" >
-                            <div class="contactBtns"> 
-                                <div class="btnMinus">-</div>
-                            </div>
-                        </div> 
-                        <div class="contactLine">
-                            <img src="img/whatsapp2.svg" alt="">
-                            <input type="text">
-                            <div class="contactBtns"> 
-                                <div class="btnPlus">+</div>
+                    <div class="notificationBlock">
+                        <span class="notificationTitle">{{tr('В этом месяце')}}</span>
+                        
+                        <div class="realLine">
+                            <img src="img/realIcon.png" alt="">
+                            <div>
+                                <span>{{tr('Вам поступило вознаграждение запокупку в TOO App Trade')}} 467 тг. </span>
+                                <div class="disclosureDate">30.07.23</div>
                             </div>
                         </div>
                     </div>
-                    <div class="contact">
-                        <span>E-mail</span>
-                        <div class="contactLine">
-                            <img src="img/mail2.svg" alt="" style="top: 17px;">
-                            <input type="text" value="info@real.kz" >
-                            <div class="contactBtns"> 
-                                <div class="btnMinus">-</div>
-                            </div>
-                        </div>
-                        <div class="contactLine">
-                            <img src="img/mail2.svg" alt="" style="top: 17px;">
-                            <input type="text">
-                            <div class="contactBtns"> 
-                                <div class="btnPlus">+</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact">
-                        <span>{{tr('Адрес')}}</span>
-                        <div class="contactLine ">
-                            <img src="img/location2.svg" alt="">
-                            <input type="text">
-                        </div>
-                    </div>
-                    
                 </div>
-            </div>
+            </section>
             <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
             <script src="script.js"></script>
         </div>

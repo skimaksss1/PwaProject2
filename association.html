@@ -7,7 +7,7 @@
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-    <link rel="stylesheet/less" type="text/less" href="forBusiness.less" />
+    <link rel="stylesheet/less" type="text/less" href="association.less" />
     <!-- Скрипты не трогать -->
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
@@ -24,7 +24,7 @@
         app.mount("#dont_use_this_id_in_style");
       });
     </script>
-    </head>
+  </head>
     <body>
         <div class="page" id="dont_use_this_id_in_style">
             <!-- <section class="navigation">
@@ -87,14 +87,14 @@
                 <div class="container">
                     <div class="mainLine">
                         <div class="pageTitle">
-                            <p>{{tr('Для бизнеса')}}</p>
+                            <p>{{tr('Ассоциация')}}</p>
                         </div>
                         <div class="leftBtn-mainLine">
                             <img src="img/backpage.svg" alt="">             
                         </div>
-                        <!-- <div class="lang">
+                        <div class="lang">
                             <span>KZ</span>
-                        </div> -->
+                        </div>
                         <!-- <div class="rightBtn-mainLine">
                             <img src="img/sorting.svg" alt="">
                             <img src="img/filtering.svg" alt="">      
@@ -104,6 +104,21 @@
             </section>
             <section class="informList">
                 <div class="container">
+                    <div class="informAccordion">
+                        <div class="informItem">
+                            <div class="informAtr">
+                                <span class="informName greyColor">{{tr('О ассоцииации')}}</span>
+                            </div>
+                            <div class="informAtr">
+                                <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.01229 9.1622e-08C5.74707 8.84593e-08 5.49272 0.100096 5.30518 0.27827C5.11765 0.456443 5.01229 0.698099 5.01229 0.950074L5.01229 15.7578L1.71929 12.6293C1.62704 12.5386 1.5167 12.4662 1.39469 12.4164C1.27269 12.3666 1.14147 12.3404 1.00869 12.3393C0.87591 12.3382 0.744232 12.3623 0.621336 12.41C0.498439 12.4578 0.386787 12.5284 0.292894 12.6176C0.199001 12.7068 0.124747 12.8128 0.0744665 12.9296C0.0241857 13.0464 -0.00111584 13.1715 3.79766e-05 13.2976C0.00119179 13.4238 0.028779 13.5484 0.081188 13.6643C0.133597 13.7803 0.209778 13.8851 0.305288 13.9727L5.30459 18.7225C5.49263 18.9002 5.74706 19 6.01229 19C6.27751 19 6.53195 18.9002 6.71999 18.7225L11.7193 13.9727C11.9014 13.7936 12.0022 13.5536 12 13.3045C11.9977 13.0553 11.8925 12.8171 11.7071 12.6409C11.5217 12.4648 11.2709 12.3648 11.0087 12.3627C10.7465 12.3605 10.4939 12.4563 10.3053 12.6293L7.01229 15.7578L7.01229 0.950074C7.01229 0.698099 6.90693 0.456443 6.7194 0.27827C6.53186 0.100096 6.27751 9.47847e-08 6.01229 9.1622e-08Z" fill="#858585"/>
+                                </svg>                               
+                            </div>
+                        </div>
+                        <span class="disclosure" style="display: none;">
+                            <span>{{tr('Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deserunt, unde vel iste aspernatur aliquam quisquam dignissimos quos dolorem at asperiores possimus? Quibusdam, quos?')}}</span>
+                        </span>
+                    </div>
                     <div class="informAccordion">
                         <div class="informItem">
                             <div class="informAtr">
@@ -117,13 +132,12 @@
                         </div>
                         <span class="disclosure" style="display: none;">
                             <span>{{tr('Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deserunt, unde vel iste aspernatur aliquam quisquam dignissimos quos dolorem at asperiores possimus? Quibusdam, quos?')}}</span>
-                            <div class="disclosureDate">23.08.23</div>
                         </span>
                     </div>
                     <div class="informAccordion">
                         <div class="informItem">
                             <div class="informAtr">
-                                <span class="informName greyColor">{{tr('Промо приложения')}}</span>
+                                <span class="informName greyColor">{{tr('Отправить заявку')}}</span>
                             </div>
                             <div class="informAtr">
                                 <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,56 +147,39 @@
                         </div>
                         <span class="disclosure" style="display: none;">
                             <span>{{tr('Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deserunt, unde vel iste aspernatur aliquam quisquam dignissimos quos dolorem at asperiores possimus? Quibusdam, quos?')}}</span>
-                            <div class="disclosureDate">23.08.23</div>
                         </span>
                     </div>
                     <div class="informAccordion">
                         <div class="informItem">
                             <div class="informAtr">
-                                <span class="informName greyColor">{{tr('Тарифные планы')}}</span>
+                                <span class="informName greyColor">{{tr('Связаться с нами')}}</span>
                             </div>
                             <div class="informAtr">
                                 <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.01229 9.1622e-08C5.74707 8.84593e-08 5.49272 0.100096 5.30518 0.27827C5.11765 0.456443 5.01229 0.698099 5.01229 0.950074L5.01229 15.7578L1.71929 12.6293C1.62704 12.5386 1.5167 12.4662 1.39469 12.4164C1.27269 12.3666 1.14147 12.3404 1.00869 12.3393C0.87591 12.3382 0.744232 12.3623 0.621336 12.41C0.498439 12.4578 0.386787 12.5284 0.292894 12.6176C0.199001 12.7068 0.124747 12.8128 0.0744665 12.9296C0.0241857 13.0464 -0.00111584 13.1715 3.79766e-05 13.2976C0.00119179 13.4238 0.028779 13.5484 0.081188 13.6643C0.133597 13.7803 0.209778 13.8851 0.305288 13.9727L5.30459 18.7225C5.49263 18.9002 5.74706 19 6.01229 19C6.27751 19 6.53195 18.9002 6.71999 18.7225L11.7193 13.9727C11.9014 13.7936 12.0022 13.5536 12 13.3045C11.9977 13.0553 11.8925 12.8171 11.7071 12.6409C11.5217 12.4648 11.2709 12.3648 11.0087 12.3627C10.7465 12.3605 10.4939 12.4563 10.3053 12.6293L7.01229 15.7578L7.01229 0.950074C7.01229 0.698099 6.90693 0.456443 6.7194 0.27827C6.53186 0.100096 6.27751 9.47847e-08 6.01229 9.1622e-08Z" fill="#858585"/>
-                                </svg>                               
+                                </svg>                             
                             </div>
                         </div>
                         <span class="disclosure" style="display: none;">
-                            <div class="diclosureCards">
-                                <div class="diclosureCard frstCard" style="background-color: #E2FE30;">
-                                    <span class="cardName">STANDARD</span>
-                                    <div class="cardPrice">
-                                        <span>15 000 ₸</span>
-                                        <div class="moreBtn">
-                                            {{tr('Подробнее')}}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="diclosureCard scndCard" style="background: linear-gradient(#7197AC, #556F7D);">
-                                    <span class="cardName">BUSINESS</span>
-                                    <div class="cardPrice">
-                                        <span>25 000 ₸</span>
-                                        <div class="moreBtn">
-                                            {{tr('Подробнее')}}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="diclosureCard thrdCard" style="background: linear-gradient(#D7BD63, #83702F);">
-                                    <span class="cardName">PREMIUM</span>
-                                    <div class="cardPrice">
-                                        <span>50 000 ₸</span>
-                                        <div class="moreBtn">
-                                            {{tr('Подробнее')}}
-                                        </div>
-                                    </div>
-                                </div>
+                            <span class="disclosureName">{{tr('ТОО «Фирма администратор»')}}</span>
+                            <div class="partnerInfo">
+                                <img src="img/location.svg" alt="">
+                                <span>{{tr('РК, г.Нур-Султан, пр.Кенесары 40,')}} <br> {{tr('БЦ «7 континент»')}}</span>
+                            </div>
+                            <div class="partnerInfo">
+                                <img src="img/telephone.svg" alt="">
+                                <span>+7 (717-2) 62-66-46</span>
+                            </div>
+                            <div class="partnerInfo">
+                                <img src="img/mail.svg" alt="">
+                                <span>info@smartcams.kz</span>
                             </div>
                         </span>
                     </div>
                     <div class="informAccordion">
                         <div class="informItem">
                             <div class="informAtr">
-                                <span class="informName greyColor">F.A.Q.</span>
+                                <span class="informName greyColor">{{tr('Промо ассоциации')}}</span>
                             </div>
                             <div class="informAtr">
                                 <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,13 +189,24 @@
                         </div>
                         <span class="disclosure" style="display: none;">
                             <span>{{tr('Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deserunt, unde vel iste aspernatur aliquam quisquam dignissimos quos dolorem at asperiores possimus? Quibusdam, quos?')}}</span>
-                            <div class="disclosureDate">23.08.23</div>
+                        </span>
+                    </div>
+                    <div class="informAccordion">
+                        <div class="informItem">
+                            <div class="informAtr">
+                                <span class="informName greyColor">{{tr('Часто задаваемые вопросы')}}</span>
+                            </div>
+                            <div class="informAtr">
+                                <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.01229 9.1622e-08C5.74707 8.84593e-08 5.49272 0.100096 5.30518 0.27827C5.11765 0.456443 5.01229 0.698099 5.01229 0.950074L5.01229 15.7578L1.71929 12.6293C1.62704 12.5386 1.5167 12.4662 1.39469 12.4164C1.27269 12.3666 1.14147 12.3404 1.00869 12.3393C0.87591 12.3382 0.744232 12.3623 0.621336 12.41C0.498439 12.4578 0.386787 12.5284 0.292894 12.6176C0.199001 12.7068 0.124747 12.8128 0.0744665 12.9296C0.0241857 13.0464 -0.00111584 13.1715 3.79766e-05 13.2976C0.00119179 13.4238 0.028779 13.5484 0.081188 13.6643C0.133597 13.7803 0.209778 13.8851 0.305288 13.9727L5.30459 18.7225C5.49263 18.9002 5.74706 19 6.01229 19C6.27751 19 6.53195 18.9002 6.71999 18.7225L11.7193 13.9727C11.9014 13.7936 12.0022 13.5536 12 13.3045C11.9977 13.0553 11.8925 12.8171 11.7071 12.6409C11.5217 12.4648 11.2709 12.3648 11.0087 12.3627C10.7465 12.3605 10.4939 12.4563 10.3053 12.6293L7.01229 15.7578L7.01229 0.950074C7.01229 0.698099 6.90693 0.456443 6.7194 0.27827C6.53186 0.100096 6.27751 9.47847e-08 6.01229 9.1622e-08Z" fill="#858585"/>
+                                </svg>                               
+                            </div>
+                        </div>
+                        <span class="disclosure" style="display: none;">
+                            <span>{{tr('Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deserunt, unde vel iste aspernatur aliquam quisquam dignissimos quos dolorem at asperiores possimus? Quibusdam, quos?')}}</span>
                         </span>
                     </div>
                     
-                    <div class="saveContact">
-                        {{tr('Регистрация')}}
-                    </div>
                 </div>
             </section>
             <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
