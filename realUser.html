@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    
+        <link rel="stylesheet/less" type="text/less" href="common.less" />
+        <!-- для каждой страницы свой less файл. -->
+    <link rel="stylesheet/less" type="text/less" href="realUser.less" />
+    <!-- Скрипты не трогать -->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+    <script>
+      //скрипты не трограть.
+      window.addEventListener("load", () => {
+        const app = Vue.createApp({
+          methods: {
+            tr(k) {
+              return k;
+            },
+          },
+        });
+        app.mount("#dont_use_this_id_in_style");
+      });
+    </script>
+    </head>
+    <body>
+        <div class="page" id="dont_use_this_id_in_style">
+            <div class="brow_empty"></div>
+            <div class="real">
+                <div class="containerLow">
+                    <div class="realMain">
+                        <img src="img/real.png" alt="">
+                        <div class="enter">
+                            <span>{{tr('Войти')}}</span>
+                        </div>
+                    </div>
+                    <div class="realTitle">{{tr('Добро пожаловать')}} <br> {{tr('в Real!')}}</div>
+                    <div class="inputsBlock">   
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Фамилия">
+                        <div class="inputWrapper">
+                            <div class="inputPhone">
+                                <img src="img/rectDown.svg" alt="">
+                                <input type="text" placeholder="+7" class="">
+                            </div>
+                        </div>
+                        <input type="text" placeholder="Пол">
+                        <input type="text" placeholder="Страна">
+                        <input type="text" placeholder="Область">
+                        <input type="text" placeholder="Город">
+                        <input type="text" placeholder="Адрес">
+                        <input type="text" placeholder="E-mail">
+                    </div>
+                    <div class="inputsBlock promo">
+                        <input type="text" placeholder="Промокод">
+                        <span>Если у вас есть промокод, добавьте его</span>
+                    </div>
+                    <div class="inputsBlock">
+                        <div class="checkboxLine chbxList">
+                            <div class="squaredThree">
+                                <input type="checkbox" value="None" id="chkbx2" name="chkbx2" checked />
+                                <label for="chkbx2"></label>
+                            </div>
+                            <span>{{tr('Согласен с хранением моих персональных данных')}}</span>
+                        </div>
+                    </div>
+                    <div class="inputsBlock">
+                        <div class="checkboxLine chbxList">
+                            <div class="squaredThree">
+                                <input type="checkbox" value="None" id="chkbx3" name="chkbx3" checked />
+                                <label for="chkbx3"></label>
+                            </div>
+                            <span>{{tr('Подтверждаю что компания не находится под санкциями, в том числе международными')}}</span>
+                        </div>
+                    </div>
+                    <div class="inputsBlock">
+                        <div class="checkboxLine chbxList">
+                            <div class="squaredThree">
+                                <input type="checkbox" value="None" id="chkbx4" name="chkbx4" checked />
+                                <label for="chkbx4"></label>
+                            </div>
+                            <span>{{tr('Согласен и принимаю')}}  <span>{{tr('условия пользовательского соглашения')}}</span> </span>
+                        </div>
+                    </div>
+                    <span class="notifiation">Для завершения регистрации и активации аккаунта необходимо произвести оплату</span>
+                    <div class="saveContact">
+                        {{tr('Отправить')}}
+                    </div>
+                </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>

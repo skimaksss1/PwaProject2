@@ -7,7 +7,7 @@
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-    <link rel="stylesheet/less" type="text/less" href="successend.less" />
+    <link rel="stylesheet/less" type="text/less" href="congratulations.less" />
     <!-- Скрипты не трогать -->
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
@@ -31,24 +31,30 @@
                 <div class="real">
                     <div class="containerLow">
                         <div class="realSucces">
-
                             <div class="realMain">
                                 <img src="img/real.png" alt="">
-                                <!-- <div class="enter">
-                                    <span>Войти</span>
-                                </div> -->
                             </div>
-                            <div class="succesText">
-                                <p class="orderSending">
-                                    {{tr('Ваша заявка')}} <br>{{tr('успешно отправлена! ')}}
-                                </p>
-                            <p class="orderDecription">
-                                {{tr('Мы свяжемся с вами')}} <br>{{tr('в ближайшее время! ')}}
-                            </p>
-                        </div>
-                        <div class="saveContact">
-                            {{tr('На главную')}}
-                        </div>
+                            <span class="succesRegist">Поздравляем!</span>
+                            <span class="yourRegistred">Вы зарегистрированы!</span>
+                            <div class="enter">
+                                <span class="enterTitle">Ваши данные для входа</span>
+                                <div class="input">
+                                    <span>Логин</span>
+                                    <input type="text" value="+7 777 777 77 77">
+                                </div>
+                                <div class="input">
+                                    <span>Пароль</span>
+                                    <div class="inputCode">
+                                        <input type="text" value="4515jssOpwe778">
+                                        <img src="img/copy.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <span>Участвуй в программе лояльности. Приглашай друзей и получи гарантированный кэшбек!</span>
+                                <div class="btn">Подробнее</div>
+                                <span class="notInteresting">Не интересует</span>
+                            </div>
                     </div>
                 </div>
             <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>

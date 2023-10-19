@@ -7,7 +7,7 @@
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-    <link rel="stylesheet/less" type="text/less" href="successend.less" />
+    <link rel="stylesheet/less" type="text/less" href="successendApp.less" />
     <!-- Скрипты не трогать -->
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
@@ -40,14 +40,16 @@
                             </div>
                             <div class="succesText">
                                 <p class="orderSending">
-                                    {{tr('Ваша заявка')}} <br>{{tr('успешно отправлена! ')}}
+                                    <span>{{tr('Ваша заявка')}}</span>
+                                    <span class="quantity">№154</span> 
+                                    <span>{{tr('успешно отправлена!')}}</span>
                                 </p>
                             <p class="orderDecription">
-                                {{tr('Мы свяжемся с вами')}} <br>{{tr('в ближайшее время! ')}}
+                                {{tr('Для активации аккаунта необходимо произвести оплату')}}
                             </p>
                         </div>
                         <div class="saveContact">
-                            {{tr('На главную')}}
+                            {{tr('Оплатить')}}
                         </div>
                     </div>
                 </div>

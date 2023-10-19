@@ -1,0 +1,57 @@
+@import url(common.less);
+
+.brow_empty{
+    height: 50px;
+    width: 100%;
+}
+.real{
+  height: calc(100vh - 50px);
+  .realSucces{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .realMain{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span{
+        font-weight: 500;
+        font-size: 21px;
+      }
+    }
+    .orderSending{
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 0.75em;
+      margin-bottom: 20px;
+      span{
+        display: block;
+        line-height: 40px;
+        font-weight: 400;
+      }
+      .quantity{
+        font-size: 45px;
+        font-weight: 700;
+        color: @common-color1;
+      }
+    }
+    .saveContact{
+      width: 100%;
+      height: 58px;
+      border-radius: 58px;
+      background-color: #E7FE55;
+      color: #000;
+      font-size: 24px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 30px;
+      padding: 0 50px;
+      position: relative;
+      margin-bottom: 130px;
+  }
+  }
+}

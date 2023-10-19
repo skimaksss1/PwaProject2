@@ -7,7 +7,7 @@
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-    <link rel="stylesheet/less" type="text/less" href="successend.less" />
+    <link rel="stylesheet/less" type="text/less" href="done.less" />
     <!-- Скрипты не трогать -->
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
@@ -34,20 +34,19 @@
 
                             <div class="realMain">
                                 <img src="img/real.png" alt="">
-                                <!-- <div class="enter">
-                                    <span>Войти</span>
-                                </div> -->
                             </div>
-                            <div class="succesText">
-                                <p class="orderSending">
-                                    {{tr('Ваша заявка')}} <br>{{tr('успешно отправлена! ')}}
-                                </p>
-                            <p class="orderDecription">
-                                {{tr('Мы свяжемся с вами')}} <br>{{tr('в ближайшее время! ')}}
-                            </p>
-                        </div>
-                        <div class="saveContact">
-                            {{tr('На главную')}}
+                            <div class="done">
+                                    <span class="doneTitle">Готово!</span>
+                                <div class="doneCircle">
+                                    <img src="img/done.svg" alt="">
+                                </div>
+                                <span>Вы успешно подключены
+                                    к программе лояльности
+                                    Real</span>
+                                </div>
+                                <div class="inMain">
+                                    {{tr('На главную')}}
+                                </div>
                         </div>
                     </div>
                 </div>

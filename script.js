@@ -4,6 +4,16 @@ $(document).ready(function() {
 		$(".dropdownSelect").click(function(){
 			$(".selecting").toggle();
 		});
+		$(".termsName").click(function(){
+			$(".termsCard").toggle();
+		});
+		$(".whatIsIt").click(function(){
+			$(".whatIsItCard").toggle();
+		});
+		$(".courseQuantity").click(function(){
+			$(".courseQuantityCard").toggle();
+		});
+		
 		
 	}))
 });

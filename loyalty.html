@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    
+        <link rel="stylesheet/less" type="text/less" href="common.less" />
+        <!-- для каждой страницы свой less файл. -->
+    <link rel="stylesheet/less" type="text/less" href="loyalty.less" />
+    <!-- Скрипты не трогать -->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+    <script>
+      //скрипты не трограть.
+      window.addEventListener("load", () => {
+        const app = Vue.createApp({
+          methods: {
+            tr(k) {
+              return k;
+            },
+          },
+        });
+        app.mount("#dont_use_this_id_in_style");
+      });
+    </script>
+    </head>
+    <body>
+        <div class="page" id="dont_use_this_id_in_style">
+            <div class="brow_empty"></div>
+                <div class="real">
+                    <div class="containerLow">
+                        <div class="realSucces">
+                            <div class="realMain">
+                                <img src="img/real.png" alt="">
+                            </div>
+                            <span class="succesRegist">Программа лояльности</span>
+                            <div class="card">
+                                <span>Участвуй в программе лояльности. Приглашай друзей и получи гарантированный кэшбек!</span>
+                            </div>
+
+                            <div class="enter">
+                                <span class="enterTitle">Для получения кэшбэка введите реквизиты вашей банковской карты</span>
+                                <div class="input">
+                                    <input type="text" placeholder="Имя держателя карты">
+                                </div>
+                                <div class="input">
+                                    <input type="text" placeholder="ИИН">
+                                </div>
+                                <div class="input">
+                                    <div class="inputCode">
+                                        <input type="text" placeholder="4400 4800 4188 9969">
+                                        <span>10/25</span>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <input type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="checkboxLine chbxList">
+                                <div class="squaredThree">
+                                    <input type="checkbox" value="None" id="chkbx2" name="chkbx2" checked />
+                                    <label for="chkbx2"></label>
+                                </div>
+                                <span>{{tr('Согласен с хранением моих персональных данных')}}</span>
+                            </div>
+                            <div class="connectBtn">
+                                {{tr('Подключиться')}}
+                            </div>
+                    </div>
+                </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
