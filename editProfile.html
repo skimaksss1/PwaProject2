@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    
+        <link rel="stylesheet/less" type="text/less" href="common.less" />
+        <!-- для каждой страницы свой less файл. -->
+    <link rel="stylesheet/less" type="text/less" href="editProfile.less" />
+    <!-- Скрипты не трогать -->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+    <script>
+      //скрипты не трограть.
+      window.addEventListener("load", () => {
+        const app = Vue.createApp({
+          methods: {
+            tr(k) {
+              return k;
+            },
+          },
+        });
+        app.mount("#dont_use_this_id_in_style");
+      });
+    </script>
+    </head>
+    <body>
+        <div class="page" id="dont_use_this_id_in_style">
+            <div class="brow_empty"></div>
+            <section class="main">
+                <div class="container">
+                    <div class="mainLine">
+                        <div class="pageTitle">
+                            <p>{{tr('Редактировать профиль')}}</p>
+                        </div>
+                        <div class="leftBtn-mainLine">
+                            <img src="img/backpage.svg" alt="">             
+                        </div>
+                        <div class="done">
+                            <span>{{tr('Готово')}}</span>
+                        </div>
+                        <!-- <div class="rightBtn-mainLine">
+                            <img src="img/sorting.svg" alt="">
+                            <img src="img/filtering.svg" alt="">      
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <div class="editProfile">
+                <div class="containerLow">
+                    <div class="profileEdit">
+                        <div class="profilePhoto" style="background-image: url(img/photo.png);">
+                            <div class="profilePhotoEdit">
+                                <img src="img/pencil_black.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="yellowBtn">
+                        {{tr('Изменить фото профиля')}}
+                    </div> 
+                    <div class="inputsBlock">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Фамилия">
+                        <input type="text" placeholder="Пол">
+                    </div>
+                    <div class="inputsBlock ">
+                        <span class="inputTitle">{{tr('Номер телефона')}}</span>
+                        <div class="inputWrapper">
+                            <div class="inputPhone">
+                                <img src="img/rectDown.svg" alt="">
+                                <input type="text" placeholder="+7" class="">
+                            </div>
+                        </div>
+                        <input type="text" placeholder="Пол">
+                        <input type="text" placeholder="Страна">
+                        <input type="text" placeholder="Область">
+                        <input type="text" placeholder="Город">
+                        <input type="text" placeholder="Адрес">
+                        <div class="emailInput">
+                            <input type="text" placeholder="E-mail">
+                            <img src="img/mail2.svg" alt="">
+                        </div>
+                    </div>
+                    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+                    <script src="script.js"></script>
+                </div>
+            </div>
+            <div class="editPhotoSelect">
+                <div class="select">
+                    <img src="img/select_image.svg" alt="">
+                    <span>Выбрать из галереи</span>
+                </div>
+                <div class="select">
+                    <img src="img/select_photo.svg" alt="">
+                    <span>Сделать фото</span>
+                </div>
+                <div class="select select_trash">
+                    <img src="img/select_trash.svg" alt="">
+                    <span>Удалить текущее фото</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
