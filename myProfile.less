@@ -206,13 +206,14 @@
     }
   }
   .award {
+    padding: 0 10px;
     margin-top: 14px;
     .awardName {
       font-size: 28px;
       font-weight: 600;
     }
     .awardValue {
-      font-size: 63px;
+      font-size: 58px;
       font-weight: 700;
       color: @common-color1;
     }
@@ -264,6 +265,7 @@
     }
   }
   .paymentTerms{
+    padding: 0 10px;
     &>span{
       display: block;
       font-size: 12px;
@@ -287,6 +289,7 @@
     }
   }
   .useTerms{
+    padding: 0 10px;
     margin-top: 15px;
     .useTermsName {
       font-size: 28px;
@@ -358,7 +361,7 @@
         }
       }
       .btnAll{
-        padding: 0px 30px;
+        padding: 0px 10px;
         background-color: #fff;
         background: linear-gradient(20deg,#414141, #4C4C4C);
         border-radius: 9px;
@@ -434,7 +437,14 @@
               font-weight: 700;
             }
             .minus{
-              padding-bottom: 3px;
+              background-image: url(img/minus_white.svg);
+              background-position: center center;
+              background-repeat: no-repeat;
+            }
+            .plus{
+              background-image: url(img/plus_white.svg);
+              background-position: center center;
+              background-repeat: no-repeat;
             }
             .userName{
               font-size: 18px;
@@ -460,6 +470,7 @@
     }
   }
   .target{
+    padding: 0 10px;
     padding-top: 40px;
     .targetTitle{
       display: block;
@@ -519,6 +530,7 @@
     }
   }
   .bonus{
+    padding: 0 10px;
     padding-top: 20px;
     .bonusdName{
       font-size: 28px;
@@ -560,7 +572,8 @@
     }
   }
   .informAccordion{
-    padding-top: 35px;
+    padding: 0 10px;
+    padding-top: 25px;
     padding-bottom: 8px;
     .informItem{
       display: flex;
@@ -760,6 +773,9 @@
         margin-top: 20px;
     }
   }
+  .purchase, .basket{
+    padding: 0 10px;
+  }
   .addAction, .purchase, .basket{
     .addActionTitle, .purchaseTitle, .basketTitle{
       font-size: 28px;
@@ -866,6 +882,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 9px;
+        font-weight: 600;
       }
     }
   }

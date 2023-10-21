@@ -19,13 +19,13 @@
     color: @common-color1;
     font-weight: 600;
     margin-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   .inputsBlock{
     display: flex;
     flex-direction: column;
     gap: 7px;
-    margin-bottom:24px;
+    margin-bottom:12px;
     position: relative;
     .inputsBlock{
       margin-bottom: 0;
@@ -33,6 +33,7 @@
     .inputTitle{
       display: block;
       margin-bottom: -2px;
+      margin-left: 20px;
     }
     input{
       height: 50px;
@@ -46,7 +47,6 @@
       position: relative;
       color: #fff;
     }
-    .inputWrapper{
       .inputPhone{
         position: relative;
         img{
@@ -65,21 +65,9 @@
         right: 17px;
         bottom: 15px;
       }
-      .inputPhone::before{
-        content: "";
-        background-image: url(img/flag.png);
-        background-repeat: no-repeat;
-        width: 50px;
-        height: 19px;
-        position: absolute;
-        left: 17px;
-        bottom: 15px;
-        z-index: 1;
+      .iconRightInput{
+        padding-right: 50px;
       }
-      input{
-        padding-left: 67px;
-      }
-    }
 
 
     .dropdownSelect{
@@ -147,11 +135,10 @@
   }
   
   .promo{
-    margin-bottom: 50px;
-    span{
-      color: #7D7D7D;
-      margin-left: 25px;
-      font-size: 12px;
+    margin-bottom: 25px;
+    
+    .inputTitle{
+      display: block;
     }
   }
   .checkboxLine{
@@ -238,7 +225,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 30px;
     padding: 0 100px;
 }

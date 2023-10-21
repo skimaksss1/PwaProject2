@@ -29,9 +29,9 @@
         <div class="page" id="dont_use_this_id_in_style">
             <div class="brow_empty"></div>
             <div class="real">
-                <div class="containerLow">
+                <div class="container">
                     <div class="realMain">
-                        <img src="img/real.png" alt="">
+                        <img src="img/real.svg" alt="">
                         <div class="enter">
                             <span>{{tr('Войти')}}</span>
                         </div>
@@ -40,11 +40,8 @@
                     <div class="inputsBlock">   
                         <input type="text" placeholder="Имя">
                         <input type="text" placeholder="Фамилия">
-                        <div class="inputWrapper">
-                            <div class="inputPhone">
-                                <img src="img/rectDown.svg" alt="">
-                                <input type="text" placeholder="+7" class="">
-                            </div>
+                        <div class="inputPhone">
+                            <input type="text" placeholder="Телефон" class="iconRightInput">
                         </div>
                         <input type="text" placeholder="Пол">
                         <input type="text" placeholder="Страна">
@@ -54,8 +51,8 @@
                         <input type="text" placeholder="E-mail">
                     </div>
                     <div class="inputsBlock promo">
+                        <span class="inputTitle">{{tr('Если у вас есть промокод, добавьте')}}</span>
                         <input type="text" placeholder="Промокод">
-                        <span>Если у вас есть промокод, добавьте его</span>
                     </div>
                     <div class="inputsBlock">
                         <div class="checkboxLine chbxList">
@@ -86,7 +83,7 @@
                     </div>
                     <span class="notifiation">Для завершения регистрации и активации аккаунта необходимо произвести оплату</span>
                     <div class="saveContact">
-                        {{tr('Отправить')}}
+                        {{tr('Оплатить')}}
                     </div>
                 </div>
             <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>

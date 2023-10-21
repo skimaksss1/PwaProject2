@@ -54,7 +54,7 @@
                             <div class="photo" style="background-image: url(img/photo.png);"></div>
                             <div class="nameMail">
                                 <p class="name">Иван Иванов</p>
-                                <p class="mail">ivan@gmail.com</p>
+                                <p class="mail"><a href="#">ivan@gmail.com</a></p>
                             </div>
                             <div class="edit">
                                 <img src="img/pencil_black.svg" alt="">
@@ -75,11 +75,11 @@
                             </div>
                             <div class="dataInfo">
                                 <div class="dataAtr">Телефон</div>
-                                <div class="value">+7 777 111 11 11</div>
+                                <div class="value"><a href="#">+7 777 111 11 11</a></div>
                             </div>
                             <div class="dataInfo">
                                 <div class="dataAtr">E-mail</div>
-                                <div class="value">ivan@gmail.com</div>
+                                <div class="value"><a href="#">ivan@gmail.com</a></div>
                             </div>
                         </div>
                         <div class="dataThirdLine">
@@ -110,20 +110,36 @@
                             <img src="img/pencil_black.svg" alt="">
                         </div>
                     </div>
+                    <div class="separation">
+                        <hr>
+                    </div>
                     <div class="balans">
                         <p class="balansName">{{tr('Баланс')}}</p>
                         <span class="balansValue">50 000</span><span class="unit">KZT</span>
                         <div class="statistic">{{tr('Статистика')}}</div>
+                    </div>
+                    <div class="separation">
+                        <hr>
                     </div>
                     <div class="total">
                         <p class="totalName">{{tr('Общая сумма')}}</p>
                         <span class="totalValue">1 278 020</span><span class="unit">KZT</span>
                         <div class="whatIsIt">{{tr('Что это?')}}</div>
                     </div>
+                    <div class="separation">
+                        <hr>
+                    </div>
                     <div class="realQR">
                         <p class="realQRName">{{tr('Real QR Bonus')}}</p>
                         <span class="realQRValue">125 000</span><span class="unit">Ед</span>
                         <div class="whatIsIt">{{tr('Что это?')}}</div>
+                        <div class="whatIsItCard" style="display: none;">
+                            <span>Выплата кэшбэк вознаграждения производится один раз в неделю за вычетом комиссии банка на проведение платежа....</span>
+                            <span>Обязательным условием является оплата всех налогов пользователем....</span>
+                        </div>
+                    </div>
+                    <div class="separation">
+                        <hr>
                     </div>
                     <div class="currency">
                         <span class="currencyName">{{tr('Валюта')}}</span>
@@ -136,15 +152,15 @@
                     <div class="networks">
                         <div class="addNetwork">
                             <span>{{tr('Контакты')}}</span>
-                            <div class="addBtn">+</div>
+                            <div class="addBtn"></div>
                         </div>
                         <div class="addNetwork">
                             <span>{{tr('Социальные сети')}}</span>
-                            <div class="addBtn">+</div>
+                            <div class="addBtn"></div>
                         </div>
                         <div class="addNetwork">
                             <span>{{tr('График работы')}}</span>
-                            <div class="addBtn">+</div>
+                            <div class="addBtn"></div>
                         </div>
                     </div>
                     <div class="imageGallery">

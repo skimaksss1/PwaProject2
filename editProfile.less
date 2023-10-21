@@ -91,7 +91,7 @@
     }
     .inputTitle{
       display: block;
-      margin-bottom: -2px;
+      margin-left: 20px;
     }
     .emailInput{
       position: relative;
@@ -114,6 +114,21 @@
       position: relative;
       color: #fff;
     }
+    .inputPhone{
+      position: relative;
+    }
+    .inputPhone::after{
+      content: "";
+      background-image: url(img/telephone_grey.svg);
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 17px;
+      bottom: 15px;
+    }
+    .iconRightInput{
+      padding-right: 50px;
+    }
     .inputWrapper{
       .inputPhone{
         position: relative;
@@ -123,29 +138,6 @@
           z-index: 1;
           left: 55px;
         }
-      }
-      .inputPhone::after{
-        content: "";
-        background-image: url(img/telephone_grey.svg);
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        right: 17px;
-        bottom: 15px;
-      }
-      .inputPhone::before{
-        content: "";
-        background-image: url(img/flag.png);
-        background-repeat: no-repeat;
-        width: 50px;
-        height: 19px;
-        position: absolute;
-        left: 17px;
-        bottom: 15px;
-        z-index: 1;
-      }
-      input{
-        padding-left: 67px;
       }
     }
 

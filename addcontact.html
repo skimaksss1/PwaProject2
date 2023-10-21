@@ -53,36 +53,33 @@
                     <div class="contact">
                         <span>{{tr('Телефон для связи')}}</span>
                         <div class="contactLine ">
-                            <div class="inputWrapper">
-                                <div class="inputPhone">
-                                    <img src="img/rectDown.svg" alt="">
-                                    <input type="text" placeholder="+7" value="+7 777 111 22 33" class="">
-                                </div>
+                            <div class="inputPhone">
+                                <input type="text" placeholder="+7" value="+7 777 111 22 33" class="">
                             </div>
                             <div class="contactBtns"> 
-                                <div class="btnMinus">-</div>
+                                <div class="btnMinus">
+                                    <img src="img/minus.svg" alt="">
+                                </div>
                             </div>
                         </div> 
                         <div class="contactLine ">
-                            <div class="inputWrapper">
-                                <div class="inputPhone">
-                                    <img src="img/rectDown.svg" alt="">
-                                    <input type="text" placeholder="" value="+7 777 111 22 44" class="">
-                                </div>
+                            <div class="inputPhone">
+                                <input type="text" placeholder="+7" value="+7 707 566 89 24" class="">
                             </div>
                             <div class="contactBtns">
-                                <div class="btnMinus">-</div>
+                                <div class="btnMinus">
+                                    <img src="img/minus.svg" alt="">
+                                </div>
                             </div>
                         </div>
                         <div class="contactLine ">
-                            <div class="inputWrapper">
-                                <div class="inputPhone">
-                                    <img src="img/rectDown.svg" alt="">
-                                    <input type="text" placeholder="+7" value="" class="">
-                                </div>
+                            <div class="inputPhone">
+                                <input type="text" placeholder="+7" aria-placeholder="+7" class="">
                             </div>
                             <div class="contactBtns">
-                                <div class="btnPlus">+</div>
+                                <div class="btnMinus">
+                                    <img src="img/plus.svg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -90,16 +87,20 @@
                         <span>{{tr('Номер WhatsApp')}}</span>
                         <div class="contactLine">
                             <img src="img/whatsapp2.svg" alt="">
-                            <input type="text" value="+7 777 111 22 33" >
+                            <input class="iconLeftInput" type="text" value="+7 777 111 22 33" >
                             <div class="contactBtns"> 
-                                <div class="btnMinus">-</div>
+                                <div class="btnMinus">
+                                    <img src="img/minus.svg" alt="">
+                                </div>
                             </div>
                         </div> 
                         <div class="contactLine">
                             <img src="img/whatsapp2.svg" alt="">
-                            <input type="text">
+                            <input class="iconLeftInput" type="text">
                             <div class="contactBtns"> 
-                                <div class="btnPlus">+</div>
+                                <div class="btnMinus">
+                                    <img src="img/plus.svg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -107,16 +108,20 @@
                         <span>E-mail</span>
                         <div class="contactLine">
                             <img src="img/mail2.svg" alt="" style="top: 17px;">
-                            <input type="text" value="info@real.kz" >
+                            <input class="iconLeftInput" type="text" value="info@real.kz" >
                             <div class="contactBtns"> 
-                                <div class="btnMinus">-</div>
+                                <div class="btnMinus">
+                                    <img src="img/minus.svg" alt="">
+                                </div>
                             </div>
                         </div>
                         <div class="contactLine">
                             <img src="img/mail2.svg" alt="" style="top: 17px;">
-                            <input type="text">
+                            <input class="iconLeftInput" type="text">
                             <div class="contactBtns"> 
-                                <div class="btnPlus">+</div>
+                                <div class="btnMinus">
+                                    <img src="img/plus.svg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -124,7 +129,7 @@
                         <span>{{tr('Адрес')}}</span>
                         <div class="contactLine ">
                             <img src="img/location2.svg" alt="">
-                            <input type="text">
+                            <input class="iconLeftInput fullWidth" type="text">
                         </div>
                     </div>
                     

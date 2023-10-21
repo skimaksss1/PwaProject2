@@ -37,7 +37,7 @@
 .contacts {
   margin-top: 30px;
   .contact{
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     &:nth-last-child(1){
       margin-bottom: 0;
     }
@@ -45,7 +45,8 @@
       display: block;
       font-size: 16px;
       font-weight: 600;
-      margin-bottom: 12px;
+      margin-bottom: 5px;
+      margin-left: 20px;
     }
     .inputDescription{
       font-size: 13px;
@@ -56,40 +57,6 @@
     .contactLine{
       position: relative;
       margin-bottom: 12px;
-      .inputWrapper{
-        .inputPhone{
-          position: relative;
-          img{
-            position: absolute;
-            top: 23px;
-            z-index: 1;
-            left: 55px;
-          }
-        }
-        .inputPhone::after{
-          content: "";
-          background-image: url(img/telephone_grey.svg);
-          width: 20px;
-          height: 20px;
-          position: absolute;
-          right: 17px;
-          bottom: 15px;
-        }
-        .inputPhone::before{
-          content: "";
-          background-image: url(img/flag.png);
-          background-repeat: no-repeat;
-          width: 50px;
-          height: 19px;
-          position: absolute;
-          left: 17px;
-          bottom: 15px;
-          z-index: 1;
-        }
-        input{
-          padding-left: 67px;
-        }
-      }
       input{
         background-color: @common-color3;
         width: calc(100% - 60px);
@@ -97,13 +64,19 @@
         border-radius: 26px;
         border: none;
         outline: none;
-        padding: 5px 50px;
+        padding: 21px;
         color: #fff;
         font-size: 24px;
       }
+      .fullWidth{
+        width: 100%;
+      }
+      .iconLeftInput{
+        padding-left: 50px;
+      }
       img{
         position: absolute;
-        top: 12.5px;
+        top: 11.5px;
         left: 16px;
       }
       .contactBtns{
@@ -113,24 +86,19 @@
         position: absolute;
         top: 0;
         right: 0;
-        .btnMinus{
-          position: relative;
-          color: #A1A1A1 !important;
-        }
         .btnMinus, .btnPlus{
-          width: 50px;
-          height: 50px;
-          background-color: #262626;
-          color: #A1A1A1;
-          font-size: 31px;
-          font-weight: 600;
-          border-radius: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
-        }
-        .btnMinus{
-          padding-bottom: 5px;
+          width: 50px;
+          height: 50px;
+          background-color: #262626;
+          border-radius: 100%;
+          img{
+            position: relative;
+            top: auto;
+            left: auto;
+          }
         }
       }
     }

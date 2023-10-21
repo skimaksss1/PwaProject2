@@ -29,10 +29,10 @@
         <div class="page" id="dont_use_this_id_in_style">
             <div class="brow_empty"></div>
                 <div class="real">
-                    <div class="containerLow">
+                    <div class="container">
                         <div class="realSucces">
                             <div class="realMain">
-                                <img src="img/real.png" alt="">
+                                <img src="img/real.svg" alt="">
                             </div>
                             <span class="succesRegist">Программа лояльности</span>
                             <div class="card">
@@ -42,19 +42,26 @@
                             <div class="enter">
                                 <span class="enterTitle">Для получения кэшбэка введите реквизиты вашей банковской карты</span>
                                 <div class="input">
-                                    <input type="text" placeholder="Имя держателя карты">
+                                    <span class="inputTitle">{{tr('Имя держателя карты')}}</span>
+                                    <input type="text" placeholder="Иванов Иван">
                                 </div>
                                 <div class="input">
-                                    <input type="text" placeholder="ИИН">
+                                    <span class="inputTitle">{{tr('ИИН')}}</span>
+                                    <input type="text" placeholder="971122657889">
                                 </div>
                                 <div class="input">
-                                    <div class="inputCode">
-                                        <input type="text" placeholder="4400 4800 4188 9969">
-                                        <span>10/25</span>
+                                    <span class="inputTitle">{{tr('IBAN')}}</span>
+                                    <input type="text" placeholder="KZ75 722K ZT40 7708 1210">
+                                </div>
+                                <div class="input">
+                                    <span class="inputTitle">{{tr('Номер карты')}}</span>
+                                    <input type="text" placeholder="4400 4800 4188 9969">
+                                </div>
+                                <div class="input">
+                                    <span class="inputTitle">{{tr('Годен до')}}</span>
+                                    <div class="inputCode ">
+                                        <input type="text" placeholder="10/25">
                                     </div>
-                                </div>
-                                <div class="input">
-                                    <input type="text" placeholder="">
                                 </div>
                             </div>
                             <div class="checkboxLine chbxList">
@@ -62,7 +69,7 @@
                                     <input type="checkbox" value="None" id="chkbx2" name="chkbx2" checked />
                                     <label for="chkbx2"></label>
                                 </div>
-                                <span>{{tr('Согласен с хранением моих персональных данных')}}</span>
+                                <span>{{tr('Принимаю условия Бонусной программы, подтверждаю, что введенные данные верны и принадлежат мне')}}</span>
                             </div>
                             <div class="connectBtn">
                                 {{tr('Подключиться')}}
