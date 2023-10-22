@@ -1,218 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="windows-1251" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    
-        <link rel="stylesheet/less" type="text/less" href="common.less" />
-        <!-- для каждой страницы свой less файл. -->
-        <link rel="stylesheet/less" type="text/less" href="mydata.less" />
-        <!-- Скрипты не трогать -->
-        <script src="https://cdn.jsdelivr.net/npm/less"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
-        <script>
+
+<head>
+    <meta charset="windows-1251" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet/less" type="text/less" href="common.less" />
+    <!-- для каждой страницы свой less файл. -->
+    <link rel="stylesheet/less" type="text/less" href="mydata.less" />
+    <!-- Скрипты не трогать -->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+    <script>
         //скрипты не трограть.
         window.addEventListener("load", () => {
             const app = Vue.createApp({
-            methods: {
-                tr(k) {
-                return k;
+                methods: {
+                    tr(k) {
+                        return k;
+                    },
                 },
-            },
             });
             app.mount("#dont_use_this_id_in_style");
         });
-        </script>
-    </head>
-    <body>
-        <div class="page" id="dont_use_this_id_in_style">
-            <div class="brow_empty"></div>
-            <section class="main">
-                <div class="container">
-                    <div class="mainLine">
-                        <div class="pageTitle">
-                            <p>{{tr('Мои данные')}}</p>
-                        </div>
-                        <div class="leftBtn-mainLine">
-                            <img src="img/backpage.svg" alt="">             
-                        </div>
-                        <!-- <div class="lang">
+    </script>
+</head>
+
+<body>
+    <div class="page" id="dont_use_this_id_in_style">
+        <div class="brow_empty"></div>
+        <section class="main">
+            <div class="container">
+                <div class="mainLine">
+                    <div class="pageTitle">
+                        <p>{{tr('Мои данные')}}</p>
+                    </div>
+                    <div class="leftBtn-mainLine">
+                        <img src="img/backpage.svg" alt="">
+                    </div>
+                    <!-- <div class="lang">
                             <span>KZ</span>
                         </div> -->
-                        <!-- <div class="rightBtn-mainLine">
+                    <!-- <div class="rightBtn-mainLine">
                             <img src="img/sorting.svg" alt="">
                             <img src="img/filtering.svg" alt="">      
                         </div> -->
-                    </div>
                 </div>
-            </section>
-            <div class="data">
-                <div class="container">
-                    <div class="dataCard">
-                        <div class="dataFirstLine">
-                            <div class="photo" style="background-image: url(img/photo.png);"></div>
-                            <div class="nameMail">
-                                <p class="name">Иван Иванов</p>
-                                <p class="mail"><a href="#">ivan@gmail.com</a></p>
-                            </div>
-                            <div class="edit">
-                                <img src="img/pencil_black.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="dataSecondLine">
-                            <div class="dataInfo">
-                                <div class="dataAtr">Пол</div>
-                                <div class="value">Мужской</div>
-                            </div>
-                            <div class="dataInfo">
-                                <div class="dataAtr">Город</div>
-                                <div class="value">Астана</div>
-                            </div>
-                            <div class="dataInfo">
-                                <div class="dataAtr">Адрес</div>
-                                <div class="value">Абая 119</div>
-                            </div>
-                            <div class="dataInfo">
-                                <div class="dataAtr">Телефон</div>
-                                <div class="value"><a href="#">+7 777 111 11 11</a></div>
-                            </div>
-                            <div class="dataInfo">
-                                <div class="dataAtr">E-mail</div>
-                                <div class="value"><a href="#">ivan@gmail.com</a></div>
-                            </div>
-                        </div>
-                        <div class="dataThirdLine">
-                            <a href="#" class="activatedBtn">Активация 05.07.2023</a>
-                        </div>
-                        <div class="dataFourthLine">
-                            <a href="#" class="premiumBtn">PREMIUM</a>
-                        </div>
-                    </div>
-                    <div class="personalInfo">
-                        <div class="companyInfo">
-                            <div class="myCompany">{{tr('Моя компания')}}</div>
-                            <div class="nameMyCompany">{{tr('ТОО “Мечта”')}}</div>
-                            <div class="captionMyCompany">{{tr('Системы обеспечения безопасности')}}</div>
-                            <div class="requisitesMyCompany">
-                                <div class="bin">
-                                    {{tr('БИН')}} <span>998 887 838 393</span>
-                                </div>
-                                <div class="iik">
-                                    {{tr('ИИК')}} <span>KZ87864534345755457</span>
-                                </div>
-                                <div class="bik">
-                                    {{tr('БИК')}} <span>KZZHIUIUIP</span>
-                                </div>
-                            </div>
+            </div>
+        </section>
+        <div class="data">
+            <div class="container">
+                <div class="dataCard">
+                    <div class="dataFirstLine">
+                        <div class="photo" style="background-image: url(img/photo.png);"></div>
+                        <div class="nameMail">
+                            <p class="name">Иван Иванов</p>
+                            <p class="mail"><a href="#">ivan@gmail.com</a></p>
                         </div>
                         <div class="edit">
                             <img src="img/pencil_black.svg" alt="">
                         </div>
                     </div>
-                    <div class="separation">
-                        <hr>
+                    <div class="dataSecondLine">
+                        <div class="dataInfo">
+                            <div class="dataAtr">Пол</div>
+                            <div class="value">Мужской</div>
+                        </div>
+                        <div class="dataInfo">
+                            <div class="dataAtr">Город</div>
+                            <div class="value">Астана</div>
+                        </div>
+                        <div class="dataInfo">
+                            <div class="dataAtr">Адрес</div>
+                            <div class="value">Абая 119</div>
+                        </div>
+                        <div class="dataInfo">
+                            <div class="dataAtr">Телефон</div>
+                            <div class="value"><a href="#">+7 777 111 11 11</a></div>
+                        </div>
+                        <div class="dataInfo">
+                            <div class="dataAtr">E-mail</div>
+                            <div class="value"><a href="#">ivan@gmail.com</a></div>
+                        </div>
                     </div>
-                    <div class="balans">
-                        <p class="balansName">{{tr('Баланс')}}</p>
-                        <span class="balansValue">50 000</span><span class="unit">KZT</span>
-                        <div class="statistic">{{tr('Статистика')}}</div>
+                    <div class="dataThirdLine">
+                        <a href="#" class="activatedBtn">Активация 05.07.2023</a>
                     </div>
-                    <div class="separation">
-                        <hr>
+                    <div class="dataFourthLine">
+                        <a href="#" class="premiumBtn">PREMIUM</a>
                     </div>
-                    <div class="total">
-                        <p class="totalName">{{tr('Общая сумма')}}</p>
-                        <span class="totalValue">1 278 020</span><span class="unit">KZT</span>
-                        <div class="whatIsIt">{{tr('Что это?')}}</div>
+                </div>
+                <div class="personalInfo">
+                    <div class="companyInfo">
+                        <div class="myCompany">{{tr('Моя компания')}}</div>
+                        <div class="nameMyCompany">{{tr('ТОО “Мечта”')}}</div>
+                        <div class="captionMyCompany">{{tr('Системы обеспечения безопасности')}}</div>
+                        <div class="requisitesMyCompany">
+                            <div class="bin">
+                                {{tr('БИН')}} <span>998 887 838 393</span>
+                            </div>
+                            <div class="iik">
+                                {{tr('ИИК')}} <span>KZ87864534345755457</span>
+                            </div>
+                            <div class="bik">
+                                {{tr('БИК')}} <span>KZZHIUIUIP</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="separation">
-                        <hr>
+                    <div class="edit">
+                        <img src="img/pencil_black.svg" alt="">
                     </div>
-                    <div class="realQR">
-                        <p class="realQRName">{{tr('Real QR Bonus')}}</p>
-                        <span class="realQRValue">125 000</span><span class="unit">Ед</span>
-                        <div class="whatIsIt">{{tr('Что это?')}}</div>
+                </div>
+                <div class="separation">
+                    <hr>
+                </div>
+                <div class="balans">
+                    <p class="balansName">{{tr('Баланс')}}</p>
+                    <span class="balansValue">50 000</span><span class="unit">KZT</span>
+                    <div class="whatIsIt">{{tr('Что это?')}}
                         <div class="whatIsItCard" style="display: none;">
-                            <span>Выплата кэшбэк вознаграждения производится один раз в неделю за вычетом комиссии банка на проведение платежа....</span>
+                            <span>Выплата кэшбэк вознаграждения производится один раз в неделю за вычетом комиссии банка
+                                на проведение платежа....</span>
                             <span>Обязательным условием является оплата всех налогов пользователем....</span>
                         </div>
                     </div>
-                    <div class="separation">
-                        <hr>
-                    </div>
-                    <div class="currency">
-                        <span class="currencyName">{{tr('Валюта')}}</span>
-                        <span class="unit">KZT</span>
-                        <img src="img/polygon.svg" alt="">
-                    </div>
-                    <div class="separation">
-                        <hr>
-                    </div>
-                    <div class="networks">
-                        <div class="addNetwork">
-                            <span>{{tr('Контакты')}}</span>
-                            <div class="addBtn"></div>
-                        </div>
-                        <div class="addNetwork">
-                            <span>{{tr('Социальные сети')}}</span>
-                            <div class="addBtn"></div>
-                        </div>
-                        <div class="addNetwork">
-                            <span>{{tr('График работы')}}</span>
-                            <div class="addBtn"></div>
-                        </div>
-                    </div>
-                    <div class="imageGallery">
-                        <div class="cardItem">
-                            <div class="imageCard addImage">+</div>
-                        </div>
-                        <div class="cardItem">
-                            <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
-                        </div>
-                        <div class="cardItem">
-                            <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
-                        </div>
-                        <div class="cardItem">
-                            <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
-                        </div>
-                        <div class="cardItem">
-                            <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
-                        </div>
-                        <div class="cardItem">
-                            <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
-                        </div>
-                    </div>
-                    <div class="informAccordion">
-                        <div class="informItem">
-                            <div class="informAtr">
-                                <span class="informName greyColor">{{tr('Уведомления')}}</span>
-                                <div class="notification">
-                                    +4
-                                </div>
-                            </div>
-                            <div class="informAtr">
-                                <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.01229 9.1622e-08C5.74707 8.84593e-08 5.49272 0.100096 5.30518 0.27827C5.11765 0.456443 5.01229 0.698099 5.01229 0.950074L5.01229 15.7578L1.71929 12.6293C1.62704 12.5386 1.5167 12.4662 1.39469 12.4164C1.27269 12.3666 1.14147 12.3404 1.00869 12.3393C0.87591 12.3382 0.744232 12.3623 0.621336 12.41C0.498439 12.4578 0.386787 12.5284 0.292894 12.6176C0.199001 12.7068 0.124747 12.8128 0.0744665 12.9296C0.0241857 13.0464 -0.00111584 13.1715 3.79766e-05 13.2976C0.00119179 13.4238 0.028779 13.5484 0.081188 13.6643C0.133597 13.7803 0.209778 13.8851 0.305288 13.9727L5.30459 18.7225C5.49263 18.9002 5.74706 19 6.01229 19C6.27751 19 6.53195 18.9002 6.71999 18.7225L11.7193 13.9727C11.9014 13.7936 12.0022 13.5536 12 13.3045C11.9977 13.0553 11.8925 12.8171 11.7071 12.6409C11.5217 12.4648 11.2709 12.3648 11.0087 12.3627C10.7465 12.3605 10.4939 12.4563 10.3053 12.6293L7.01229 15.7578L7.01229 0.950074C7.01229 0.698099 6.90693 0.456443 6.7194 0.27827C6.53186 0.100096 6.27751 9.47847e-08 6.01229 9.1622e-08Z" fill="#858585"/>
-                                </svg>                         
-                            </div>
-                        </div>
-                        <span class="disclosure" style="display: none;">
-                            <div class="realLine">
-                                <img src="img/realIcon.png" alt="">
-                                <div>
-                                    <span>{{tr('Вам поступило вознаграждение от Real 1700 ед.')}}</span>
-                                    <div class="disclosureDate">23.08.23</div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-               
-
                 </div>
+                <div class="separation">
+                    <hr>
+                </div>
+                <div class="total">
+                    <p class="totalName">{{tr('Общая сумма')}}</p>
+                    <span class="totalValue">1 278 020</span><span class="unit">KZT</span>
+                    <div class="whatIsIt">{{tr('Что это?')}}
+                        <div class="whatIsItCard" style="display: none;">
+                            <span>Выплата кэшбэк вознаграждения производится один раз в неделю за вычетом комиссии банка
+                                на проведение платежа....</span>
+                            <span>Обязательным условием является оплата всех налогов пользователем....</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="separation">
+                    <hr>
+                </div>
+                <div class="realQR">
+                    <p class="realQRName">{{tr('Real QR Bonus')}}</p>
+                    <span class="realQRValue">125 000</span><span class="unit">Ед</span>
+                    <div class="whatIsIt">{{tr('Что это?')}}
+                        <div class="whatIsItCard" style="display: none;">
+                            <span>Выплата кэшбэк вознаграждения производится один раз в неделю за вычетом комиссии банка
+                                на проведение платежа....</span>
+                            <span>Обязательным условием является оплата всех налогов пользователем....</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="separation">
+                    <hr>
+                </div>
+                <div class="currency">
+                    <span class="currencyName">{{tr('Валюта')}}</span>
+                    <span class="unit">KZT</span>
+                    <img src="img/polygon.svg" alt="">
+                </div>
+                <div class="separation">
+                    <hr>
+                </div>
+                <div class="networks">
+                    <div class="addNetwork">
+                        <span>{{tr('Контакты')}}</span>
+                        <div class="addBtn"></div>
+                    </div>
+                    <div class="addNetwork">
+                        <span>{{tr('Социальные сети')}}</span>
+                        <div class="addBtn"></div>
+                    </div>
+                    <div class="addNetwork">
+                        <span>{{tr('График работы')}}</span>
+                        <div class="addBtn"></div>
+                    </div>
+                </div>
+                <div class="imageGallery">
+                    <div class="cardItem">
+                        <div class="imageCard addImage">+</div>
+                    </div>
+                    <div class="cardItem">
+                        <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                    </div>
+                    <div class="cardItem">
+                        <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                    </div>
+                    <div class="cardItem">
+                        <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                    </div>
+                    <div class="cardItem">
+                        <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                    </div>
+                    <div class="cardItem">
+                        <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                    </div>
+                </div>
+                <div class="informAccordion">
+                    <div class="informItem">
+                        <div class="informAtr">
+                            <span class="informName greyColor">{{tr('Уведомления')}}</span>
+                            <div class="notification">
+                                +4
+                            </div>
+                        </div>
+                        <div class="informAtr">
+                            <svg width="12" height="19" viewBox="0 0 12 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.01229 9.1622e-08C5.74707 8.84593e-08 5.49272 0.100096 5.30518 0.27827C5.11765 0.456443 5.01229 0.698099 5.01229 0.950074L5.01229 15.7578L1.71929 12.6293C1.62704 12.5386 1.5167 12.4662 1.39469 12.4164C1.27269 12.3666 1.14147 12.3404 1.00869 12.3393C0.87591 12.3382 0.744232 12.3623 0.621336 12.41C0.498439 12.4578 0.386787 12.5284 0.292894 12.6176C0.199001 12.7068 0.124747 12.8128 0.0744665 12.9296C0.0241857 13.0464 -0.00111584 13.1715 3.79766e-05 13.2976C0.00119179 13.4238 0.028779 13.5484 0.081188 13.6643C0.133597 13.7803 0.209778 13.8851 0.305288 13.9727L5.30459 18.7225C5.49263 18.9002 5.74706 19 6.01229 19C6.27751 19 6.53195 18.9002 6.71999 18.7225L11.7193 13.9727C11.9014 13.7936 12.0022 13.5536 12 13.3045C11.9977 13.0553 11.8925 12.8171 11.7071 12.6409C11.5217 12.4648 11.2709 12.3648 11.0087 12.3627C10.7465 12.3605 10.4939 12.4563 10.3053 12.6293L7.01229 15.7578L7.01229 0.950074C7.01229 0.698099 6.90693 0.456443 6.7194 0.27827C6.53186 0.100096 6.27751 9.47847e-08 6.01229 9.1622e-08Z"
+                                    fill="#858585" />
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="disclosure" style="display: none;">
+                        <div class="realLine">
+                            <img src="img/realIcon.png" alt="">
+                            <div>
+                                <span>{{tr('Вам поступило вознаграждение от Real 1700 ед.')}}</span>
+                                <div class="disclosureDate">23.08.23</div>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+
+
             </div>
-            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-            <script src="script.js"></script>
         </div>
-    </body>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+
 </html>

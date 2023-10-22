@@ -40,18 +40,29 @@
                     <div class="inputsBlock">   
                         <input type="text" placeholder="Имя">
                         <input type="text" placeholder="Фамилия">
-                        <div class="inputPhone">
-                            <input type="text" placeholder="Телефон" class="iconRightInput">
+                        <input type="text" placeholder="Год рождения">
+                        <div class="dropdownSelect">
+                            <div class="selctActive">
+                                <span>Мужской</span>
+                            </div>
+                            <div class="selecting" style="display: none;">
+                                <ul>
+                                    <li>Мужской</li>
+                                    <li>Женский</li>
+                                </ul>
+                            </div>
                         </div>
-                        <input type="text" placeholder="Пол">
                         <input type="text" placeholder="Страна">
                         <input type="text" placeholder="Область">
                         <input type="text" placeholder="Город">
                         <input type="text" placeholder="Адрес">
+                        <div class="inputPhone">
+                            <input type="text" placeholder="Телефон" class="iconRightInput">
+                        </div>
                         <input type="text" placeholder="E-mail">
                     </div>
                     <div class="inputsBlock promo">
-                        <span class="inputTitle">{{tr('Если у вас есть промокод, добавьте')}}</span>
+                        <span class="inputTitle">{{tr('Если у вас есть промокод, добавьте его')}}</span>
                         <input type="text" placeholder="Промокод">
                     </div>
                     <div class="inputsBlock">

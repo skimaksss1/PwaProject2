@@ -4,17 +4,22 @@ $(document).ready(function() {
 		$(".dropdownSelect").click(function(){
 			$(".selecting").toggle();
 		});
+		$(".dropdownSelect2").click(function(){
+			$(".selecting2").toggle();
+		});
 		$(".termsName").click(function(){
 			$(".termsCard").toggle();
 		});
 		$(".whatIsIt").click(function(){
-			$(".whatIsItCard").toggle();
+			$(this).find(".whatIsItCard").toggle();
 		});
 		$(".courseQuantity").click(function(){
 			$(".courseQuantityCard").toggle();
 		});
 		
-		
+		// $('.lang').click(function(){
+		// 	$('ul').toggleClass("show");    
+		//   });
 	}))
 });
 

@@ -62,28 +62,34 @@
                     <div class="inputsBlock">
                         <input type="text" placeholder="Имя">
                         <input type="text" placeholder="Фамилия">
-                        <input type="text" placeholder="Пол">
-                    </div>
-                    <div class="inputsBlock ">
-                        <span class="inputTitle">{{tr('Номер телефона')}}</span>
-                            <div class="inputPhone">
-                                <input type="text" placeholder="Телефон" class="iconRightInput">
+                        <input type="text" placeholder="ИИН">
+                        <div class="dropdownSelect">
+                            <div class="selctActive">
+                                <span>Мужской</span>
                             </div>
-                        <input type="text" placeholder="Пол">
+                            <div class="selecting" style="display: none;">
+                                <ul>
+                                    <li>Мужской</li>
+                                    <li>Женский</li>
+                                </ul>
+                            </div>
+                        </div>
                         <input type="text" placeholder="Страна">
                         <input type="text" placeholder="Область">
                         <input type="text" placeholder="Город">
                         <input type="text" placeholder="Адрес">
+                        <div class="inputPhone">
+                            <input type="text" placeholder="Телефон" class="iconRightInput">
+                        </div>
                         <div class="emailInput">
                             <input type="text" placeholder="E-mail">
-                            <img src="img/mail2.svg" alt="">
                         </div>
                     </div>
                     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
                     <script src="script.js"></script>
                 </div>
             </div>
-            <div class="editPhotoSelect">
+            <!-- <div class="editPhotoSelect">
                 <div class="select">
                     <img src="img/select_image.svg" alt="">
                     <span>Выбрать из галереи</span>
@@ -96,7 +102,7 @@
                     <img src="img/select_trash.svg" alt="">
                     <span>Удалить текущее фото</span>
                 </div>
-            </div>
+            </div> -->
         </div>
     </body>
 </html>

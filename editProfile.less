@@ -117,18 +117,6 @@
     .inputPhone{
       position: relative;
     }
-    .inputPhone::after{
-      content: "";
-      background-image: url(img/telephone_grey.svg);
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      right: 17px;
-      bottom: 15px;
-    }
-    .iconRightInput{
-      padding-right: 50px;
-    }
     .inputWrapper{
       .inputPhone{
         position: relative;
@@ -146,14 +134,14 @@
         position: relative;
         z-index: 1;
         .selctActive{
-          height: 58px;
+          height: 50px;
           width: 100%;
           border-radius: 26px;
           background-color: @common-color3;
           outline: none;
           border: none;
-          padding: 10px 22px;
-          font-size: 24px;
+          padding: 10px 16px;
+          font-size: 22px;
           position: relative;
           color: #686868;
           display: flex;
@@ -165,11 +153,11 @@
         .selctActive::after{
             content: '';
             background: url(img/polygon.svg) no-repeat;
-            width: 13px;
-            height: 11px;
+            width: 9px;
+            height: 9px;
             position: absolute;
-            right: 12px;
-            top: 20px;
+            right: 22px;
+            top: 22px;
         }
         .selecting{
             // height: 169px;
@@ -190,13 +178,16 @@
                 :nth-child(1){
                     color: @common-color1;
                 }
+                :nth-last-child(1){
+                  border-bottom: 0;
+                }
                 :nth-child(1)::after{
                     content: '';
                     background: url(img/polygon.svg) no-repeat;
-                    width: 13px;
-                    height: 11px;
+                    width: 9px;
+                    height: 9px;
                     position: absolute;
-                    right: 12px;
+                    right: 22px;
                     transform: rotate(180deg);
                 }
             }

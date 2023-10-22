@@ -41,17 +41,39 @@
                         <span class="inputTitle">{{tr('Данные руководителя')}}</span>
                         <input type="text" placeholder="Имя">
                         <input type="text" placeholder="Фамилия">
-                        <input type="text" placeholder="Пол">
+                        <div class="dropdownSelect">
+                            <div class="selctActive">
+                                <span>Мужской</span>
+                            </div>
+                            <div class="selecting" style="display: none;">
+                                <ul>
+                                    <li>Мужской</li>
+                                    <li>Женский</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="inputsBlock ">
                         <span class="inputTitle">{{tr('Номер телефона')}}</span>
                         <div class="inputPhone">
-                            <input type="text" placeholder="Телефон" class="iconRightInput">
+                            <input type="text" placeholder="Телефон">
                         </div>
                     </div>
                     <div class="inputsBlock">
                         <span class="inputTitle">{{tr('Данные компании')}}</span>
-                        <input type="text" placeholder="Форма собственности">
+                        <div class="dropdownSelect2">
+                            <div class="selctActive">
+                                <span>ТОО</span>
+                            </div>
+                            <div class="selecting2" style="display: none;">
+                                <ul>
+                                    <li>ТОО</li>
+                                    <li>ООО</li>
+                                    <li>АО</li>
+                                    <li>ИП</li>
+                                </ul>
+                            </div>
+                        </div>
                         <input type="text" placeholder="Наименование компании">
                         <input type="text" placeholder="Сфера деятельности">
                         <input type="text" placeholder="Сайт компании">

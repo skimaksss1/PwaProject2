@@ -1,311 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="windows-1251" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    
-        <link rel="stylesheet/less" type="text/less" href="common.less" />
-        <!-- для каждой страницы свой less файл. -->
-        <link rel="stylesheet/less" type="text/less" href="myProfile.less" />
-        <!-- Скрипты не трогать -->
-        <script src="https://cdn.jsdelivr.net/npm/less"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
-        <script>
+
+<head>
+    <meta charset="windows-1251" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet/less" type="text/less" href="common.less" />
+    <!-- для каждой страницы свой less файл. -->
+    <link rel="stylesheet/less" type="text/less" href="myProfile.less" />
+    <!-- Скрипты не трогать -->
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+    <script>
         //скрипты не трограть.
         window.addEventListener("load", () => {
             const app = Vue.createApp({
-            methods: {
-                tr(k) {
-                return k;
+                methods: {
+                    tr(k) {
+                        return k;
+                    },
                 },
-            },
             });
             app.mount("#dont_use_this_id_in_style");
         });
-        </script>
-    </head>
-    <body>
-        <div class="page" id="dont_use_this_id_in_style">
-            <div class="brow_empty"></div>
-            <section class="main">
-                <div class="container">
-                    <div class="mainLine">
-                        <div class="pageTitle">
-                            <p>{{tr('Профиль')}}</p>
-                        </div>
-                        <div class="leftBtn-mainLine">
-                            <img src="img/backpage.svg" alt="">             
-                        </div>
-                        <!-- <div class="lang">
+    </script>
+</head>
+
+<body>
+    <div class="page" id="dont_use_this_id_in_style">
+        <div class="brow_empty"></div>
+        <section class="main">
+            <div class="container">
+                <div class="mainLine">
+                    <div class="pageTitle">
+                        <p>{{tr('Профиль')}}</p>
+                    </div>
+                    <div class="leftBtn-mainLine">
+                        <img src="img/backpage.svg" alt="">
+                    </div>
+                    <!-- <div class="lang">
                             <span>KZ</span>
                         </div> -->
-                        <!-- <div class="rightBtn-mainLine">
+                    <!-- <div class="rightBtn-mainLine">
                             <img src="img/sorting.svg" alt="">
                             <img src="img/filtering.svg" alt="">      
                         </div> -->
+                </div>
+            </div>
+        </section>
+        <div class="profile">
+            <div class="container">
+                <div class="profileCard">
+                    <div class="profileFirstLine">
+                        <div class="photo" style="background-image: url(img/photo.png);"></div>
+                        <div class="nameMail">
+                            <p class="name">Иван Иванов</p>
+                            <p class="mail">ivan@gmail.com</p>
+                        </div>
+                        <div class="edit">
+                            <img src="img/pencil_black.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="profileSecondLine">
+                        <div class="profileInfo">
+                            <span>{{tr('Мои реквизиты')}}</span>
+                            <div class="value">97 10 14 116 558</div>
+                            <div class="value">KZ65498631321548484</div>
+                            <div class="value">4400 4821 2556 7147</div>
+                            <div class="nameDate">
+                                <div class="value">IVAN IVANOV</div>
+                                <div class="dateValue">10/25</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profileThirdLine">
+                        <a href="#" class="activatedBtn">{{tr('Активация')}} 05.07.2023</a>
                     </div>
                 </div>
-            </section>
-            <div class="profile">
-                <div class="container">
-                    <div class="profileCard">
-                        <div class="profileFirstLine">
-                            <div class="photo" style="background-image: url(img/photo.png);"></div>
-                            <div class="nameMail">
-                                <p class="name">Иван Иванов</p>
-                                <p class="mail">ivan@gmail.com</p>
-                            </div>
-                            <div class="edit">
-                                <img src="img/pencil_black.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="profileSecondLine">
-                            <div class="profileInfo">
-                                <span>{{tr('Мои реквизиты')}}</span>
-                                <div class="value">KZ65498631321548484</div>
-                                <div class="value">4400 4821 2556 7147</div>
-                                <div class="nameDate">
-                                    <div class="value">IVAN IVANOV</div>
-                                    <div class="dateValue">10/25</div>
+                <div class="yellowBtn">
+                    {{tr('Программа лояльности')}}
+                </div>
+                <div class="award">
+                    <p class="awardName">{{tr('Вознаграждение ')}}</p>
+                    <span class="awardValue">27 000</span><span class="unit">Ед</span>
+                    <div class="payment">
+                        <div class="paymentHistory">{{tr('История выплат:')}}</div>
+                        <div class="paymentList">
+
+                            <div class="historyLine">
+                                <div class="paymentName">
+                                    <div class="paymentNumber">1</div>
+                                    <div class="paymentSum"><span>17 000</span> ед</div>
                                 </div>
+                                <span class="paymentDate">23.08.23</span>
+                            </div>
+                            <div class="historyLine">
+                                <div class="paymentName">
+                                    <div class="paymentNumber">2</div>
+                                    <div class="paymentSum"><span>125 000</span> ед</div>
+                                </div>
+                                <span class="paymentDate">23.08.23</span>
                             </div>
                         </div>
-                        <div class="profileThirdLine">
-                            <a href="#" class="activatedBtn">{{tr('Активация')}} 05.07.2023</a>
-                        </div>
+                    </div>
+                </div>
+                <div class="paymentTerms">
+                    <span class="termsName">Какие условия выплат?</span>
+                    <div class="termsCard" style="display: none;">
+                        <span>Выплата кэшбэк вознаграждения производится один раз в неделю за вычетом комиссии банка на
+                            проведение платежа....</span>
+                        <span>Обязательным условием является оплата всех налогов пользователем....</span>
                     </div>
                     <div class="yellowBtn">
-                        {{tr('Программа лояльности')}}
-                    </div> 
-                    <div class="award">
-                        <p class="awardName">{{tr('Вознаграждение ')}}</p>
-                        <span class="awardValue">27 000</span><span class="unit">Ед</span>
-                        <div class="payment">
-                            <div class="paymentHistory">{{tr('История выплат:')}}</div>
-                            <div class="paymentList">
+                        {{tr('Вознаграждения по QR')}}
+                    </div>
+                </div>
+                <div class="useTerms">
+                    <span class="useTermsValue">1 000</span><span class="unit">Ед</span>
+                    <div class="whatIsIt">{{tr('Условия использования')}}
 
-                                <div class="historyLine">
-                                    <div class="paymentName">
-                                        <div class="paymentNumber">1</div>
-                                        <div class="paymentSum"><span>17 000</span> ед</div>
-                                    </div>
-                                    <span class="paymentDate">23.08.23</span>
-                                </div>
-                                <div class="historyLine">
-                                    <div class="paymentName">
-                                        <div class="paymentNumber">2</div>
-                                        <div class="paymentSum"><span>125 000</span> ед</div>
-                                    </div>
-                                    <span class="paymentDate">23.08.23</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="paymentTerms">
-                        <span class="termsName">Какие условия выплат?</span>
-                        <div class="termsCard">
-                            <span>Выплата кэшбэк вознаграждения производится один раз в неделю за вычетом комиссии банка на проведение платежа....</span>
-                            <span>Обязательным условием является оплата всех налогов пользователем....</span>
-                        </div>
-                        <div class="yellowBtn">
-                            {{tr('Вознаграждения по QR')}}
-                        </div> 
-                    </div>
-                    <div class="useTerms">
-                        <span class="useTermsValue">1 000</span><span class="unit">Ед</span>
-                        <div class="whatIsIt">{{tr('Условия использования')}}</div>
-                        
                         <div class="whatIsItCard" style="display: none;">
-                            <span>Выплата кэшбэк вознаграждения производится один раз в неделю за вычетом комиссии банка на проведение платежа....</span>
-                            <span>Обязательным условием является оплата всех налогов пользователем....</span>
-                        </div>
-                        <div class="rate">1 ед = 1 тенге</div>
-                        <div class="courseQuantity">{{tr('Курс единицы ')}}</div>
-                        <div class="courseQuantityCard" style="display: none;">
-                            <span>Выплата кэшбэк вознаграждения производится один раз в неделю за вычетом комиссии банка на проведение платежа....</span>
+                            <span>Выплата кэшбэк вознаграждения производится один раз в неделю за вычетом комиссии банка
+                                на проведение платежа....</span>
                             <span>Обязательным условием является оплата всех налогов пользователем....</span>
                         </div>
                     </div>
-                    <div class="myTeams">
-                        <div class="myTeamsLine">
-                            <div class="temasLine">
-                                <span>Моя команда</span>
-                                <div class="teamsQuantity">17555</div>
-                            </div>
-                            <div class="btnAll">Все</div>
+                    <div class="rate">1 ед = 1 тенге</div>
+                    <div class="courseQuantity">{{tr('Курс единицы ')}}
+                        <div class="courseQuantityCard" style="display: none;">
+                            <span>Выплата кэшбэк вознаграждения производится один раз в неделю за вычетом комиссии банка
+                                на проведение платежа....</span>
+                            <span>Обязательным условием является оплата всех налогов пользователем....</span>
                         </div>
-                        <div class="teamsCard">
-                            <div class="teamUsers">
-                                <div class="user" style="background-image: url(img/user-1.png);">
-                                    <div class="userLvl">4</div>
-                                </div>
-                                <div class="user" style="background-image: url(img/user-2.png);">
-                                    <div class="userLvl">3</div>
-                                </div>
-                                <div class="user" style="background-image: url(img/user-3.png);">
-                                    <div class="userLvl">5</div>
-                                </div>
-                                <div class="user" style="background-image: url(img/user-4.png);">
-                                    <div class="userLvl">3</div>
-                                </div>
-                                <div class="user" style="background-image: url(img/user-5.png);">
-                                    <div class="userLvl">+</div>
-                                </div>
+                    </div>
+                </div>
+                <div class="myTeams">
+                    <div class="myTeamsLine">
+                        <div class="temasLine">
+                            <span>Моя команда</span>
+                            <div class="teamsQuantity">17555</div>
+                        </div>
+                        <div class="btnAll">Все</div>
+                    </div>
+                    <div class="teamsCard">
+                        <div class="teamUsers">
+                            <div class="user" style="background-image: url(img/user-1.png);">
+                                <div class="userLvl">4</div>
                             </div>
-                            <div class="userList">
+                            <div class="user" style="background-image: url(img/user-2.png);">
+                                <div class="userLvl">3</div>
+                            </div>
+                            <div class="user" style="background-image: url(img/user-3.png);">
+                                <div class="userLvl">5</div>
+                            </div>
+                            <div class="user" style="background-image: url(img/user-4.png);">
+                                <div class="userLvl">3</div>
+                            </div>
+                            <div class="user" style="background-image: url(img/user-5.png);">
+                                <div class="userLvl">+</div>
+                            </div>
+                        </div>
+                        <div class="userList">
+                            <div class="column">
+                                <div class="userWrapper">
+                                    <div class="checkedWrapper minus"></div>
+                                    <span class="userName">Я</span>
+                                    <div class="userLvl">175</div>
+                                </div>
+                                <div class="column">
+                                    <div class="userWrapper">
+                                        <div class="checkedWrapper plus"></div>
+                                        <span class="userName">Иван Ш.</span>
+                                        <div class="userLvl">4</div>
+                                    </div>
+                                </div>
                                 <div class="column">
                                     <div class="userWrapper">
                                         <div class="checkedWrapper minus"></div>
-                                        <span class="userName">Я</span>
-                                        <div class="userLvl">175</div>
+                                        <span class="userName">Дастан А.</span>
+                                        <div class="userLvl">3</div>
                                     </div>
                                     <div class="column">
                                         <div class="userWrapper">
                                             <div class="checkedWrapper plus"></div>
-                                            <span class="userName">Иван Ш.</span>
-                                            <div class="userLvl">4</div>
-                                        </div>
-                                    </div>
-                                    <div class="column">
-                                        <div class="userWrapper">
-                                            <div class="checkedWrapper minus"></div>
-                                            <span class="userName">Дастан А.</span>
-                                            <div class="userLvl">3</div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="userWrapper">
-                                                <div class="checkedWrapper plus"></div>
-                                                <span class="userName">Асет А.</span>
-                                                <div class="userLvl">2</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column">
-                                        <div class="userWrapper">
-                                            <div class="checkedWrapper plus"></div>
-                                            <span class="userName">Ерлан А.</span>
-                                            <div class="userLvl">5</div>
-                                        </div>
-                                    </div>
-                                    <div class="column">
-                                        <div class="userWrapper">
-                                            <div class="checkedWrapper plus"></div>
-                                            <span class="userName">Нурсултан С.</span>
-                                            <div class="userLvl">3</div>
+                                            <span class="userName">Асет А.</span>
+                                            <div class="userLvl">2</div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="target">
-                        <span class="targetTitle">Вы выполнили 80% цели</span>
-                        <div class="targetProgress">
-                            <div class="checkProgress">
-                                <div class="check">
-                                    <img src="img/check.svg" alt="">
+                                <div class="column">
+                                    <div class="userWrapper">
+                                        <div class="checkedWrapper plus"></div>
+                                        <span class="userName">Ерлан А.</span>
+                                        <div class="userLvl">5</div>
+                                    </div>
                                 </div>
-                                <div class="check">
-                                    <img src="img/check.svg" alt="">
-                                </div>
-                                <div class="check">
-                                    <img src="img/check.svg" alt="">
-                                </div>
-                                <div class="check">
-                                    <img src="img/check.svg" alt="">
-                                </div>
-                                <div class="check">
-                                    <img src="img/check.svg" alt="">
+                                <div class="column">
+                                    <div class="userWrapper">
+                                        <div class="checkedWrapper plus"></div>
+                                        <span class="userName">Нурсултан С.</span>
+                                        <div class="userLvl">3</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="progressLine"></div>
-                        </div>
-                        <span class="targetCaption">осталось совсем немного</span>
-                    </div>
-                    <div class="bonus">
-                        <p class="bonusdName">{{tr('Бонусная программа')}}</p>
-                        <div class="bonusCard">
-                            <div class="bonusWrapper">
-                                <span class="bonusTitle">Мой промокод </span>
-                                <div class="bonusActivatedWrapper">
-                                    <span class="bonusActivated">Активен</span>
-                                    <img src="img/activated.svg" alt="">
-                                </div>
-                            </div>
-                            <span class="bonusQuality">256478</span>
-                            <div class="yellowBtn">
-                                {{tr('Пригласить')}}
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="informAccordion">
-                        <div class="informItem">
-                            <div class="informAtr">
-                                <span class="informName greyColor">{{tr('Уведомления')}}</span>
-                                <div class="notification">
-                                    +4
-                                </div>
-                            </div>
-                            <div class="informAtr">
-                                <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.01229 9.1622e-08C5.74707 8.84593e-08 5.49272 0.100096 5.30518 0.27827C5.11765 0.456443 5.01229 0.698099 5.01229 0.950074L5.01229 15.7578L1.71929 12.6293C1.62704 12.5386 1.5167 12.4662 1.39469 12.4164C1.27269 12.3666 1.14147 12.3404 1.00869 12.3393C0.87591 12.3382 0.744232 12.3623 0.621336 12.41C0.498439 12.4578 0.386787 12.5284 0.292894 12.6176C0.199001 12.7068 0.124747 12.8128 0.0744665 12.9296C0.0241857 13.0464 -0.00111584 13.1715 3.79766e-05 13.2976C0.00119179 13.4238 0.028779 13.5484 0.081188 13.6643C0.133597 13.7803 0.209778 13.8851 0.305288 13.9727L5.30459 18.7225C5.49263 18.9002 5.74706 19 6.01229 19C6.27751 19 6.53195 18.9002 6.71999 18.7225L11.7193 13.9727C11.9014 13.7936 12.0022 13.5536 12 13.3045C11.9977 13.0553 11.8925 12.8171 11.7071 12.6409C11.5217 12.4648 11.2709 12.3648 11.0087 12.3627C10.7465 12.3605 10.4939 12.4563 10.3053 12.6293L7.01229 15.7578L7.01229 0.950074C7.01229 0.698099 6.90693 0.456443 6.7194 0.27827C6.53186 0.100096 6.27751 9.47847e-08 6.01229 9.1622e-08Z" fill="#858585"/>
-                                </svg>                         
-                            </div>
-                        </div>
-                        <span class="disclosure" style="display: none;">
-                            <div class="realLine">
-                                <img src="img/realIcon.png" alt="">
-                                <div>
-                                    <span>{{tr('Вам поступило вознаграждение от Real 1700 ед.')}}</span>
-                                    <div class="disclosureDate">23.08.23</div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                    <div class="purchase">
-                        <span class="purchaseTitle">{{tr('История покупок')}}</span>
-                        <div class="purchaseGallery">
-                            <div class="cardItem">
-                                <div class="purchaseCard" style=""></div>
-                            </div>
-                            <div class="cardItem">
-                                <div class="purchaseCard" style=""></div>
-                            </div>
-                            <div class="cardItem">
-                                <div class="purchaseCard" style=""></div>
-                            </div>
-                            <div class="cardItem">
-                                <div class="purchaseCard" style=""></div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="basket">
-                        <div class="basketFlex">
-                            <span class="basketTitle">{{tr('Корзина')}}</span>
-                            <span class="ammountItem">5</span>
-                        </div>
-                        <div class="basketGallery">
-                            <div class="cardItem">
-                                <div class="basketCard" style=""></div>
-                            </div>
-                            <div class="cardItem">
-                                <div class="basketCard" style=""></div>
-                            </div>
-                            <div class="cardItem">
-                                <div class="basketCard" style=""></div>
-                            </div>
-                            <div class="cardItem">
-                                <div class="basketCard" style=""></div>
-                            </div>
-                            
                         </div>
                     </div>
                 </div>
+                <div class="target">
+                    <span class="targetTitle">Вы выполнили 80% цели</span>
+                    <div class="targetProgress">
+                        <div class="checkProgress">
+                            <div class="check">
+                                <img src="img/check.svg" alt="">
+                            </div>
+                            <div class="check">
+                                <img src="img/check.svg" alt="">
+                            </div>
+                            <div class="check">
+                                <img src="img/check.svg" alt="">
+                            </div>
+                            <div class="check">
+                                <img src="img/check.svg" alt="">
+                            </div>
+                            <div class="check">
+                                <img src="img/check.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="progressLine"></div>
+                    </div>
+                    <span class="targetCaption">осталось совсем немного</span>
+                </div>
+                <div class="bonus">
+                    <p class="bonusdName">{{tr('Бонусная программа')}}</p>
+                    <div class="bonusCard">
+                        <div class="bonusWrapper">
+                            <span class="bonusTitle">Мой промокод </span>
+                            <div class="bonusActivatedWrapper">
+                                <span class="bonusActivated">Активен</span>
+                                <img src="img/activated.svg" alt="">
+                            </div>
+                        </div>
+                        <span class="bonusQuality">256478</span>
+                        <div class="yellowBtn">
+                            {{tr('Пригласить')}}
+                        </div>
+                    </div>
+                </div>
+                <div class="informAccordion">
+                    <div class="informItem">
+                        <div class="informAtr">
+                            <span class="informName greyColor">{{tr('Уведомления')}}</span>
+                            <div class="notification">
+                                +4
+                            </div>
+                        </div>
+                        <div class="informAtr">
+                            <svg width="12" height="19" viewBox="0 0 12 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.01229 9.1622e-08C5.74707 8.84593e-08 5.49272 0.100096 5.30518 0.27827C5.11765 0.456443 5.01229 0.698099 5.01229 0.950074L5.01229 15.7578L1.71929 12.6293C1.62704 12.5386 1.5167 12.4662 1.39469 12.4164C1.27269 12.3666 1.14147 12.3404 1.00869 12.3393C0.87591 12.3382 0.744232 12.3623 0.621336 12.41C0.498439 12.4578 0.386787 12.5284 0.292894 12.6176C0.199001 12.7068 0.124747 12.8128 0.0744665 12.9296C0.0241857 13.0464 -0.00111584 13.1715 3.79766e-05 13.2976C0.00119179 13.4238 0.028779 13.5484 0.081188 13.6643C0.133597 13.7803 0.209778 13.8851 0.305288 13.9727L5.30459 18.7225C5.49263 18.9002 5.74706 19 6.01229 19C6.27751 19 6.53195 18.9002 6.71999 18.7225L11.7193 13.9727C11.9014 13.7936 12.0022 13.5536 12 13.3045C11.9977 13.0553 11.8925 12.8171 11.7071 12.6409C11.5217 12.4648 11.2709 12.3648 11.0087 12.3627C10.7465 12.3605 10.4939 12.4563 10.3053 12.6293L7.01229 15.7578L7.01229 0.950074C7.01229 0.698099 6.90693 0.456443 6.7194 0.27827C6.53186 0.100096 6.27751 9.47847e-08 6.01229 9.1622e-08Z"
+                                    fill="#858585" />
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="disclosure" style="display: none;">
+                        <div class="realLine">
+                            <img src="img/realIcon.png" alt="">
+                            <div>
+                                <span>{{tr('Вам поступило вознаграждение от Real 1700 ед.')}}</span>
+                                <div class="disclosureDate">23.08.23</div>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+
             </div>
-            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-            <script src="script.js"></script>
         </div>
-    </body>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+
 </html>
