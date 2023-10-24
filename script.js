@@ -24,13 +24,6 @@ $(document).ready(function() {
 		$(".lang ul li").click(function(){
 			$(".lang ul").toggle();
 		});
-		
-	}))
-});
-
-
-$(document).ready(function() {
-	addEventListener('load',()=>setTimeout(()=>{
 		$(".informAccordion").click(function(){
 			$(this).find(".disclosure").toggle();
 				$(this).find('svg').toggleClass('rotate'); 
@@ -41,6 +34,7 @@ $(document).ready(function() {
 	}))
 });
 
+	
 $("body").on('click', '.eyeBtnOpen', function() {
 	$(this).toggleClass("eyeBtnClose");
 	var input = $(".iconRightInput");
