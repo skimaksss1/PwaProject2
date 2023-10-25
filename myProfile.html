@@ -145,7 +145,7 @@
                         <div class="btnAll">Все</div>
                     </div>
                     <div class="teamsCard">
-                        <div class="teamUsers">
+                         <div class="teamUsers">
                             <div class="user" style="background-image: url(img/user-1.png);">
                                 <div class="userLvl">4</div>
                             </div>
@@ -162,7 +162,7 @@
                                 <div class="userLvl">+</div>
                             </div>
                         </div>
-                        <div class="userList">
+                        <!--<div class="userList">
                             <div class="column">
                                 <div class="userWrapper">
                                     <div class="checkedWrapper minus"></div>
@@ -205,7 +205,63 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
+
+                        <div class="user-node-tree">
+                            <!-- Родительский user-node -->
+                            <div class="user-node">
+                              <div class="user-node-header">
+                                <div class="user-node-icon minus"></div>
+                                <div class="user-node-text">Я</div>
+                                <div class="user-node-count">175</div>
+                              </div>
+                              <div class="user-node-list">
+                                <!-- Список дочерних -->
+                                <div class="user-node">
+                                  <div class="user-node-header">
+                                    <div class="user-node-icon plus"></div>
+                                    <div class="user-node-text">Иван Ш.</div>
+                                    <div class="user-node-count">4</div>
+                                  </div>
+                                  <div class="user-node-list"></div>
+                                </div>
+                                <div class="user-node">
+                                  <div class="user-node-header">
+                                    <div class="user-node-icon minus"></div>
+                                    <div class="user-node-text">Дастан А.</div>
+                                    <div class="user-node-count">3</div>
+                                  </div>
+                                  <div class="user-node-list">
+                                    <div class="user-node">
+                                      <div class="user-node-header">
+                                        <div class="user-node-icon plus"></div>
+                                        <div class="user-node-text">Асет А.</div>
+                                        <div class="user-node-count">2</div>
+                                      </div>
+                                      <div class="user-node-list"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="user-node">
+                                  <div class="user-node-header">
+                                    <div class="user-node-icon plus"></div>
+                                    <div class="user-node-text">Ерлан А.</div>
+                                    <div class="user-node-count">5</div>
+                                  </div>
+                                  <div class="user-node-list"></div>
+                                </div>
+                                <div class="user-node">
+                                  <div class="user-node-header">
+                                    <div class="user-node-icon plus"></div>
+                                    <div class="user-node-text">Нурсултан С.</div>
+                                    <div class="user-node-count">5</div>
+                                  </div>
+                                  <div class="user-node-list"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                     </div>
                 </div>
                 <div class="target">
@@ -278,8 +334,7 @@
 
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.7.1.js"
-            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </div>
 </body>
