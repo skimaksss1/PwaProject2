@@ -34,6 +34,11 @@
     overflow: auto;
     clip-path: inset(0 0 30px 0);
     margin-bottom: -30px;
+    #element::-webkit-scrollbar {
+        width: 0px;
+        height: 0;
+        background-color: transparent;
+      }
     .historyList{
         display: flex;
         align-items: center;
@@ -68,7 +73,7 @@
     }
 }
 .dropDown{
-    margin-bottom: 17px;
+    margin-bottom: 12px;
     .dropdownSelect{
         position: relative;
         z-index: 1;
@@ -157,126 +162,34 @@
 .card{
     background-color: #252525;
     width: 100%;
-    height: auto;
+    height: calc(100vh - 150px);
     border-radius: 29px;
-    padding: 10px;
+    padding: 30px;
     padding-bottom: 16px;
     position: relative;
     margin-bottom: 20px;
-    .sale{
-        width: 75px;
-        height: 75px;
-        background-color: #9F55FE;
-        border-radius: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
-        font-size: 24px;
-        padding-bottom: 5px;
-        position: absolute;
-        right: -3px;
-        top: -10px;
-    }
-    .cardImg{
-        height: 160px;
-        width: 100%;
-        border-radius: 20px;
-        background-position: center;
-    }
-    .cardSlide-dots{
-        display: flex;
-        justify-content: center;
-        gap: 4px;
-        margin: 5px 0;
-        .slide-dot{
-            width: 8px;
-            height: 8px;
-            background-color: #fff;
-            border-radius: 100%;
-        }
-        .slide-dot.active{
-            background-color: #E7FE55;
-        }
-    }
-}
-.cardInfo{
-    .cardNameStar{
-        display: flex;
-        justify-content: space-between;
-        .cardName{
-            font-size: 24px;
-            font-weight: 700;
-            color: #E7FE55;
-            margin-bottom: 12px;
-        }
-    }
-    .cardDescription{
-        font-size: 17px;
-        font-weight: 400;
-        margin-bottom: 16px;
-    }
-    .discounts{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        .discount{
-            width: 100%;
-            height: 60px;
-            background-color: #9F55FE;
-            border-radius: 58px;
-            padding: 11px 28px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            p{
-                font-weight: 700;
-                font-size: 20px;
-                width: 200px;
-                line-height: 96.9%;
-            }
-            span{
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 96.9%;
-            }
-        }
-    }
-}
-.nextBtn{
-    margin-top: 20px;
-    margin-right: 8px;
     display: flex;
-    justify-content: flex-end;
-}
-.navigation{
-    position: absolute;
-    width: 100%;
-    bottom: 22px;
-    z-index: 1;
-    .nav{
-        .navCont{
-            height: 83px;
-            width: 100%;
-            background: linear-gradient( 30deg, #414141c7, #6a6a6ab4);
-            backdrop-filter: blur(1rem);
-            border-radius: 83px;
-            padding: 10px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .navItem.navActive{
-                height: 64px;
-                width: 64px;
-                background-color: #fff;
-                border-radius: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .navItem.navActive svg path{
-                    fill: #000;
-                }
-            }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .alertTitle{
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 50px;
+        margin-bottom: 5px;
+        display: block;
+    }
+    .alertCaption{
+        font-size: 14px;
+        text-align: center;
+    }
+    svg{
+        animation: reload 2s infinite;
+    }
+    @keyframes reload {
+        100%{
+            transform: rotate(180deg);    
         }
     }
 }

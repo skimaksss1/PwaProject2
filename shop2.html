@@ -8,7 +8,7 @@
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-    <link rel="stylesheet/less" type="text/less" href="notifications.less" />
+    <link rel="stylesheet/less" type="text/less" href="shop2.less" />
     <!-- Скрипты не трогать -->
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
@@ -36,7 +36,7 @@
                             <img src="img/backpage.svg" alt="">             
                         </div>
                         <div class="pageTitle">
-                            <p>{{tr('Уведомления')}}</p>
+                            <p>{{tr('Магазин')}}</p>
                         </div>
                         <!-- <div class="rightBtn-mainLine">
                             <img src="img/sorting.svg" alt="">
@@ -45,36 +45,20 @@
                     </div>
                 </div>
             </section>
-            <section class="notification">
+
+            <section class="cards">
                 <div class="container">
-                    <div class="notificationBlock">
-                        <span class="notificationTitle">{{tr('На этой неделе')}}</span>
-                        
-                        <div class="realLine">
-                            <img src="img/realIcon.png" alt="">
-                            <div>
-                                <span>{{tr('Вам поступило вознаграждение от Real')}} 1700 ед.</span>
-                                <div class="disclosureDate">23.08.23</div>
-                            </div>
+                    <div class="card">
+                        <div class="loading dot">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
-                        <div class="realLine">
-                            <img src="img/realIcon.png" alt="">
-                            <div>
-                                <span>{{tr('Вам поступило вознаграждение от Real')}} 1700 ед.</span>
-                                <div class="disclosureDate">23.08.23</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="notificationBlock">
-                        <span class="notificationTitle">{{tr('В этом месяце')}}</span>
-                        
-                        <div class="realLine">
-                            <img src="img/realIcon.png" alt="">
-                            <div>
-                                <span>{{tr('Вам поступило вознаграждение запокупку в TOO App Trade')}} 467 тг. </span>
-                                <div class="disclosureDate">30.07.23</div>
-                            </div>
-                        </div>
+                            
+                        <span class="alertTitle">Страница в разработке</span>
+                        <span class="alertCaption">Страница находится на стадии разработки. Мы делаем все возможное, чтобы запустить ее как можно скорее. </span>
                     </div>
                 </div>
             </section>
