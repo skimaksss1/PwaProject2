@@ -162,45 +162,72 @@
 .card{
     background-color: #252525;
     width: 100%;
-    height: calc(100vh - 150px);
-    border-radius: 29px;
-    padding: 30px;
-    padding-bottom: 16px;
+    height: calc(100vh - 113px);
     position: relative;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    .slider_shadow{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #000000, #00000000);
+        position: absolute; 
+    }
+    .slider_list{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        .slide_item{
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            align-items: flex-end;
+        }
+        .slide_content{
+            z-index: 1;
+            .real{
+                background-color: @common-color1;
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+            }
+        }
+        .slide_dots{
+            width: 100%;
+            height: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // position: absolute;
+            gap: 3px;
+            margin-bottom: 125px;
+            .dot{
+                width: 100%;
+                height: 2px;
+                background-color: #D9D9D9;
+            }
+            .dot_active{
+                background-color: @common-color1;
+            }
+        }
+    }
     .alertTitle{
-        font-size: 18px;
-        font-weight: 700;
+        font-size: 38px;
+        font-weight: 600;
         text-transform: uppercase;
-        margin-top: 50px;
+        margin-top: 10px;
         margin-bottom: 5px;
         display: block;
     }
     .alertCaption{
+        display: block;
+        text-align: left;
         font-size: 14px;
-        text-align: center;
+        line-height: 170%;
+        margin-bottom: 20px;
     }
-    svg{
-        animation: reload 2s infinite;
-    }
-    @keyframes reload {
-        100%{
-            transform: rotate(180deg);    
-        }
-    }
-    .real{
-        background-color: @common-color1;
-        width: 100px;
-        height: 100px;
-        display: flex;
-        border-radius: 1000%;
-        align-items: center;
-        justify-content: center;
-        .lotie{
-        }
-    }
+    
 }
