@@ -30,10 +30,11 @@ $(document).ready(function() {
 			$(this).find('.informName').toggleClass('greyColor'); 
 			$(this).find('.informAtr svg path').toggleClass('whiteColor'); 
 			$(this).find('.fill_cc1 path').toggleClass('yellow_color'); 
-			$(this).find('.answer_title').toggleClass('yellow_color'); 
+			$(this).find('img').css('yellow_color'); 
 		});
 		$(".diclosureCard").click(function(){
 			$(this).siblings(".diclosure_card").toggle();
+			$(this).find('img').toggleClass('rotate90'); 
 		});
 		
 	}))
