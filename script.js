@@ -24,12 +24,17 @@ $(document).ready(function() {
 		$(".lang ul li").click(function(){
 			$(".lang ul").toggle();
 		});
-		$(".informAccordion").click(function(){
-			$(this).find(".disclosure").toggle();
-				$(this).find('svg').toggleClass('rotate'); 
-				$(this).find('.informName').toggleClass('greyColor'); 
-				$(this).find('.informAtr svg path').toggleClass('whiteColor'); 
-			});
+		$(".informItem").click(function(){
+			$(this).siblings(".disclosure").toggle();
+			$(this).find('svg').toggleClass('rotate'); 
+			$(this).find('.informName').toggleClass('greyColor'); 
+			$(this).find('.informAtr svg path').toggleClass('whiteColor'); 
+			$(this).find('.fill_cc1 path').toggleClass('yellow_color'); 
+			$(this).find('.answer_title').toggleClass('yellow_color'); 
+		});
+		$(".diclosureCard").click(function(){
+			$(this).siblings(".diclosure_card").toggle();
+		});
 		
 	}))
 });

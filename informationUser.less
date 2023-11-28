@@ -265,6 +265,41 @@
             color: #8D8D8D;
             width: fit-content;
         }
+      }
+    .answer{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      .answeItem{
+        border: 1px solid #686868;
+        border-radius: 32px;
+        padding: 18px 20px;
+        .informItem{
+          // min-height: unset;
+          margin-bottom: unset;
+          gap: 8px;
+          .answer_line{
+            .answer_title{
+              font-size: 18px;
+              font-weight: 600;
+              color: #858585;
+            }
+          }
+        }
+        .disclosure{
+          margin: 0;
+          width: 100% !important;
+          margin-top: 8px;
+          span{
+            width: 100%;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .yellow_color{
+      color: @common-color1 !important;
+      fill: @common-color1;
     }
     .disclosureName{
         color: @common-color1;
