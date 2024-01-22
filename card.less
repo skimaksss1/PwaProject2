@@ -208,6 +208,123 @@ body{
             }
         }
     }
+    .evaluation{
+        margin-top: 40px;
+        .indicator{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .quantity{
+                font-size: 16px;
+            }
+            .stars{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+    .comments{
+        border-radius: 10px;
+        background-color: #292929;
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+        padding: 15px;
+        .main_comment{
+            display: flex;
+            flex-direction: column;
+            .comment_header{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                .user_info{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;
+                    .user_photo{
+                        background-image: url(img/user-1.png);
+                        background-size: contain;
+                        border-radius: 100%;
+                        width: 50px;
+                        height: 50px;
+                    }
+                    .user_data{
+                        display: flex;
+                        flex-direction: column;
+                        .name{
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                        .date{
+                            font-size: 12px;
+                            font-weight: 400; 
+                            color: #A9A9A9;   
+                        }
+                    }
+                }
+                .stars{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+            .comment{
+                font-size: 12px;
+                margin-top: 10px;
+            }
+            .answer{
+                font-size: 10px;
+                color: #585858;
+                margin-top: 5px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .hide{
+                margin: 0 auto;
+            }
+            .hidden{
+                display: flex !important; 
+            }
+            .rotate180{
+                transform: rotate(180deg);
+            }
+            .sub_comment_block{
+                padding-left: 10px;
+                // padding-top: 5px;
+                display: none;
+                gap: 20px;
+                .line_arrow{
+                    height: 100%;
+                    position: relative;
+                    .line{
+                        height: 100%;
+                        width: 1px;
+                        background-color: #585858;
+                    }
+                    .arrow{
+                        position: absolute;
+                        top: 0;
+                        margin-bottom: 5px;
+                    }
+                    
+                }
+                .comment_header{  
+                }
+                .sub_comment{
+                    .answer{
+                        font-size: 10px;
+                        color: #585858;
+                        margin-top: 5px;
+                        display: flex;
+                        justify-content: flex-end;
+                    }                    
+                }
+            }
+        }
+    }
 }
 .nextBtn{
     margin-top: 20px;

@@ -569,6 +569,31 @@
       }
     }
   }
+  .important{
+    height: auto;
+    background-color: #2C2C2C;
+    border-radius: 10px;
+    margin: 20px 10px;
+    .title{
+      background-color: #C63838;
+      width: 100%;
+      height: 42px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+    span{
+      text-align: center;
+      padding: 15px;
+      display: block;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
   .informAccordion{
     padding: 0 10px;
     padding-top: 25px;
@@ -882,6 +907,77 @@
         border-radius: 9px;
         font-weight: 600;
       }
+    }
+  }
+  .shopHistory{
+    .shopHistory_title{
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .shop_card{
+      .shop_title{
+        font-size: 24px;
+        color: #E7FE55;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+      .evaluation{
+        display: flex;
+        justify-content: space-between;
+        .indicator{
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          .stars{
+            display: flex;
+            gap: 10px;
+          }
+        }
+        .save_btn{
+          color: #292929;
+        }
+      }
+      .comment_list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        .comment_card{
+          background-color: #292929;
+          border-radius: 10px;
+          padding: 15px;
+          .comment{
+            font-size: 12px;
+          }
+          .comment_date{
+            font-size: 10px;
+            color: #A9A9A9;
+            margin-top: 10px;
+          }
+        }
+      }
+      .add_comment{
+        padding: 8px;
+        background-color: #E7FE55;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        font-weight: 600;
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+    .separation{
+      margin: 20px 0;
+     hr{
+      border: none;
+      outline: none;
+      width: 100%;
+      height: 1px;
+      background-color: #e7fe5552;
+     }
     }
   }
 }
