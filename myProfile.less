@@ -206,6 +206,91 @@
   .award {
     padding: 0 10px;
     margin-top: 14px;
+    .total_cards{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .total_card{
+        background-color: #292929;
+        border-radius: 10px;
+        .total_head{
+          background-color: #2C2C2C;
+          border-radius: 10px;
+          padding: 26px 20px;
+          display: flex;
+          justify-content: space-between;
+          .left_contnent{
+            display: flex;
+            gap: 10px;
+            img{
+              flex-shrink: 0;
+            }
+            .title{
+              flex-shrink: 0;
+              p{
+                font-size: 16px;
+                font-weight: 600;
+              }
+              span{
+                font-size: 12px;
+                color: #848484;
+              }
+            }
+          }
+          .right_content{
+            color: #E7FE55;
+            font-size: 28px;
+            font-weight: 600;
+            .summa {
+              .ed{
+                font-size: 16px;
+                color: #848484;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+        .total_content {
+          .week{
+            display: flex;
+            justify-content: space-between;
+            align-items:flex-end;
+            padding: 0 20px 10px;
+            
+          &:nth-child(1){
+            padding-top: 10px;
+          }
+            .left_content{
+              p{
+                font-size: 12px;
+              }
+              .week_date {
+                font-size: 12px;
+                color: #848484;
+              }
+            }
+            .right_content{
+              span{
+                color: #E7FE55;
+                font-size: 12px;
+              }
+            }
+          }
+          .seperation{
+            hr{
+              // border: 1px solid #474747;
+              border: none;
+              height: 0.5px;
+              background-color: #474747;
+              margin: 0 20px;
+            }
+          }
+        }
+        .hidden{
+          display: none;
+        }
+      }
+    }
     .awardName {
       font-size: 28px;
       font-weight: 600;
