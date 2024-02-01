@@ -63,7 +63,16 @@ $(document).ready(function() {
 			}
 		});
 		
-
+		$(document).ready(function() {
+			// Добавляем обработчик события клика к каждому элементу с классом .total_head
+			$('.total_head').click(function() {
+			  // Находим соответствующий .total_content
+			  var totalContent = $(this).next('.total_content');
+			  
+			  // Используем toggleClass для добавления/удаления класса .hidden у найденного .total_content
+			  totalContent.toggleClass('hidden');
+			});
+		  });
 
 
 		

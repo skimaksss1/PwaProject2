@@ -175,124 +175,207 @@
       flex-shrink: 0;
     }
   }
-  .balans {
-    margin-top: 14px;
-    padding: 0 10px;
-    .balansName {
-      font-size: 28px;
-      font-weight: 600;
-    }
-    .balansValue {
-      font-size: 38px;
-      font-weight: 700;
-      color: @common-color1;
-    }
-    .unit {
-      font-size: 25px;
-      font-weight: 400;
-      color: #7A7A7A;
-      margin-left: 5px;
-    }
-    .statistic {
-      margin-top: 4px;
-      font-size: 28px;
-      font-weight: 400;
-    }
-    .whatIsIt{
-      text-decoration: underline;
-      color: #A3A3A3;
-    }
-    .whatIsItCard, .courseQuantityCard{
-      margin-top: 6px;
-      padding: 14px;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      background-color: #2C2C2C;
-      border-radius: 9px;
-      margin-bottom: 15px;
-      span{
-        font-size: 12px;
-        color: #fff;
 
+  .total_cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .total_card{
+      background-color: #292929;
+      border-radius: 10px;
+      .total_head{
+        background-color: #2C2C2C;
+        border-radius: 10px;
+        padding: 26px 20px;
+        display: flex;
+        justify-content: space-between;
+        .left_contnent{
+          display: flex;
+          gap: 10px;
+          img{
+            flex-shrink: 0;
+          }
+          .title{
+            flex-shrink: 0;
+            p{
+              font-size: 16px;
+              font-weight: 600;
+            }
+            span{
+              font-size: 12px;
+              color: #848484;
+            }
+          }
+        }
+        .right_content{
+          color: #E7FE55;
+          font-size: 28px;
+          font-weight: 600;
+        }
+      }
+      .total_content {
+        .week{
+          display: flex;
+          justify-content: space-between;
+          align-items:flex-end;
+          padding: 0 20px 10px;
+          
+        &:nth-child(1){
+          padding-top: 10px;
+        }
+          .left_content{
+            p{
+              font-size: 12px;
+            }
+            .week_date {
+              font-size: 12px;
+              color: #848484;
+            }
+          }
+          .right_content{
+            span{
+              color: #E7FE55;
+              font-size: 12px;
+            }
+          }
+        }
+        .seperation{
+          hr{
+            // border: 1px solid #474747;
+            border: none;
+            height: 0.5px;
+            background-color: #474747;
+            margin: 0 20px;
+          }
+        }
+      }
+      .hidden{
+        display: none;
       }
     }
   }
-  .total {
-    padding: 0 10px;
-    .totalName {
-      font-size: 28px;
-      font-weight: 600;
-    }
-    .totalValue {
-      font-size: 38px;
-      font-weight: 700;
-      color: @common-color1;
-    }
-    .unit {
-      font-size: 25px;
-      font-weight: 400;
-      color: #7A7A7A;
-      margin-left: 5px;
-    }
-    .whatIsIt{
-      text-decoration: underline;
-      color: #A3A3A3;
-    }
-    .whatIsItCard, .courseQuantityCard{
-      margin-top: 6px;
-      padding: 14px;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      background-color: #2C2C2C;
-      border-radius: 9px;
-      margin-bottom: 15px;
-      span{
-        font-size: 12px;
-        color: #fff;
 
-      }
-    }
-  }
-  .realQR{
-    margin-top: 15px;
-    padding: 0 10px;
-    .realQRName {
-      font-size: 28px;
-      font-weight: 600;
-    }
-    .whatIsItCard, .courseQuantityCard{
-      margin-top: 6px;
-      padding: 14px;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      background-color: #2C2C2C;
-      border-radius: 9px;
-      margin-bottom: 15px;
-      span{
-        font-size: 12px;
-        color: #fff;
 
-      }
-    }
-    .realQRValue {
-      font-size: 38px;
-      font-weight: 700;
-      color: @common-color1;
-    }
-    .unit {
-      font-size: 25px;
-      font-weight: 400;
-      color: #7A7A7A;
-      margin-left: 5px;
-    }
-    .whatIsIt{
-      text-decoration: underline;
-      color: #A3A3A3;
-    }
-  }
+  // .balans {
+  //   margin-top: 14px;
+  //   padding: 0 10px;
+  //   .balansName {
+  //     font-size: 28px;
+  //     font-weight: 600;
+  //   }
+  //   .balansValue {
+  //     font-size: 38px;
+  //     font-weight: 700;
+  //     color: @common-color1;
+  //   }
+  //   .unit {
+  //     font-size: 25px;
+  //     font-weight: 400;
+  //     color: #7A7A7A;
+  //     margin-left: 5px;
+  //   }
+  //   .statistic {
+  //     margin-top: 4px;
+  //     font-size: 28px;
+  //     font-weight: 400;
+  //   }
+  //   .whatIsIt{
+  //     text-decoration: underline;
+  //     color: #A3A3A3;
+  //   }
+  //   .whatIsItCard, .courseQuantityCard{
+  //     margin-top: 6px;
+  //     padding: 14px;
+  //     display: flex;
+  //     flex-direction: column;
+  //     gap: 30px;
+  //     background-color: #2C2C2C;
+  //     border-radius: 9px;
+  //     margin-bottom: 15px;
+  //     span{
+  //       font-size: 12px;
+  //       color: #fff;
+
+  //     }
+  //   }
+  // }
+  // .total {
+  //   padding: 0 10px;
+  //   .totalName {
+  //     font-size: 28px;
+  //     font-weight: 600;
+  //   }
+  //   .totalValue {
+  //     font-size: 38px;
+  //     font-weight: 700;
+  //     color: @common-color1;
+  //   }
+  //   .unit {
+  //     font-size: 25px;
+  //     font-weight: 400;
+  //     color: #7A7A7A;
+  //     margin-left: 5px;
+  //   }
+  //   .whatIsIt{
+  //     text-decoration: underline;
+  //     color: #A3A3A3;
+  //   }
+  //   .whatIsItCard, .courseQuantityCard{
+  //     margin-top: 6px;
+  //     padding: 14px;
+  //     display: flex;
+  //     flex-direction: column;
+  //     gap: 30px;
+  //     background-color: #2C2C2C;
+  //     border-radius: 9px;
+  //     margin-bottom: 15px;
+  //     span{
+  //       font-size: 12px;
+  //       color: #fff;
+
+  //     }
+  //   }
+  // }
+  // .realQR{
+  //   margin-top: 15px;
+  //   padding: 0 10px;
+  //   .realQRName {
+  //     font-size: 28px;
+  //     font-weight: 600;
+  //   }
+  //   .whatIsItCard, .courseQuantityCard{
+  //     margin-top: 6px;
+  //     padding: 14px;
+  //     display: flex;
+  //     flex-direction: column;
+  //     gap: 30px;
+  //     background-color: #2C2C2C;
+  //     border-radius: 9px;
+  //     margin-bottom: 15px;
+  //     span{
+  //       font-size: 12px;
+  //       color: #fff;
+
+  //     }
+  //   }
+  //   .realQRValue {
+  //     font-size: 38px;
+  //     font-weight: 700;
+  //     color: @common-color1;
+  //   }
+  //   .unit {
+  //     font-size: 25px;
+  //     font-weight: 400;
+  //     color: #7A7A7A;
+  //     margin-left: 5px;
+  //   }
+  //   .whatIsIt{
+  //     text-decoration: underline;
+  //     color: #A3A3A3;
+  //   }
+  // }
+
+
   .currency{
     margin-top: 15px;
     display: flex;
