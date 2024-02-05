@@ -726,7 +726,7 @@
                       display: flex;
                       align-items: center;
                       gap: 10px;
-                      width: 100%;
+                      // width: 100%;
                       .user_photo{
                           background-image: url(img/user-1.png);
                           background-size: contain;
@@ -748,9 +748,17 @@
                           }
                       }
                   }
-                  .stars{
-                      display: flex;
-                      justify-content: space-between;
+                  .user_date_stars{
+                    .sum{
+                      font-weight: 700;
+                      font-size: 12px;
+                      text-align: right;
+                    }
+                    .stars{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
                   }
               }
               .comment{
@@ -762,7 +770,7 @@
                   color: #585858;
                   margin-top: 5px;
                   display: flex;
-                  justify-content: flex-end;
+                  justify-content: flex-start;
               }
               .hide{
                   margin: 0 auto;
@@ -775,8 +783,8 @@
               }
               .sub_comment_block{
                   padding-left: 10px;
-                  // padding-top: 5px;
-                  display: none;
+                  padding-top: 10px;
+                  // display: none;
                   gap: 20px;
                   .line_arrow{
                       height: 100%;
@@ -801,8 +809,11 @@
                           color: #585858;
                           margin-top: 5px;
                           display: flex;
-                          justify-content: flex-end;
+                          justify-content: flex-start;
                       }                    
+                  }
+                  .sub_comment{
+                    padding-left: 25px;
                   }
               }
           }

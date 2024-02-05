@@ -38,30 +38,30 @@ $(document).ready(function() {
 		});
 
 
-		$(".hide").click(function(){
-			var mainComment = $(this).closest(".main_comment");
+		// $(".hide").click(function(){
+		// 	var mainComment = $(this).closest(".main_comment");
 		
-			// Теперь mainComment - это ваш родительский блок .main_comment
-			mainComment.find(".sub_comment_block").toggleClass("hidden");
+		// 	// Теперь mainComment - это ваш родительский блок .main_comment
+		// 	mainComment.find(".sub_comment_block").toggleClass("hidden");
 		
-			// Поворот элемента с классом "hide" на 180 градусов
-			$(this).toggleClass("rotate180");
+		// 	// Поворот элемента с классом "hide" на 180 градусов
+		// 	$(this).toggleClass("rotate180");
 		
-			// Пересчитайте высоту и установите новую высоту для элемента с классом "line"
-			var sourceElements = mainComment.find(".sub_comment");
-			if (sourceElements.length > 0) {
-				var sourceHeight = sourceElements[0].clientHeight;
+		// 	// Пересчитайте высоту и установите новую высоту для элемента с классом "line"
+		// 	var sourceElements = mainComment.find(".sub_comment");
+		// 	if (sourceElements.length > 0) {
+		// 		var sourceHeight = sourceElements[0].clientHeight;
 		
-				var targetElements = mainComment.find(".line");
-				if (targetElements.length > 0) {
-					targetElements[0].style.height = sourceHeight + "px";
-				} else {
-					console.error("Элементы с классом 'line' не найдены.");
-				}
-			} else {
-				console.error("Элементы с классом 'sub_comment' не найдены.");
-			}
-		});
+		// 		var targetElements = mainComment.find(".line");
+		// 		if (targetElements.length > 0) {
+		// 			targetElements[0].style.height = sourceHeight + "px";
+		// 		} else {
+		// 			console.error("Элементы с классом 'line' не найдены.");
+		// 		}
+		// 	} else {
+		// 		console.error("Элементы с классом 'sub_comment' не найдены.");
+		// 	}
+		// });
 		
 		$(document).ready(function() {
 			// Добавляем обработчик события клика к каждому элементу с классом .total_head

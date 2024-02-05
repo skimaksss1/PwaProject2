@@ -143,6 +143,121 @@
       }
     }
   }
+
+
+  .total_cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+    .total_card{
+      background-color: #292929;
+      border-radius: 10px;
+      .total_head{
+        background-color: #2C2C2C;
+        border-radius: 10px;
+        padding: 26px 20px;
+        display: flex;
+        justify-content: space-between;
+        .left_contnent{
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          img{
+            flex-shrink: 0;
+            width: 38px;
+            height: 38px;
+          }
+          .title{
+            flex-shrink: 0;
+            line-height: 100%;
+            p{
+              font-size: 16px;
+              font-weight: 600;
+            }
+            span{
+              font-size: 12px;
+              color: #E7FE55;
+              font-weight: 600;
+            }
+          }
+        }
+        .right_content{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .summa{
+            color: #E7FE55;
+            font-size: 20px;
+            font-weight: 700;
+            .measurement{
+              font-weight: 500;
+              font-size: 20px;
+              color: #7A7A7A;
+              margin-left: 5px;
+            }
+          }
+          .ed{
+            font-size: 10px;
+            font-weight: 600;
+            margin-left: auto;
+            color: #727272;
+          }
+        }
+      }
+      .total_content {
+        height: 200px;
+        overflow: auto;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        clip-path: content-box;
+        
+        .total_list{
+          .week{
+            display: flex;
+            justify-content: space-between;
+            align-items:flex-end;
+            
+            &:nth-child(1){
+              // padding-top: 10px;
+            }
+            .left_content{
+              p{
+                font-size: 12px;
+              }
+              .week_date {
+                font-size: 12px;
+                color: #848484;
+              }
+            }
+            .right_content{
+              span{
+                color: #E7FE55;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .seperation{
+          hr{
+            // border: 1px solid #474747;
+            border: none;
+            height: 0.5px;
+            background-color: #474747;
+          }
+        }
+      }
+      .hidden{
+        display: none;
+      }
+    }
+  }
+
+
+
+
   .yellowBtn{
     width: 340px;
     height: 35px;
@@ -203,152 +318,8 @@
       flex-shrink: 0;
     }
   }
-  .award {
-    padding: 0 10px;
-    margin-top: 14px;
-    .total_cards{
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      .total_card{
-        background-color: #292929;
-        border-radius: 10px;
-        .total_head{
-          background-color: #2C2C2C;
-          border-radius: 10px;
-          padding: 26px 20px;
-          display: flex;
-          justify-content: space-between;
-          .left_contnent{
-            display: flex;
-            gap: 10px;
-            img{
-              flex-shrink: 0;
-            }
-            .title{
-              flex-shrink: 0;
-              p{
-                font-size: 16px;
-                font-weight: 600;
-              }
-              span{
-                font-size: 12px;
-                color: #848484;
-              }
-            }
-          }
-          .right_content{
-            color: #E7FE55;
-            font-size: 28px;
-            font-weight: 600;
-            .summa {
-              .ed{
-                font-size: 16px;
-                color: #848484;
-                font-weight: 500;
-              }
-            }
-          }
-        }
-        .total_content {
-          .week{
-            display: flex;
-            justify-content: space-between;
-            align-items:flex-end;
-            padding: 0 20px 10px;
-            
-          &:nth-child(1){
-            padding-top: 10px;
-          }
-            .left_content{
-              p{
-                font-size: 12px;
-              }
-              .week_date {
-                font-size: 12px;
-                color: #848484;
-              }
-            }
-            .right_content{
-              span{
-                color: #E7FE55;
-                font-size: 12px;
-              }
-            }
-          }
-          .seperation{
-            hr{
-              // border: 1px solid #474747;
-              border: none;
-              height: 0.5px;
-              background-color: #474747;
-              margin: 0 20px;
-            }
-          }
-        }
-        .hidden{
-          display: none;
-        }
-      }
-    }
-    .awardName {
-      font-size: 28px;
-      font-weight: 600;
-    }
-    .awardValue {
-      font-size: 58px;
-      font-weight: 700;
-      color: @common-color1;
-    }
-    .unit {
-      font-size: 25px;
-      font-weight: 400;
-      color: #7A7A7A;
-      margin-left: 5px;
-    }
-    .paymentHistory {
-      margin-top: 4px;
-      font-size: 28px;
-      font-weight: 400;
-    }
-    .paymentList{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 6px;
-      margin: 10px 0;
-      .historyLine{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .paymentName{
-          display: flex;
-          align-items: center;
-          .paymentNumber{
-            width: 17px;
-            height: 17px;
-            background-color: #2C2C2C;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 17px;
-            font-weight: 500;
-            margin-right: 20px;
-          }
-          .paymentSum{
-            font-size: 24px;
-          }
-        }
-        .paymentDate{
-          color: #5C5C5C;
-        }
-      }
-    }
-  }
   .paymentTerms{
-    padding: 0 10px;
+    // padding: 0 10px;
     &>span{
       display: block;
       font-size: 12px;
@@ -372,7 +343,7 @@
     }
   }
   .useTerms{
-    padding: 0 10px;
+    // padding: 0 10px;
     margin-top: 15px;
     .useTermsName {
       font-size: 28px;
@@ -553,7 +524,7 @@
     }
   }
   .target{
-    padding: 0 10px;
+    // padding: 0 10px;
     padding-top: 40px;
     .targetTitle{
       display: block;
@@ -613,7 +584,7 @@
     }
   }
   .bonus{
-    padding: 0 10px;
+    // padding: 0 10px;
     padding-top: 20px;
     .bonusdName{
       font-size: 28px;
@@ -658,7 +629,7 @@
     height: auto;
     background-color: #2C2C2C;
     border-radius: 10px;
-    margin: 20px 10px;
+    margin: 20px 0px;
     .title{
       background-color: #C63838;
       width: 100%;
@@ -680,8 +651,8 @@
     }
   }
   .informAccordion{
-    padding: 0 10px;
-    padding-top: 25px;
+    // padding: 0 10px;
+    // padding-top: 25px;
     padding-bottom: 8px;
     .informItem{
       display: flex;
@@ -858,10 +829,10 @@
         align-items: flex-start;
         gap: 15px;
       }
-        span{
-            display: block;
-            width: 90%;
-        }
+        // span{
+        //     display: block;
+        //     width: 90%;
+        // }
         .disclosureDate{
             margin-left: auto;
             color: #8D8D8D;
@@ -996,19 +967,47 @@
   }
   .shopHistory{
     .shopHistory_title{
-      font-size: 28px;
-      font-weight: 600;
+      font-size: 24px;
+      font-weight: 500;
+      color: #858585;
     }
     .shop_card{
-      .shop_title{
-        font-size: 24px;
-        color: #E7FE55;
-        font-weight: 600;
-        margin: 10px 0;
+      .shop_info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1F1F1F;
+        border-radius: 10px;
+        padding: 15px 20px;
+        .shop_title{
+          font-size: 20px;
+          color: #E7FE55;
+          font-weight: 600;
+        }
+        .shop_sum_date{
+          flex-shrink: 0;    
+          display: flex;
+          flex-direction: column;
+          .name{
+            color: #E7FE55;
+            font-size: 20px;
+            font-weight: 600;
+            width: unset;
+            text-align: right;
+          }
+          .date{
+            font-size: 10px;
+            color: #A9A9A9;
+            text-align: right;
+            width: unset;
+          }
+        }
       }
       .evaluation{
         display: flex;
         justify-content: space-between;
+        margin: 10px 0;
+        align-items: center;
         .indicator{
           display: flex;
           gap: 10px;
@@ -1019,7 +1018,7 @@
           }
         }
         .save_btn{
-          color: #292929;
+          color: #555555;
         }
       }
       .comment_list{
