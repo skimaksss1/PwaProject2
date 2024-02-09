@@ -8,7 +8,7 @@
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-    <link rel="stylesheet/less" type="text/less" href="done.less" />
+    <link rel="stylesheet/less" type="text/less" href="confirm.less" />
     <!-- Скрипты не трогать -->
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
@@ -48,14 +48,15 @@
                         </div>
                         <div class="realSucces">
                             <div class="done">
-                                    <span class="doneTitle">Готово!</span>
-                                <div class="doneCircle">
-                                    <img src="img/done.svg" alt="">
-                                </div>
-                                <span>Оплата прошла успешно!</span>
+                                <span class="activeBonus">Вы активируете бонус в:</span>
+                                <span class="companyName">ТОО “QAZAQ REPUBLIC”</span>
+                                <span class="summa">15 000₸</span>
                                 </div>
                                 <div class="inMain">
-                                    {{tr('На главную')}}
+                                    {{tr('Подтвердить')}}
+                                </div>
+                                <div class="inMainCanceled">
+                                    {{tr('Отменить')}}
                                 </div>
                         </div>
                     </div>
