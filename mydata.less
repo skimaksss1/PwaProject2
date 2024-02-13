@@ -810,12 +810,48 @@
                           margin-top: 5px;
                           display: flex;
                           justify-content: flex-start;
-                      }                    
+                      }       
+                      
                   }
                   .sub_comment{
                     padding-left: 25px;
                   }
-              }
+              }              
+              .textarea_comment{
+                position: relative;
+                textarea{
+                  width: 100%;
+                  max-width: 100%;
+                  min-width: 100%;
+                  height: 100px;
+                  background-color: #3E3E3E;
+                  margin: 10px 0;
+                  outline: none;
+                  border: none;
+                  border-radius: 10px;
+                  color: #fff;
+                  padding: 10px;
+                  padding-bottom: 35px;
+                }
+                .send_comment_btn{
+                  background-color: #E7FE55;
+                  border-radius: 10px;
+                  padding: 6px 10px;
+                  color: #000;
+                  font-size: 10px;
+                  font-weight: 700;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: fit-content;
+                  position: absolute;
+                  bottom: 25px;
+                  right: 10px;
+                  &:active{
+                    background-color: #BAD707;
+                  }
+                }
+              }             
           }
       }
     }
