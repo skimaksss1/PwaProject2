@@ -228,22 +228,34 @@
         .discount{
             width: 100%;
             height: 60px;
-            background-color: #9F55FE;
-            border-radius: 58px;
-            padding: 11px 28px;
+            background-color: #333333;
+            border-radius: 20px;
+            padding: 11px 15px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border: 1px #fff solid;
             p{
-                font-weight: 700;
-                font-size: 20px;
-                width: 200px;
+                font-weight: 600;
+                font-size: 16px;
                 line-height: 96.9%;
             }
-            span{
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 96.9%;
+            .disc_procent{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                hr{
+                    width: 1px;
+                    height: 100%;
+                    background-color: #fff;
+                    margin-right: 15px;
+                    margin-left: 10px;
+                }
+                span{
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 96.9%;
+                }
             }
         }
     }
