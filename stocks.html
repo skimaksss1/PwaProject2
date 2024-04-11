@@ -33,10 +33,46 @@
                 <div class="container">
                     <div class="mainLine">
                         <div class="leftBtn-mainLine">
-                            <img src="img/backpage.svg" alt="">             
+                            <img src="img/location.svg" alt="">    
+                            <span class="active_li">Астана</span> 
+                            <ul>
+                                <a href="" class="location_place">
+                                    <li>Павлодар</li>
+                                </a>
+                                <a href="" class="location_place">
+                                    <li>Алматы</li>
+                                </a>
+                                <a href="" class="location_place">
+                                    <li>Актобе</li>
+                                </a>
+                                <a href="" class="location_place">
+                                    <li>Павлодар</li>
+                                </a>
+                                <a href="" class="location_place">
+                                    <li>Алматы</li>
+                                </a>
+                                <a href="" class="location_place">
+                                    <li>Актобе</li>
+                                </a>
+                            </ul>
                         </div>
                         <div class="pageTitle">
-                            <p>{{tr('Лента')}}</p>
+                            <p>{{tr('Акции')}}</p>
+                            <img src="img/polygonYellow.svg" alt="">
+                            <ul>
+                                <a href="" class="title_tag">
+                                    <li>Партнеры</li>
+                                </a>
+                                <a href="" class="title_tag active">
+                                    <li>Акции</li>
+                                </a>
+                                <a href="" class="title_tag">
+                                    <li>Магазин</li>
+                                </a>
+                                <a href="" class="title_tag">
+                                    <li>Избранное</li>
+                                </a>
+                            </ul>
                         </div>
                         <!-- <div class="rightBtn-mainLine">
                             <img src="img/sorting.svg" alt="">
@@ -90,31 +126,33 @@
             <section class="separation">
                 <hr>
             </section>
-            <section class="dropDown">
+            <div class="crumbs_list">
                 <div class="container">
-                    <!-- <dl class="dropdown">
-                        <dt><a><span>Партнеры</span></a></dt>
-                            <dd>
-                                <ul>
-                                    <li><a class="default">Партнеры</a></li>
-                                    <li><a>Акции</a></li>
-                                    <li><a>Магазин</a></li>
-                                    <li><a>Избранное</a></li>
-                                </ul>
-                            </dd>
-                    </dl> -->
-                    <div class="dropdownSelect">
-                        <div class="selctActive">
-                            <span>{{tr('Акции')}}</span>
-                        </div>
-                        <div class="selecting" style="display: none;">
+                    <div class="line_down"></div>
+                    <ul>
+                        <li class="first_list">Электроника
                             <ul>
-                                <li>{{tr('Партнеры')}}</li>
-                                <li>{{tr('Акции')}}</li>
-                                <li>{{tr('Магазиг')}}</li>
-                                <li>{{tr('Избранное')}}</li>
+                                <li> <input type="radio" name="radio" id="radio"> <label for="radio">Телефоны и смарт часы</label></li>
+                                <li> <input type="radio" name="radio" id="radio1"> <label for="radio1">Наушники и аудиотехника</label></li>
+                                <li> <input type="radio" name="radio" id="radio2"> <label for="radio2">Ноутбуки, планшеты и электронные книги</label></li>
+                                <li> <input type="radio" name="radio" id="radio3"> <label for="radio3">Телевизоры и видеотехника</label></li>
+                                <li> <input type="radio" name="radio" id="radio4"> <label for="radio4">Комплектующие для ПК</label></li>
+                                <li> <input type="radio" name="radio" id="radio5"> <label for="radio">Компьютеры</label></li>
                             </ul>
-                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="bred_crumbs">
+                <div class="container">
+                    <div class="crumbs">
+                        <div class="crumb">Электроника</div>
+                        <span>-</span>
+                        <div class="crumb">Компьютеры</div>
+                        <span>-</span>
+                        <div class="crumb">Материнские платы</div>
+                        <span>-</span>
+                        <div class="crumb">Просто текст для просмотра длинной плашки</div>
                     </div>
                 </div>
             </section>
