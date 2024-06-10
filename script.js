@@ -7,6 +7,12 @@ $(document).ready(function() {
 		$(".dropdownSelect2").click(function(){
 			$(".selecting2").toggle();
 		});
+		$(".dropdownSelect3").click(function(){
+			$(".selecting3").toggle();
+		});
+		$(".dropdownSelect4").click(function(){
+			$(".selecting4").toggle();
+		});
 		$(".termsName").click(function(){
 			$(".termsCard").toggle();
 		});
