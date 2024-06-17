@@ -110,3 +110,19 @@ $("body").on('click', '.eyeBtnOpen', function() {
 
 
 
+function setAspectRatio(element, ratioWidth, ratioHeight) {
+	const width = element.offsetWidth; // Получаем ширину элемента
+	const height = (width * ratioHeight) / ratioWidth; // Рассчитываем высоту в соотношении 4:3
+	element.style.height = `${height}px`; // Устанавливаем высоту элемента
+  }
+
+  // Получаем все элементы с классом 'block'
+  const blocks = document.querySelectorAll('.prod_img');
+
+  // Устанавливаем высоту для всех элементов с классом 'block'
+  blocks.forEach(block => setAspectRatio(block, 4, 3));
+
+  // При изменении размера окна, пересчитываем высоту для всех элементов
+  window.addEventListener('resize', () => {
+	blocks.forEach(block => setAspectRatio(block, 4, 3));
+  });
