@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="windows-1251" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="format-detection" content="telephone=no" />
         <title>Document</title>
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-    <link rel="stylesheet/less" type="text/less" href="vacancy.less" />
-    <!-- Скрипты не трогать -->
-    <script src="https://cdn.jsdelivr.net/npm/less"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
-    <script>
-      //скрипты не трограть.
-      window.addEventListener("load", () => {
-        const app = Vue.createApp({
-          methods: {
-            tr(k) {
-              return k;
+        <link rel="stylesheet/less" type="text/less" href="vacancy.less" />
+        <!-- Скрипты не трогать -->
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+        <script>
+        //скрипты не трограть.
+        window.addEventListener("load", () => {
+            const app = Vue.createApp({
+            methods: {
+                tr(k) {
+                return k;
+                },
             },
-          },
+            });
+            app.mount("#dont_use_this_id_in_style");
         });
-        app.mount("#dont_use_this_id_in_style");
-      });
-    </script>
-  </head>
+        </script>
+    </head>
     <body>
         <div class="page" id="dont_use_this_id_in_style">
             <div class="brow_empty"></div>
@@ -35,10 +35,10 @@
                         <div class="leftBtn-mainLine">
                             <a href="card.html">
                                 <img src="img/backpage.svg" alt="">             
-                            </a>        
+                            </a>           
                         </div>
                         <div class="pageTitle">
-                            <p>{{tr('Вакансии')}}</p>
+                            <p>{{tr('ТОО App Trade')}}</p>
                         </div>
                         <!-- <div class="lang">
                             <span>KZ</span>
@@ -50,45 +50,65 @@
                     </div>
                 </div>
             </section>
+
             <div class="content">
                 <div class="container">
-                    <div class="addAction">
-
-                        <div class="inputs">
-                            <input type="text" name="" id="" placeholder="Наименование вакансии">
-                            <div class="textarea">
-                                <textarea class="captionAction" name="" id="" cols="30" rows="10" placeholder="Описание товара"></textarea>
-                                <span>0/140</span>
+                    <div class="separation">
+                        <hr>
+                    </div>
+                    <span class="salesCompany_name">Вакансии</span>
+                    <div class="vacancy_cards">
+                        <div class="vacancy_card">
+                            <div class="vacancy_name">
+                                <span>Тех.персонал</span>
+                                <img src="img/arrow.png" alt="">
                             </div>
-                            <input type="text" name="" id="" placeholder="Требуемый опыт">
-                            <div class="dropdownSelect">
-                                <div class="selctActive">
-                                    <span>Вид занятости</span>
-                                </div>
-                                <div class="selecting" style="display: none;">
-                                    <ul>
-                                        <li>Вид занятости</li>
-                                        <li>Постоянное</li>
-                                        <li>Гибкий график</li>
-                                        <li>Удаленная работа</li>
-                                        <li>Аутсорсинг</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <input type="text" name="" id="" placeholder="Диапозон заработной платы">
-                            <div class="inputsBlock">
-                                <div class="checkboxLine chbxList">
-                                    <div class="squaredThree">
-                                        <input type="checkbox" value="None" id="chkbx5" name="chkbx5" checked />
-                                        <label for="chkbx5"></label>
+                            <div class="vacancy_infos">
+                                <div class="vacancy_info">
+                                    <div class="vacancy_title">Описание:</div>
+                                    <div class="vacancy_description">
+                                        Lorem ipsum dolor sit amet consectetur. Sapien congue non massa id nibh turpis congue turpis.
                                     </div>
-                                    <span>Официальное трудоустройство </span>
+                                </div>
+                                <div class="vacancy_info">
+                                    <div class="vacancy_title">Требуемый опыт:</div>
+                                    <div class="vacancy_description">
+                                        Lorem ipsum dolor sit amet consectetur. Tempor placerat vitae risus iaculis. Scelerisque porta eu nulla est eget tempus donec quam tortor. Ullamcorper quam tempus.
+                                    </div>
+                                </div>
+                                <div class="vacancy_info">
+                                    <div class="vacancy_title">Вид занятости:</div>
+                                    <div class="vacancy_description">
+                                        Полная занятость, гибкий график
+                                    </div>
+                                </div>
+                                <div class="vacancy_info">
+                                    <div class="vacancy_title">Заработная плата:</div>
+                                    <div class="vacancy_description">
+                                        от 120 000₸ - до 220 000₸
+                                    </div>
                                 </div>
                             </div>
-                            
-                        <a href="#" class="addActionBtn">{{tr('Отправить')}}</a>
+                            <div class="vacancy_btn">Оставить отклик</div>
                         </div>
-
+                        <div class="vacancy_card">
+                            <div class="vacancy_name">
+                                <span>Фотограф</span>
+                                <img src="img/arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="vacancy_card">
+                            <div class="vacancy_name">
+                                <span>Бармен</span>
+                                <img src="img/arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="vacancy_card">
+                            <div class="vacancy_name">
+                                <span>Системный администратор</span>
+                                <img src="img/arrow.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
