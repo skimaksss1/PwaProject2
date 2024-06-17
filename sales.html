@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="windows-1251" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>Document</title>
+    
+        <link rel="stylesheet/less" type="text/less" href="common.less" />
+        <!-- для каждой страницы свой less файл. -->
+        <link rel="stylesheet/less" type="text/less" href="sales.less" />
+        <!-- Скрипты не трогать -->
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+        <script>
+        //скрипты не трограть.
+        window.addEventListener("load", () => {
+            const app = Vue.createApp({
+            methods: {
+                tr(k) {
+                return k;
+                },
+            },
+            });
+            app.mount("#dont_use_this_id_in_style");
+        });
+        </script>
+    </head>
+    <body>
+        <div class="page" id="dont_use_this_id_in_style">
+            <div class="brow_empty"></div>
+            <section class="main">
+                <div class="container">
+                    <div class="mainLine">
+                        <div class="leftBtn-mainLine">
+                            <img src="img/backpage.svg" alt="">             
+                        </div>
+                        <div class="pageTitle">
+                            <p>{{tr('ТОО App Trade')}}</p>
+                        </div>
+                        <!-- <div class="lang">
+                            <span>KZ</span>
+                        </div> -->
+                        <!-- <div class="rightBtn-mainLine">
+                            <img src="img/sorting.svg" alt="">
+                            <img src="img/filtering.svg" alt="">      
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+            <div class="content">
+                <div class="container">
+                    <div class="separation">
+                        <hr>
+                    </div>
+                    <!-- <span class="salesCompany_name">ТОО App Trade</span> -->
+                    <div class="sales_cards">
+                        <div class="sales_card">
+                            <div class="left_card">
+                                <span class="sales_title">Скидка на оборудование</span>
+                                <span class="sales_date">01.01.2024-31.01.2024</span>
+                            </div>
+                            <div class="sales_value">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                        <div class="sales_card">
+                            <div class="left_card">
+                                <span class="sales_title">Скидка на монтажные работы</span>
+                                <span class="sales_date">01.01.2024-31.01.2024</span>
+                            </div>
+                            <div class="sales_value">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                        <div class="sales_card">
+                            <div class="left_card">
+                                <span class="sales_title">Скидка на оборудование</span>
+                                <span class="sales_date">01.01.2024-31.01.2024</span>
+                            </div>
+                            <div class="sales_value">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                        <div class="sales_card">
+                            <div class="left_card">
+                                <span class="sales_title">Скидка на монтажные работы</span>
+                                <span class="sales_date">01.01.2024-31.01.2024</span>
+                            </div>
+                            <div class="sales_value">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                        <div class="sales_card">
+                            <div class="left_card">
+                                <span class="sales_title">Скидка на оборудование</span>
+                                <span class="sales_date">01.01.2024-31.01.2024</span>
+                            </div>
+                            <div class="sales_value">
+                                <span>10%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
