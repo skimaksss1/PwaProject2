@@ -8,7 +8,7 @@
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-        <link rel="stylesheet/less" type="text/less" href="detailTovar.less" />
+        <link rel="stylesheet/less" type="text/less" href="editTovar.less" />
         <!-- Скрипты не трогать -->
         <script src="https://cdn.jsdelivr.net/npm/less"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
@@ -48,6 +48,18 @@
                     </div>
                 </div>
             </section>
+
+            <div class="filtr">
+                <div class="container">
+                    <span>Вы уверены что хотите удалить?</span>
+                    <div class="redBtn">
+                        {{tr('Удалить')}}
+                    </div>
+                    <div class="whiteBtn">
+                        {{tr('Отменить')}}
+                    </div>
+                </div>
+            </div>
 
             <div class="content">
                 <div class="container">
@@ -115,7 +127,10 @@
                     </div>
                     
                     <div class="addActionBtn">
-                        {{tr('Добавить в корзину')}}
+                        {{tr('Редактировать')}}
+                    </div>
+                    <div class="redBtn">
+                        {{tr('Удалить')}}
                     </div>
                     
                     <div class="comment_list">

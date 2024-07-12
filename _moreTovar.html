@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="windows-1251" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>Document</title>
+    
+        <link rel="stylesheet/less" type="text/less" href="common.less" />
+        <!-- для каждой страницы свой less файл. -->
+        <link rel="stylesheet/less" type="text/less" href="_moreTovar.less" />
+        <!-- Скрипты не трогать -->
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+        <script>
+        //скрипты не трограть.
+        window.addEventListener("load", () => {
+            const app = Vue.createApp({
+            methods: {
+                tr(k) {
+                return k;
+                },
+            },
+            });
+            app.mount("#dont_use_this_id_in_style");
+        });
+        </script>
+    </head>
+    <body>
+        <div class="page" id="dont_use_this_id_in_style">
+            <div class="brow_empty"></div>
+            <section class="main">
+                <div class="container">
+                    <div class="mainLine">
+                        <div class="leftBtn-mainLine">
+                            <a href="myContent.html"><img src="img/backpage.svg" alt=""></a>               
+                        </div>
+                        <div class="pageTitle">
+                            <p>{{tr('Архив товаров')}}</p>
+                        </div>
+                        <!-- <div class="lang">
+                            <span>KZ</span>
+                        </div> -->
+                        <!-- <div class="rightBtn-mainLine">
+                            <img src="img/sorting.svg" alt="">
+                            <img src="img/filtering.svg" alt="">      
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <div class="content">
+                <div class="container">
+                    <div class="addAction">
+                        <div class="title"><div><span class="addActionTitle">{{tr('Архив товаров')}}</span> <span class="addActionTitle">(5/100)</span></div>
+                        <!-- <img class="yellowPolygon" src="img/polygonYellow.svg" alt=""> -->
+                    </div>
+                        <div class="prodects_grid">
+                            <div class="product">
+                                <div class="prod_card">
+                                    <div class="moderation">
+                                        <img src="img/clock.svg" alt="">
+                                        <span>На модерации</span>
+                                    </div>
+                                    <div class="del"><img src="img/del.png" alt=""></div>
+                                    <div class="edit"><img src="img/edit.png" alt=""></div>
+                                    <div class="prod_img"></div>
+                                </div>
+                                <div class="price">
+                                    <div>
+                                        <span class="standert_price">700₸</span>
+                                        <span class="sale_price">1000₸</span>
+                                    </div>
+                                    <span class="sale">30%</span>
+                                </div>
+                                <div class="prod_name">Наушники AirPods</div>
+                            </div>
+                            <div class="product">
+                                <div class="prod_card">
+                                    <!-- <div class="moderation">
+                                        <img src="img/clock.svg" alt="">
+                                        <span>На модерации</span>
+                                    </div> -->
+                                    <div class="del"><img src="img/del.png" alt=""></div>
+                                    <div class="edit"><img src="img/edit.png" alt=""></div>
+                                    <div class="prod_img"></div>
+                                </div>
+                                <div class="price">
+                                    <div>
+                                        <span class="standert_price">700₸</span>
+                                        <span class="sale_price">1000₸</span>
+                                    </div>
+                                    <span class="sale">30%</span>
+                                </div>
+                                <div class="prod_name">Наушники AirPods</div>
+                            </div>
+                            <div class="product">
+                                <div class="prod_card">
+                                    <!-- <div class="moderation">
+                                        <img src="img/clock.svg" alt="">
+                                        <span>На модерации</span>
+                                    </div> -->
+                                    <div class="del"><img src="img/del.png" alt=""></div>
+                                    <div class="edit"><img src="img/edit.png" alt=""></div>
+                                    <div class="prod_img"></div>
+                                </div>
+                                <div class="price">
+                                    <div>
+                                        <span class="standert_price">700₸</span>
+                                        <span class="sale_price">1000₸</span>
+                                    </div>
+                                    <span class="sale">30%</span>
+                                </div>
+                                <div class="prod_name">Наушники AirPods</div>
+                            </div>
+                            <div class="product">
+                                <div class="prod_card">
+                                    <!-- <div class="moderation">
+                                        <img src="img/clock.svg" alt="">
+                                        <span>На модерации</span>
+                                    </div> -->
+                                    <div class="del"><img src="img/del.png" alt=""></div>
+                                    <div class="edit"><img src="img/edit.png" alt=""></div>
+                                    <div class="prod_img"></div>
+                                </div>
+                                <div class="price">
+                                    <div>
+                                        <span class="standert_price">700₸</span>
+                                        <span class="sale_price">1000₸</span>
+                                    </div>
+                                    <span class="sale">30%</span>
+                                </div>
+                                <div class="prod_name">Наушники AirPods</div>
+                            </div>
+                            <div class="product">
+                                <div class="prod_card">
+                                    <div class="moderation">
+                                        <img src="img/close.png" alt="">
+                                        <span>В архиве</span>
+                                    </div>
+                                    <div class="del"><img src="img/del.png" alt=""></div>
+                                    <div class="edit"><img src="img/edit.png" alt=""></div>
+                                    <div class="prod_img"></div>
+                                </div>
+                                <div class="price">
+                                    <div>
+                                        <span class="standert_price">700₸</span>
+                                        <span class="sale_price">1000₸</span>
+                                    </div>
+                                    <span class="sale">30%</span>
+                                </div>
+                                <div class="prod_name">Наушники AirPods</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>

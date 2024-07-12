@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="windows-1251" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>Document</title>
+    
+        <link rel="stylesheet/less" type="text/less" href="common.less" />
+        <!-- для каждой страницы свой less файл. -->
+        <link rel="stylesheet/less" type="text/less" href="_addTovar.less" />
+        <!-- Скрипты не трогать -->
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+        <script>
+        //скрипты не трограть.
+        window.addEventListener("load", () => {
+            const app = Vue.createApp({
+            methods: {
+                tr(k) {
+                return k;
+                },
+            },
+            });
+            app.mount("#dont_use_this_id_in_style");
+        });
+        </script>
+    </head>
+    <body>
+        <div class="page" id="dont_use_this_id_in_style">
+            <div class="brow_empty"></div>
+            <section class="main">
+                <div class="container">
+                    <div class="mainLine">
+                        <div class="leftBtn-mainLine">
+                            <a href="myContent.html"><img src="img/backpage.svg" alt=""></a>            
+                        </div>
+                        <div class="pageTitle">
+                            <p>{{tr('Добавить товар')}}</p>
+                        </div>
+                        <!-- <div class="lang">
+                            <span>KZ</span>
+                        </div> -->
+                        <!-- <div class="rightBtn-mainLine">
+                            <img src="img/sorting.svg" alt="">
+                            <img src="img/filtering.svg" alt="">      
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <div class="content">
+                <div class="container">
+                    
+                    <div class="addAction">
+                        <div class="imageGallery">
+                            <div class="cardItem">
+                                <div class="imageCard addImage" style=""></div>
+                            </div>
+                            <div class="cardItem">
+                                <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                            </div>
+                            <div class="cardItem">
+                                <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                            </div>
+                            <div class="cardItem">
+                                <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                            </div>
+                            <div class="cardItem">
+                                <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                            </div>
+                            <div class="cardItem">
+                                <div class="imageCard" style="background-image: url(img/imageCard.png);"></div>
+                            </div>
+                        </div>
+                        <div class="inputs">
+                            <input type="text" name="" id="" placeholder="Наименование товара">
+                            <div class="textarea">
+                                <textarea class="captionAction" name="" id="" cols="30" rows="10" placeholder="Описание товара"></textarea>
+                                <span>0/140</span>
+                            </div>
+                            
+                            <div class="dropdownSelect">
+                                <div class="selctActive">
+                                    <span>Категория товара</span>
+                                </div>
+                                <div class="selecting" style="display: none;">
+                                    <ul>
+                                        <li>Категория товара</li>
+                                        <li>Электроника</li>
+                                        <li>Автотовары</li>
+                                        <li>Красота и здоровье</li>
+                                        <li>Бытовая техника</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdownSelect2">
+                                <div class="selctActive">
+                                    <span>Страна-изготовитель</span>
+                                </div>
+                                <div class="selecting2" style="display: none;">
+                                    <ul>
+                                        <li>Страна-изготовитель </li>
+                                        <li>Казахстан</li>
+                                        <li>Россия</li>
+                                        <li>Китай</li>
+                                        <li>Германия</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type="text" name="" id="" placeholder="Бренд">
+                            <div class="dropdownSelect3">
+                                <div class="selctActive">
+                                    <span>Цвет</span>
+                                </div>
+                                <div class="selecting3" style="display: none;">
+                                    <ul>
+                                        <li>Цвет</li>
+                                        <li>Белый<div class="color_pick white"></div></li>
+                                        <li>Серый<div class="color_pick grey"></div></li>
+                                        <li>Черный<div class="color_pick black"></div></li>
+                                        <li>Коричневый<div class="color_pick brown"></div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="input_price">
+                                <input type="text" name="" id="" class="input_price" placeholder="Цена">
+                            </div>
+                            <div class="inputsBlock">
+                                <div class="checkboxLine chbxList">
+                                    <div class="squaredThree">
+                                        <input type="checkbox" value="None" id="chkbx1" name="chkbx1" checked />
+                                        <label for="chkbx1"></label>
+                                    </div>
+                                    <span>Добавить акцию </span>
+                                </div>
+                            </div>
+                            <div class="dropdownSelect4">
+                                <div class="selctActive">
+                                    <span>01.01.2024-31.01.2024</span>
+                                </div>
+                                <div class="selecting4" style="display: none;">
+                                    <ul>
+                                        <li>01.01.2024-31.01.2024</li>
+                                        <li>Здесь нужно установить какой нибудь multi date picker </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="input_price">
+                                <input type="text" name="" id="" class="input_price" placeholder="Цена по акции">
+                            </div>
+                            <div class="inputsBlock">
+                                <div class="checkboxLine chbxList">
+                                    <div class="squaredThree">
+                                        <input type="checkbox" value="None" id="chkbx2" name="chkbx2" checked />
+                                        <label for="chkbx2"></label>
+                                    </div>
+                                    <span>Распродажа </span>
+                                </div>
+                            </div>
+                            <div class="inputsBlock">
+                                <div class="checkboxLine chbxList">
+                                    <div class="squaredThree">
+                                        <input type="checkbox" value="None" id="chkbx3" name="chkbx3" checked />
+                                        <label for="chkbx3"></label>
+                                    </div>
+                                    <span>Можно в кредит </span>
+                                </div>
+                            </div>
+                            <div class="inputsBlock">
+                                <div class="checkboxLine chbxList">
+                                    <div class="squaredThree">
+                                        <input type="checkbox" value="None" id="chkbx4" name="chkbx4" checked />
+                                        <label for="chkbx4"></label>
+                                    </div>
+                                    <span>Бесплатная доставка по городу </span>
+                                </div>
+                            </div>
+                            <div class="inputsBlock">
+                                <div class="checkboxLine chbxList">
+                                    <div class="squaredThree">
+                                        <input type="checkbox" value="None" id="chkbx5" name="chkbx5" checked />
+                                        <label for="chkbx5"></label>
+                                    </div>
+                                    <span>Бесплатная доставка по Казахстану </span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="addActionBtn">{{tr('Добавить товар')}}</a>
+                        <a href="#" class="whiteBtn">{{tr('Предпросмотр товара')}}</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
