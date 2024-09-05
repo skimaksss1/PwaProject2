@@ -13,11 +13,6 @@
         align-items: center;
         position: relative;
         height: 35px;
-        .rightBtn-mainLine{
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
         .lang{
             font-size: 20px;
         }
@@ -32,8 +27,6 @@
         }
     }
 }
-
-
 .data{
   padding-top: 10px;
   .dataCard{
@@ -57,8 +50,8 @@
       .nameMail{
         .name{
           font-size: 22px;
-    font-weight: 600;
-    line-height: 22px;
+          font-weight: 600;
+          line-height: 22px;
         }
       }
       .edit{
@@ -179,7 +172,6 @@
       flex-shrink: 0;
     }
   }
-
   .total_cards{
     display: flex;
     flex-direction: column;
@@ -263,128 +255,6 @@
       }
     }
   }
-
-
-  // .balans {
-  //   margin-top: 14px;
-  //   padding: 0 10px;
-  //   .balansName {
-  //     font-size: 28px;
-  //     font-weight: 600;
-  //   }
-  //   .balansValue {
-  //     font-size: 38px;
-  //     font-weight: 700;
-  //     color: @common-color1;
-  //   }
-  //   .unit {
-  //     font-size: 25px;
-  //     font-weight: 400;
-  //     color: #7A7A7A;
-  //     margin-left: 5px;
-  //   }
-  //   .statistic {
-  //     margin-top: 4px;
-  //     font-size: 28px;
-  //     font-weight: 400;
-  //   }
-  //   .whatIsIt{
-  //     text-decoration: underline;
-  //     color: #A3A3A3;
-  //   }
-  //   .whatIsItCard, .courseQuantityCard{
-  //     margin-top: 6px;
-  //     padding: 14px;
-  //     display: flex;
-  //     flex-direction: column;
-  //     gap: 30px;
-  //     background-color: #2C2C2C;
-  //     border-radius: 9px;
-  //     margin-bottom: 15px;
-  //     span{
-  //       font-size: 12px;
-  //       color: #fff;
-
-  //     }
-  //   }
-  // }
-  // .total {
-  //   padding: 0 10px;
-  //   .totalName {
-  //     font-size: 28px;
-  //     font-weight: 600;
-  //   }
-  //   .totalValue {
-  //     font-size: 38px;
-  //     font-weight: 700;
-  //     color: @common-color1;
-  //   }
-  //   .unit {
-  //     font-size: 25px;
-  //     font-weight: 400;
-  //     color: #7A7A7A;
-  //     margin-left: 5px;
-  //   }
-  //   .whatIsIt{
-  //     text-decoration: underline;
-  //     color: #A3A3A3;
-  //   }
-  //   .whatIsItCard, .courseQuantityCard{
-  //     margin-top: 6px;
-  //     padding: 14px;
-  //     display: flex;
-  //     flex-direction: column;
-  //     gap: 30px;
-  //     background-color: #2C2C2C;
-  //     border-radius: 9px;
-  //     margin-bottom: 15px;
-  //     span{
-  //       font-size: 12px;
-  //       color: #fff;
-
-  //     }
-  //   }
-  // }
-  // .realQR{
-  //   margin-top: 15px;
-  //   padding: 0 10px;
-  //   .realQRName {
-  //     font-size: 28px;
-  //     font-weight: 600;
-  //   }
-  //   .whatIsItCard, .courseQuantityCard{
-  //     margin-top: 6px;
-  //     padding: 14px;
-  //     display: flex;
-  //     flex-direction: column;
-  //     gap: 30px;
-  //     background-color: #2C2C2C;
-  //     border-radius: 9px;
-  //     margin-bottom: 15px;
-  //     span{
-  //       font-size: 12px;
-  //       color: #fff;
-
-  //     }
-  //   }
-  //   .realQRValue {
-  //     font-size: 38px;
-  //     font-weight: 700;
-  //     color: @common-color1;
-  //   }
-  //   .unit {
-  //     font-size: 25px;
-  //     font-weight: 400;
-  //     color: #7A7A7A;
-  //     margin-left: 5px;
-  //   }
-  //   .whatIsIt{
-  //     text-decoration: underline;
-  //     color: #A3A3A3;
-  //   }
-  // }
-
-
   .currency{
     margin-top: 15px;
     display: flex;
@@ -490,6 +360,10 @@
         width: 93px;
         height: 93px;
         border-radius: 9px;
+        background-size: cover;
+      }
+      &:nth-child(1) .imageCard {
+        background-size:auto;
       }
     }
     .addImage{
@@ -536,132 +410,6 @@
               font-size: 24px;
               font-weight: 400;
           }
-          @supports(-webkit-appearance: none) or (-moz-appearance: none) {
-              input[type='checkbox'],
-              input[type='radio'] {
-                --active: #353535;
-                --active-inner: #E7FE55;
-                --border: #474747;
-                --border-hover: #275EFE;
-                --background: #353535;
-                --disabled: #fff;
-                --disabled-inner: #E1E6F9;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                height: 26px;
-                border: none;
-                display: inline-block;
-                vertical-align: top;
-                position: relative;
-                margin: 0;
-                box-shadow: inset 0px 2px 4px rgba(0,0,0,0.25);
-                cursor: pointer;
-                outline: 2px solid var(--bc, var(--border));
-                background: var(--b, var(--background));
-                transition: background .3s, border-color .3s, box-shadow .2s;
-                &:after {
-                  content: '';
-                  display: block;
-                  left: 0;
-                  top: 0;
-                  position: absolute;
-                  box-shadow:  0px 2px 4px rgba(0,0,0,0.5);
-                  transition: transform var(--d-t, .3s) , opacity var(--d-o, .2s);
-                }
-                &:checked {
-                  --b: var(--active);
-                  --bc: var(--active);
-                  --d-o: .3s;
-                  --d-t: .6s;
-                  --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
-                }
-                &:disabled {
-                  --b: var(--disabled);
-                  cursor: not-allowed;
-                  opacity: .9;
-                  &:checked {
-                    --b: var(--disabled-inner);
-                    --bc: var(--border);
-                  }
-                  & + label {
-                    cursor: not-allowed;
-                  }
-                }
-                &:not(.switch) {
-                  width: 21px;
-                  &:after {
-                    opacity: var(--o, 0);
-                  }
-                  &:checked {
-                    --o: 1;
-                  }
-                }
-                & + label {
-                  font-size: 14px;
-                  line-height: 21px;
-                  display: inline-block;
-                  vertical-align: top;
-                  cursor: pointer;
-                  margin-left: 4px;
-                }
-              }
-              input[type='checkbox'] {
-                &:not(.switch) {
-                  border-radius: 7px;
-                  &:after {
-                    width: 5px;
-                    height: 9px;
-                    border: 2px solid var(--active-inner);
-                    border-top: 0;
-                    border-left: 0;
-                    left: 7px;
-                    top: 4px;
-                    transform: rotate(var(--r, 20deg));
-                  }
-                  &:checked {
-                    --r: 43deg;
-                  }
-                }
-                &.switch {
-                  width: 50px;
-                  border-radius: 31px;
-                  &:after {
-                    left: 2px;
-                    top: 3px;
-                    border-radius: 50%;
-                    width: 20px;
-                    height: 20px;
-                    background: var(--ab, var(--border));
-                    transform: translateX(var(--x, 0));
-                  }
-                  &:checked {
-                    --ab: var(--active-inner);
-                    --x: 26px;
-                  }
-                  &:disabled {
-                    &:not(:checked) {
-                      &:after {
-                        opacity: .6;
-                      }
-                    }
-                  }
-                }
-              }
-              input[type='radio'] {
-                border-radius: 50%;
-                &:after {
-                  width: 19px;
-                  height: 19px;
-                  border-radius: 50%;
-                  background: var(--active-inner);
-                  opacity: 0;
-                  transform: scale(var(--s, .7));
-                }
-                &:checked {
-                  --s: .5;
-                }
-              }
-            }
           ul {
               padding: 0;
               list-style: none;
