@@ -1,6 +1,16 @@
+
+
+
 $(document).ready(function() {
 	addEventListener('load',()=>setTimeout(()=>{
-
+		$(document).ready(function() {
+			$('.arrow_down').click(function() {
+				$('.dropdown').toggleClass('show');
+			});
+			$('.sort').click(function() {
+				$('.dropdown').toggleClass('show');
+			});
+		});
 		$(".dropdownSelect").click(function(){
 			$(".selecting").toggle();
 		});

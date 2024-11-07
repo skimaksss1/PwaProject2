@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="windows-1251" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>Document</title>
+    
+        <link rel="stylesheet/less" type="text/less" href="common.less" />
+        <!-- для каждой страницы свой less файл. -->
+        <link rel="stylesheet/less" type="text/less" href="history.less" />
+        <!-- Скрипты не трогать -->
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+        <script>
+        //скрипты не трограть.
+        window.addEventListener("load", () => {
+            const app = Vue.createApp({
+            methods: {
+                tr(k) {
+                return k;
+                },
+            },
+            });
+            app.mount("#dont_use_this_id_in_style");
+        });
+        </script>
+    </head>
+    <body>
+        <div class="page" id="dont_use_this_id_in_style">
+            <!-- <div class="brow_empty"></div> -->
+            <section class="main">
+                <div class="container">
+                    <div class="mainLineBrow">
+                        <div class="tab">
+                            <a href="basket.html">
+                                <div class="tab_label">
+                                    <span>Корзина</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tab active">
+                            <a href="history.html">
+                                <div class="tab_label">
+                                    <span>История</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="content">
+                <div class="container">
+                    <div class="cards">
+                        <div class="card">
+                            <span class="item_title">ИП “ГИБРИД”</span>
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item1"></div>
+                                </div>
+                                <div class="right">
+                                    <span class="title">Мышь Bloody Bloody W95 Max Naraka белый</span>
+                                    <div class="summa">
+                                        <span class="sum">23 995 ₸</span>
+                                        <div class="crossout">26 395 ₸</div>
+                                        <div class="sale">-10%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characters">
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Артикул:</span>
+                                    <span class="chrctr_value">152239</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Магазин:</span>
+                                    <span class="chrctr_value">AppTech</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Адрес магазина:</span>
+                                    <span class="chrctr_value">г.Астана, Толе би 12</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Время работы:</span>
+                                    <span class="chrctr_value">Ежедневно 10:00 - 21:00</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Количество товара:</span>
+                                    <span class="chrctr_value">4 шт</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Дата покупки:</span>
+                                    <span class="chrctr_value">14.10.2024</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Итого:</span>
+                                    <span class="chrctr_value summa">27 932 ₸</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="item_title">Pioner</span>
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item2"></div>
+                                </div>
+                                <div class="right">
+                                    <span class="title">Мышь Bloody Bloody W95 Max Naraka белый</span>
+                                    <div class="summa">
+                                        <span class="sum">23 995 ₸</span>
+                                        <div class="crossout">26 395 ₸</div>
+                                        <div class="sale">-10%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characters">
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Артикул:</span>
+                                    <span class="chrctr_value">152239</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Магазин:</span>
+                                    <span class="chrctr_value">AppTech</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Адрес магазина:</span>
+                                    <span class="chrctr_value">г.Астана, Толе би 12</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Время работы:</span>
+                                    <span class="chrctr_value">Ежедневно 10:00 - 21:00</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Количество товара:</span>
+                                    <span class="chrctr_value">4 шт</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Дата покупки:</span>
+                                    <span class="chrctr_value">14.10.2024</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Итого:</span>
+                                    <span class="chrctr_value summa">27 932 ₸</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="item_title">StartUp</span>
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item3"></div>
+                                </div>
+                                <div class="right">
+                                    <span class="title">Мышь Bloody Bloody W95 Max Naraka белый</span>
+                                    <div class="summa">
+                                        <span class="sum">23 995 ₸</span>
+                                        <div class="crossout">26 395 ₸</div>
+                                        <div class="sale">-10%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characters">
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Артикул:</span>
+                                    <span class="chrctr_value">152239</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Магазин:</span>
+                                    <span class="chrctr_value">AppTech</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Адрес магазина:</span>
+                                    <span class="chrctr_value">г.Астана, Толе би 12</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Время работы:</span>
+                                    <span class="chrctr_value">Ежедневно 10:00 - 21:00</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Количество товара:</span>
+                                    <span class="chrctr_value">4 шт</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Дата покупки:</span>
+                                    <span class="chrctr_value">14.10.2024</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Итого:</span>
+                                    <span class="chrctr_value summa">27 932 ₸</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="item_title">ИП “ГИБРИД”</span>
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item1"></div>
+                                </div>
+                                <div class="right">
+                                    <span class="title">Мышь Bloody Bloody W95 Max Naraka белый</span>
+                                    <div class="summa">
+                                        <span class="sum">23 995 ₸</span>
+                                        <div class="crossout">26 395 ₸</div>
+                                        <div class="sale">-10%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characters">
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Артикул:</span>
+                                    <span class="chrctr_value">152239</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Магазин:</span>
+                                    <span class="chrctr_value">AppTech</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Адрес магазина:</span>
+                                    <span class="chrctr_value">г.Астана, Толе би 12</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Время работы:</span>
+                                    <span class="chrctr_value">Ежедневно 10:00 - 21:00</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Количество товара:</span>
+                                    <span class="chrctr_value">4 шт</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Дата покупки:</span>
+                                    <span class="chrctr_value">14.10.2024</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Итого:</span>
+                                    <span class="chrctr_value summa">27 932 ₸</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="item_title">Pioner</span>
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item2"></div>
+                                </div>
+                                <div class="right">
+                                    <span class="title">Мышь Bloody Bloody W95 Max Naraka белый</span>
+                                    <div class="summa">
+                                        <span class="sum">23 995 ₸</span>
+                                        <div class="crossout">26 395 ₸</div>
+                                        <div class="sale">-10%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characters">
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Артикул:</span>
+                                    <span class="chrctr_value">152239</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Магазин:</span>
+                                    <span class="chrctr_value">AppTech</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Адрес магазина:</span>
+                                    <span class="chrctr_value">г.Астана, Толе би 12</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Время работы:</span>
+                                    <span class="chrctr_value">Ежедневно 10:00 - 21:00</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Количество товара:</span>
+                                    <span class="chrctr_value">4 шт</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Дата покупки:</span>
+                                    <span class="chrctr_value">14.10.2024</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Итого:</span>
+                                    <span class="chrctr_value summa">27 932 ₸</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="item_title">StartUp</span>
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item3"></div>
+                                </div>
+                                <div class="right">
+                                    <span class="title">Мышь Bloody Bloody W95 Max Naraka белый</span>
+                                    <div class="summa">
+                                        <span class="sum">23 995 ₸</span>
+                                        <div class="crossout">26 395 ₸</div>
+                                        <div class="sale">-10%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characters">
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Артикул:</span>
+                                    <span class="chrctr_value">152239</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Магазин:</span>
+                                    <span class="chrctr_value">AppTech</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Адрес магазина:</span>
+                                    <span class="chrctr_value">г.Астана, Толе би 12</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Время работы:</span>
+                                    <span class="chrctr_value">Ежедневно 10:00 - 21:00</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Количество товара:</span>
+                                    <span class="chrctr_value">4 шт</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Дата покупки:</span>
+                                    <span class="chrctr_value">14.10.2024</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Итого:</span>
+                                    <span class="chrctr_value summa">27 932 ₸</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>

@@ -29,15 +29,15 @@
     </head>
     <body>
         <div class="page" id="dont_use_this_id_in_style">
-            <div class="brow_empty"></div>
+            <!-- <div class="brow_empty"></div> -->
             <section class="main">
                 <div class="container">
                     <div class="mainLine">
                         <div class="pageTitle">
                             <p>{{tr('Real QR')}}</p>
                         </div>
-                        <div class="leftBtn-mainLine">      
-                        </div>
+                        <!-- <div class="leftBtn-mainLine">      
+                        </div> -->
                         <!-- <div class="leftBtn-mainLine">
                             <img src="img/close.svg" alt="">             
                         </div> -->
@@ -54,6 +54,81 @@
             <div class="amount">
                 <div class="container">
                     <div class="amount_flex">
+                        <span class="input_header">Введите наименование товара или артикул</span>
+                        <div class="input_dropdown">
+                            <div class="input">
+                                <input type="text" placeholder="Поиск...">
+                                <img class="arrow_down" src="img/arrow.png" alt="">
+                            </div>
+                            <div class="dropdown">
+                                <div class="list">
+                                    <div class="item">
+                                        <div class="item_photo ip1"></div>
+                                        <div class="item_info">
+                                            <span class="item_name">Logitech g432</span>
+                                            <span class="item_article">Артикул: 564846</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item_photo ip2"></div>
+                                        <div class="item_info">
+                                            <span class="item_name">Logitech G102 Prodigy Ga...</span>
+                                            <span class="item_article">Артикул: 456687</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item_photo ip3"></div>
+                                        <div class="item_info">
+                                            <span class="item_name">Logitech MeetUp 960-001...</span>
+                                            <span class="item_article">Артикул: 4546688</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item_photo ip4"></div>
+                                        <div class="item_info">
+                                            <span class="item_name">Logitech Wireless Combo...</span>
+                                            <span class="item_article">Артикул: 5566677</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item_photo ip5"></div>
+                                        <div class="item_info">
+                                            <span class="item_name">Logitech g432</span>
+                                            <span class="item_article">Артикул: 564846</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item_photo ip6"></div>
+                                        <div class="item_info">
+                                            <span class="item_name">Logitech g432</span>
+                                            <span class="item_article">Артикул: 564846</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item_photo ip7"></div>
+                                        <div class="item_info">
+                                            <span class="item_name">Logitech Wireless Combo/</span>
+                                            <span class="item_article">Артикул: 564846</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item_photo ip8"></div>
+                                        <div class="item_info">
+                                            <span class="item_name">Logitech g432</span>
+                                            <span class="item_article">Артикул: 564846</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item_photo ip9"></div>
+                                        <div class="item_info">
+                                            <span class="item_name">Logitech G102 Prodigy Ga...</span>
+                                            <span class="item_article">Артикул: 564846</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="amountInput">
                             <span>{{tr('Введите сумму')}}</span>
                             <input type="text" value="15 000">
@@ -72,7 +147,7 @@
                             <div class="btn">0</div>
                             <div class="btn"><img src="img/union.svg" alt=""></div>
                         </div>
-                        <div class="confirm">
+                        <div class="yellowBtn">
                             {{tr('Подтвердить')}}
                         </div>
                     </div>

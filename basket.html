@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="windows-1251" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>Document</title>
+    
+        <link rel="stylesheet/less" type="text/less" href="common.less" />
+        <!-- для каждой страницы свой less файл. -->
+        <link rel="stylesheet/less" type="text/less" href="basket.less" />
+        <!-- Скрипты не трогать -->
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+        <script>
+        //скрипты не трограть.
+        window.addEventListener("load", () => {
+            const app = Vue.createApp({
+            methods: {
+                tr(k) {
+                return k;
+                },
+            },
+            });
+            app.mount("#dont_use_this_id_in_style");
+        });
+        </script>
+    </head>
+    <body>
+        <div class="page" id="dont_use_this_id_in_style">
+            <!-- <div class="brow_empty"></div> -->
+            <section class="main">
+                <div class="container">
+                    <div class="mainLineBrow">
+                        <div class="tab active">
+                            <a href="basket.html">
+                                <div class="tab_label">
+                                    <span>Корзина</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tab">
+                            <a href="history.html">
+                                <div class="tab_label">
+                                    <span>История</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="content">
+                <div class="container">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item1"></div>
+                                    <div class="colv">
+                                        <div class="dob">-</div>
+                                        <div class="col">1</div>
+                                        <div class="dob">+</div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <span class="subtitle">Игровые мыши</span>
+                                    <span class="title">Мышь Bloody Bloody W95 Max Naraka белый</span>
+                                    <div class="summa">
+                                        <span class="sum">23 995 ₸</span>
+                                        <div class="crossout">26 395 ₸</div>
+                                        <div class="sale">-10%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="order">Заказ:  564165564</span>
+                        </div>
+                        <div class="card">
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item2"></div>
+                                    <div class="colv">
+                                        <div class="dob">-</div>
+                                        <div class="col">1</div>
+                                        <div class="dob">+</div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <span class="subtitle">Держатели для телефонов</span>
+                                    <span class="title">Afkas-nova AK-37</span>
+                                    <div class="summa">
+                                        <span class="sum">1 338 ₸</span>
+                                        <!-- <div class="crossout">2 000 ₸</div>
+                                        <div class="sale">-10%</div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="order">Заказ:  564165564</span>
+                        </div>
+                        <div class="card">
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item3"></div>
+                                    <div class="colv">
+                                        <div class="dob">-</div>
+                                        <div class="col">1</div>
+                                        <div class="dob">+</div>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <span class="subtitle">Системы хранения инструмента</span>
+                                    <span class="title">СИБРТЕХ ящик для инструментов 90804 Black-Green</span>
+                                    <div class="summa">
+                                        <span class="sum">1 338 ₸</span>
+                                        <!-- <div class="crossout">26 395 ₸</div>
+                                        <div class="sale">-10%</div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="order">Заказ:  564165564</span>
+                        </div>
+                    </div>
+                    <span class="title_block">Вы недавно смотрели</span>
+                    <div class="imageGallery">
+                        <div class="cardItem">
+                           <div class="gCardphoto gCp1"></div>
+                           <span class="gCard_title">Logitech g432</span>
+                           <span class="gCard_subtitle">Наушники</span>
+                           <span class="gCardsum">23 995 ₸</span>
+                        </div>
+                        <div class="cardItem">
+                           <div class="gCardphoto gCp2"></div>
+                           <span class="gCard_title">Logitech G102 Prodigy G...</span>
+                           <span class="gCard_subtitle">Игровые мыши</span>
+                           <span class="gCardsum">23 995 ₸</span>
+                        </div>
+                        <div class="cardItem">
+                           <div class="gCardphoto gCp3"></div>
+                           <span class="gCard_title">Logitech Wireless Comb...</span>
+                           <span class="gCard_subtitle">Комплекты клавиатуры и мыши</span>
+                           <span class="gCardsum">23 995 ₸</span>
+                        </div>
+                        <div class="cardItem">
+                           <div class="gCardphoto gCp4"></div>
+                           <span class="gCard_title">Logitech g432</span>
+                           <span class="gCard_subtitle">Наушники</span>
+                           <span class="gCardsum">23 995 ₸</span>
+                        </div>
+                        <div class="cardItem">
+                           <div class="gCardphoto gCp5"></div>
+                           <span class="gCard_title">Logitech g432</span>
+                           <span class="gCard_subtitle">Наушники</span>
+                           <span class="gCardsum">23 995 ₸</span>
+                        </div>
+                        <div class="cardItem">
+                           <div class="gCardphoto gCp6"></div>
+                           <span class="gCard_title">Logitech g432</span>
+                           <span class="gCard_subtitle">Наушники</span>
+                           <span class="gCardsum">23 995 ₸</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>

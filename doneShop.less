@@ -5,7 +5,7 @@
     width: 100%;
 }
 .main{
-  margin: 12px 0 16px 0;
+  // margin: 12px 0 16px 0;
   height: 35px;
   .mainLine{
       display: flex;
@@ -30,17 +30,35 @@
           font-size: 24px;
           font-weight: bold;
           letter-spacing: -1px;
+          margin-top: 20px;
       }
   }
 }
 .real{
-  // height: calc(100vh - 50px);
+  height: calc(100vh - 80px);
   .realSucces{
-    // height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    justify-content: center;
+    .realMain{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logoPage{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        span{
+          font-size: 32px;
+          font-weight: 600;
+        }
+      }
+      span{
+        font-weight: 500;
+        font-size: 21px;
+      }
+    }
     .done{
       display: flex;
       flex-direction: column;
@@ -69,52 +87,6 @@
         font-weight: 600;
         font-size: 23px;
       }
-      .stars{
-        display: flex;
-        gap: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-
-      }
-      
-    .textarea{
-      position: relative;
-      .captionAction{
-        padding: 14px 26px;
-        color: #fff;
-        font-size: 20px;
-        background-color: #3E3E3E;
-        border-radius: 9px;
-        border: none;
-        outline: none;
-        height: 175px;
-        max-width: 100%;
-        min-width: 100%;
-      }
-      span{
-        position: absolute;
-        right: 15px;
-        bottom: 15px;
-        color: #747474;
-        font-size: 20px;
-      }
-    }
-    .leaveRev{
-      width: 100%;
-      height: 58px;
-      border-radius: 58px;
-      background-color: #ffffff;
-      color: #000;
-      font-size: 24px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto;
-      margin-top: 30px;
-      padding: 0 50px;
-      position: relative;
-    }
     }
     .inMain{
       width: 100%;
@@ -132,6 +104,57 @@
       padding: 0 50px;
       position: relative;
       margin-bottom: 130px;
+    }
+  }
+
+  .content{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 35px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .center{
+      width: 100%;
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .done{
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        display: block;
+      }
+      .doneCircle{
+        background-color: #5DFE55;
+        width: 119px;
+        height: 119px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .desc{
+        font-size: 26px;
+        font-weight: 500;
+      }
+      .inMain{
+        width: 100%;
+        height: 58px;
+        border-radius: 20px;
+        background-color: #E7FE55;
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 50px;
+        position: relative;
+      }
     }
   }
 }

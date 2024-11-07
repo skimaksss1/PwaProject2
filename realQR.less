@@ -66,7 +66,7 @@
       grid-template-columns: repeat(3, 104px);
       grid-template-rows: repeat(4, 50px);
       grid-gap: 9px;
-      margin: 50px 0;
+      margin: 30px 0;
       .btn{
         text-align: center;
         background-color: #6F6F70;
@@ -84,10 +84,10 @@
         }
       }
     }
-    .confirm{
-      width: 329px;
+    .yellowBtn{
+      width: 100%;
       height: 58px;
-      border-radius: 58px;
+      border-radius: 20px;
       background-color: #E7FE55;
       color: #000;
       font-size: 24px;
@@ -96,9 +96,118 @@
       align-items: center;
       justify-content: center;
       margin: 0 auto;
-      margin-top: 30px;
-      padding: 0 60px;
+      padding: 0 50px;
+      position: relative;
     }
+    
+    .input_header{
+      display: block;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .input_dropdown{
+      width: 329px;
+      margin-bottom: 25px;
+      position: relative;
+      .input{
+        width: 100%;
+        z-index: 9;
+        position: relative;
+        input{
+          width: 100%;
+          height: 50px;
+          background-color: #3E3E3E;
+          border-radius: 10px;
+          padding: 13px 20px;
+          outline: none;
+          border: none;
+          font-size: 20px;
+          color: #fff;
+        }
+        .arrow_down{
+          position: absolute;
+          right: 20px;
+          top: calc(50% - 5px);
+        }
+      }
+
+      .dropdown{
+        display: none;
+        background-color: #262626;
+        width: 100%;
+        height: 250px;
+        clip-path: border-box;
+        overflow: scroll;
+        padding: 20px;
+        padding-top: 30px;
+        top: 40px;
+        position: absolute;
+        border-radius: 10px;
+        z-index: 1;
+        .list{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .item{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .item_photo{
+              width: 50px;
+              height: 37px;
+              border-radius: 5px;
+              background-position: center center;
+              background-size: cover;
+            }
+            .ip1{
+              background-image: url(img/item1.png);
+            }
+            .ip2{
+              background-image: url(img/item2.png);
+            }
+            .ip3{
+              background-image: url(img/item3.png);
+            }
+            .ip4{
+              background-image: url(img/item4.png);
+            }
+            .ip5{
+              background-image: url(img/item5.png);
+            }
+            .ip6{
+              background-image: url(img/item6.png);
+            }
+            .ip7{
+              background-image: url(img/item7.png);
+            }
+            .ip8{
+              background-image: url(img/item8.png);
+            }
+            .ip9{
+              background-image: url(img/item9.png);
+            }
+            .item_name{
+              display: block;
+              font-size: 16px;
+              font-weight: 600;
+              margin-bottom: 5px;
+            }
+            .item_article{
+              display: block;
+              color: #747474;
+              font-size: 10px;
+            }
+          }
+        }
+      }    
+      .dropdown.show {
+        display: block;
+      }
+    }
+
+
+
+
   }
 }
 
