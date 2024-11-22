@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="windows-1251" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>Document</title>
+    
+        <link rel="stylesheet/less" type="text/less" href="common.less" />
+        <!-- для каждой страницы свой less файл. -->
+        <link rel="stylesheet/less" type="text/less" href="tov.less" />
+        <!-- Скрипты не трогать -->
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+        <script>
+        //скрипты не трограть.
+        window.addEventListener("load", () => {
+            const app = Vue.createApp({
+            methods: {
+                tr(k) {
+                return k;
+                },
+            },
+            });
+            app.mount("#dont_use_this_id_in_style");
+        });
+        </script>
+    </head>
+    <body>
+        <div class="page" id="dont_use_this_id_in_style">
+            <!-- <div class="brow_empty"></div> -->
+            <section class="main">
+                <div class="container">
+                    <div class="mainLine">
+                        <div class="leftBtn-mainLine">
+                            <img src="img/backpage.svg" alt="">             
+                        </div>
+                        <div class="pageTitle">
+                            <p>{{tr('Все товары')}}</p>
+                        </div>
+                        <!-- <div class="lang">
+                            <span>KZ</span>
+                        </div> -->
+                        <!-- <div class="rightBtn-mainLine">
+                            <img src="img/sorting.svg" alt="">
+                            <img src="img/filtering.svg" alt="">      
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="content">
+                <div class="container">
+                    
+                    <div class="separation">
+                        <hr>
+                    </div>
+                    <div class="tovar">
+                        <div class="tovar_cardSlide">
+                            <div class="rasp"><img src="img/fire.png" alt=""> Распродажа</div>
+                            <div class="actsya">Акция 30%</div>
+                            <img class="card_img prod_img" src="img/imageCard.png" alt="">
+                        </div>
+                        <div class="slide_list">
+                            <div class="slide active_slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                        </div>
+
+                        <div class="tovar_name">
+                            <span>Наушники AirPods</span>
+                            <span class="sale">30%</span>
+                        </div>
+                        <span class="article">Артикул: 1562555</span>
+                        <div class="color_pick">
+                            <div class="color_white"></div>
+                            <div class="color_black"></div>
+                        </div>
+                        <span class="color_name">Цвет: Белый</span>
+                        <div class="tovar_price">
+                            <span class="sale_price">700₸</span>
+                            <span class="base_price">1000₸</span>
+                        </div>
+                        <div class="sale_description">
+                            <span>Акция действует до 31.01.2024</span>
+                        </div>
+                        <div class="description_name">
+                            <span>Описание:</span>
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque explicabo est nulla voluptatem magnam quis, illum, praesentium aliquid alias libero accusantium architecto repellat repudiandae sequi. Perspiciatis excepturi maxime debitis esse.
+                        </div>
+                        <div class="specifications">
+                            <span class="spec_name">Характеристики</span>
+                            <div class="spec_block">
+                                <span class="spec_title">Страна изгатовителя</span>
+                                <span class="spec_value">Китай</span>
+                            </div>
+                            <div class="separation">
+                                <hr>
+                            </div>
+                            <div class="spec_block">
+                                <span class="spec_title">Бренд</span>
+                                <span class="spec_value">Apple</span>
+                            </div>
+                            <div class="separation">
+                                <hr>
+                            </div>
+                            <div class="spec_block">
+                                <span class="spec_title">Цвет</span>
+                                <span class="spec_value">Белый</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="addActionBtn">
+                        {{tr('Добавить в корзину')}}
+                    </div>
+                    
+                    <div class="comment_list">
+                        <div class="comments">
+                            <div class="main_comment">
+                                <div class="comment_header">
+                                    <div class="user_info">
+                                        <div class="user_photo"></div>
+                                        <div class="user_data">    
+                                            <span class="name">Анна Шарапова</span>
+                                            <span class="date">Январь 12, 2024 - 19:35</span>
+                                        </div>
+                                    </div>
+                                    <div class="stars">
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5213 19.7387L13 19.4203L12.4787 19.7387L6.47474 23.4065L8.07245 16.4746L8.2067 15.8922L7.75728 15.4981L2.42408 10.8218L9.43256 10.22L10.0356 10.1682L10.2694 9.60993L13 3.08901L15.7306 9.60993L15.9644 10.1682L16.5674 10.22L23.5759 10.8218L18.2427 15.4981L17.7933 15.8922L17.9275 16.4746L19.5253 23.4065L13.5213 19.7387Z" stroke="#BBBBBB" stroke-width="2"/>
+                                            </svg>                                                                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    Lorem Ipsum tempor incididunt ut labore et dolore,inise voluptate velit esse cillum
+                                </div>
+                                <span class="answer">Ответить</span>
+                                <div class="hide">
+                                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.00024 0.634842L8.00024 6.63484L15.0002 0.634842" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                            
+                                </div>
+                                <div class="sub_comment_block">
+                                    <div class="line_arrow">
+                                        <div class="line"></div>
+                                        <div class="arrow">
+                                            <svg width="11" height="29" viewBox="0 0 11 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.00012 25.5H0.500122V26H1.00012V25.5ZM11.0001 25.5L6.00012 22.6132V28.3868L11.0001 25.5ZM0.500122 0.5V25.5H1.50012V0.5H0.500122ZM1.00012 26H6.50012V25H1.00012V26Z" fill="#585858"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sub_comment">
+                                        <div class="comment_header">
+                                            <div class="user_info">
+                                                <div class="user_photo"></div>
+                                                <div class="user_data">    
+                                                    <span class="name">Андрей Ульянов</span>
+                                                    <span class="date">Декабрь 07, 2023 - 16:22</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment">
+                                            Lorem Ipsum tempor incididunt ut labore et dolore,inise voluptate velit esse cillum
+                                        </div>
+                                        <span class="answer">Ответить</span>
+                                        <div class="sub_comment_block">
+                                            <div class="line_arrow">
+                                                <div class="line"></div>
+                                                <div class="arrow">
+                                                    <svg width="11" height="29" viewBox="0 0 11 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.00012 25.5H0.500122V26H1.00012V25.5ZM11.0001 25.5L6.00012 22.6132V28.3868L11.0001 25.5ZM0.500122 0.5V25.5H1.50012V0.5H0.500122ZM1.00012 26H6.50012V25H1.00012V26Z" fill="#585858"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="sub_comment">
+                                                <div class="comment_header">
+                                                    <div class="user_info">
+                                                        <div class="user_photo"></div>
+                                                        <div class="user_data">    
+                                                            <span class="name">Сабит Мусурепов</span>
+                                                            <span class="date">Январь 14, 2024 - 16:05</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment">
+                                                    Lorem Ipsum tempor incididunt ut labore et dolore,inise voluptate velit esse cillum
+                                                </div>
+                                                <span class="answer">Ответить</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub_comment_block">
+                                    <div class="line_arrow">
+                                        <div class="line"></div>
+                                        <div class="arrow">
+                                            <svg width="11" height="29" viewBox="0 0 11 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.00012 25.5H0.500122V26H1.00012V25.5ZM11.0001 25.5L6.00012 22.6132V28.3868L11.0001 25.5ZM0.500122 0.5V25.5H1.50012V0.5H0.500122ZM1.00012 26H6.50012V25H1.00012V26Z" fill="#585858"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sub_comment">
+                                        <div class="comment_header">
+                                            <div class="user_info">
+                                                <div class="user_photo"></div>
+                                                <div class="user_data">    
+                                                    <span class="name">Александра Осипова</span>
+                                                    <span class="date">Декабрь 12, 2023 - 22:10</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment">
+                                            Lorem Ipsum tempor incididunt ut labore et dolore,inise voluptate velit esse cillum
+                                        </div>
+                                        <span class="answer">Ответить</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="main_comment">
+                                <div class="comment_header">
+                                    <div class="user_info">
+                                        <div class="user_photo"></div>
+                                        <div class="user_data">    
+                                            <span class="name">Анна Шарапова</span>
+                                            <span class="date">Январь 12, 2024 - 19:35</span>
+                                        </div>
+                                    </div>
+                                    <div class="stars">
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5213 19.7387L13 19.4203L12.4787 19.7387L6.47474 23.4065L8.07245 16.4746L8.2067 15.8922L7.75728 15.4981L2.42408 10.8218L9.43256 10.22L10.0356 10.1682L10.2694 9.60993L13 3.08901L15.7306 9.60993L15.9644 10.1682L16.5674 10.22L23.5759 10.8218L18.2427 15.4981L17.7933 15.8922L17.9275 16.4746L19.5253 23.4065L13.5213 19.7387Z" stroke="#BBBBBB" stroke-width="2"/>
+                                            </svg>                                                                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    Lorem Ipsum tempor incididunt ut labore et dolore,inise voluptate velit esse cillum
+                                </div>
+                                <span class="answer">Ответить</span>
+                                <div class="hide">
+                                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.00024 0.634842L8.00024 6.63484L15.0002 0.634842" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                            
+                                </div>
+                                <div class="sub_comment_block">
+                                    <div class="line_arrow">
+                                        <div class="line"></div>
+                                        <div class="arrow">
+                                            <svg width="11" height="29" viewBox="0 0 11 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.00012 25.5H0.500122V26H1.00012V25.5ZM11.0001 25.5L6.00012 22.6132V28.3868L11.0001 25.5ZM0.500122 0.5V25.5H1.50012V0.5H0.500122ZM1.00012 26H6.50012V25H1.00012V26Z" fill="#585858"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sub_comment">
+                                        <div class="comment_header">
+                                            <div class="user_info">
+                                                <div class="user_photo"></div>
+                                                <div class="user_data">    
+                                                    <span class="name">Андрей Ульянов</span>
+                                                    <span class="date">Декабрь 07, 2023 - 16:22</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment">
+                                            Lorem Ipsum tempor incididunt ut labore et dolore,inise voluptate velit esse cillum
+                                        </div>
+                                        <span class="answer">Ответить</span>
+                                        <div class="sub_comment_block">
+                                            <div class="line_arrow">
+                                                <div class="line"></div>
+                                                <div class="arrow">
+                                                    <svg width="11" height="29" viewBox="0 0 11 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1.00012 25.5H0.500122V26H1.00012V25.5ZM11.0001 25.5L6.00012 22.6132V28.3868L11.0001 25.5ZM0.500122 0.5V25.5H1.50012V0.5H0.500122ZM1.00012 26H6.50012V25H1.00012V26Z" fill="#585858"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="sub_comment">
+                                                <div class="comment_header">
+                                                    <div class="user_info">
+                                                        <div class="user_photo"></div>
+                                                        <div class="user_data">    
+                                                            <span class="name">Сабит Мусурепов</span>
+                                                            <span class="date">Январь 14, 2024 - 16:05</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment">
+                                                    Lorem Ipsum tempor incididunt ut labore et dolore,inise voluptate velit esse cillum
+                                                </div>
+                                                <span class="answer">Ответить</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub_comment_block">
+                                    <div class="line_arrow">
+                                        <div class="line"></div>
+                                        <div class="arrow">
+                                            <svg width="11" height="29" viewBox="0 0 11 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.00012 25.5H0.500122V26H1.00012V25.5ZM11.0001 25.5L6.00012 22.6132V28.3868L11.0001 25.5ZM0.500122 0.5V25.5H1.50012V0.5H0.500122ZM1.00012 26H6.50012V25H1.00012V26Z" fill="#585858"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sub_comment">
+                                        <div class="comment_header">
+                                            <div class="user_info">
+                                                <div class="user_photo"></div>
+                                                <div class="user_data">    
+                                                    <span class="name">Александра Осипова</span>
+                                                    <span class="date">Декабрь 12, 2023 - 22:10</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment">
+                                            Lorem Ipsum tempor incididunt ut labore et dolore,inise voluptate velit esse cillum
+                                        </div>
+                                        <span class="answer">Ответить</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
