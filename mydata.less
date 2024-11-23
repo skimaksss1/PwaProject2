@@ -31,7 +31,7 @@
   padding-top: 10px;
   .dataCard{
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border-radius: 20px;
     background: linear-gradient(#d7be63a9, #836f2fa2);
     .dataFirstLine{
@@ -97,8 +97,8 @@
         background-color: #fff;
         width: 260px;
         max-width: 260px;
-        border-radius: 37px;
-        padding: 6px;
+        border-radius: 10px;
+        padding: 5px 10px;
         color: #000;
         font-weight: 600;
         font-size: 17px;
@@ -188,12 +188,13 @@
         .left_contnent{
           display: flex;
           gap: 10px;
+          align-items: center;
           img{
             flex-shrink: 0;
             width: 38px;
           }
           .title{
-            flex-shrink: 0;
+            flex-shrink: 1;
             p{
               font-size: 16px;
               font-weight: 600;
@@ -210,6 +211,11 @@
           font-weight: 700;
           display: flex;
           align-items: center;
+          .arrowRight{
+            background-color: #E7FE55;
+            padding: 5px 20px;
+            border-radius: 10px;
+          }
         }
       }
       .total_content {
@@ -323,13 +329,14 @@
       justify-content: space-between;
       gap: 18px;
       span{
-        font-size: 24px;
+        font-size: 20px;
       }
       .addBtn{
-        width: 84px;
-        height: 28px;
+        width: 60px;
+        height: 34px;
+        padding: 5px 20px;
         background-color: @common-color1;
-        border-radius: 9px;
+        border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
