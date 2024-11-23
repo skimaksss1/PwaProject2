@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="windows-1251" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>Document</title>
+    
+        <link rel="stylesheet/less" type="text/less" href="common.less" />
+        <!-- для каждой страницы свой less файл. -->
+        <link rel="stylesheet/less" type="text/less" href="comments.less" />
+        <!-- Скрипты не трогать -->
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+        <script>
+        //скрипты не трограть.
+        window.addEventListener("load", () => {
+            const app = Vue.createApp({
+            methods: {
+                tr(k) {
+                return k;
+                },
+            },
+            });
+            app.mount("#dont_use_this_id_in_style");
+        });
+        </script>
+    </head>
+    <body>
+        <div class="page" id="dont_use_this_id_in_style">
+            <!-- <div class="brow_empty"></div> -->
+            <section class="main">
+                <div class="container">
+                    <div class="mainLine">
+                        <div class="pageTitle">
+                            <p>{{tr('Оценка и комментарии')}}</p>
+                        </div>
+                        <!-- <div class="leftBtn-mainLine">      
+                        </div> -->
+                        <!-- <div class="leftBtn-mainLine">
+                            <img src="img/close.svg" alt="">             
+                        </div> -->
+                        <!-- <div class="lang">
+                            <span>KZ</span>
+                        </div> -->
+                        <!-- <div class="rightBtn-mainLine">
+                            <img src="img/sorting.svg" alt="">
+                            <img src="img/filtering.svg" alt="">      
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            
+            <div class="content">
+                <div class="container">
+
+                    
+                    <div class="filter">
+                        <div class="btn_filter sort">
+                            <img src="img/sort.png" alt="">
+                            <span>За сегодня</span>
+                        </div>
+                        <div class="dropdown">
+                            <div class="item">
+                                <span>За последнюю неделю</span>
+                            </div>
+                            <div class="item">
+                                <span>За последний месяц</span>
+                            </div>
+                            <div class="item">
+                                <span>За последний год</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item1"></div>
+                                </div>
+                                <div class="right">
+                                    <span class="title">Мышь Bloody Bloody W95 Max Naraka белый</span>
+                                    <div class="summa">
+                                        <span class="sum">23 995 ₸</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characters">
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Артикул:</span>
+                                    <span class="chrctr_value">152239</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Дата продажи:</span>
+                                    <span class="chrctr_value">14.10.2024</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Количество товара:</span>
+                                    <span class="chrctr_value">4 шт</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Покупатель:</span>
+                                    <span class="chrctr_value">Саматов Сапар Саяжанов</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Итого:</span>
+                                    <span class="chrctr_value summa">27 932 ₸</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Оценка покупателя:</span>
+                                    
+                                    <div class="stars">
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5213 19.7387L13 19.4203L12.4787 19.7387L6.47474 23.4065L8.07245 16.4746L8.2067 15.8922L7.75728 15.4981L2.42408 10.8218L9.43256 10.22L10.0356 10.1682L10.2694 9.60993L13 3.08901L15.7306 9.60993L15.9644 10.1682L16.5674 10.22L23.5759 10.8218L18.2427 15.4981L17.7933 15.8922L17.9275 16.4746L19.5253 23.4065L13.5213 19.7387Z" stroke="#BBBBBB" stroke-width="2"/>
+                                            </svg>                                                                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback">
+                                <span>Очень удобная вещь. Но немного сркипит при складывании.</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item2"></div>
+                                </div>
+                                <div class="right">
+                                    <span class="title">Мышь Bloody Bloody W95 Max Naraka белый</span>
+                                    <div class="summa">
+                                        <span class="sum">23 995 ₸</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characters">
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Артикул:</span>
+                                    <span class="chrctr_value">152239</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Дата продажи:</span>
+                                    <span class="chrctr_value">14.10.2024</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Количество товара:</span>
+                                    <span class="chrctr_value">4 шт</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Покупатель:</span>
+                                    <span class="chrctr_value">Саматов Сапар Саяжанов</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Итого:</span>
+                                    <span class="chrctr_value summa">27 932 ₸</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Оценка покупателя:</span>
+                                    
+                                    <div class="stars">
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5213 19.7387L13 19.4203L12.4787 19.7387L6.47474 23.4065L8.07245 16.4746L8.2067 15.8922L7.75728 15.4981L2.42408 10.8218L9.43256 10.22L10.0356 10.1682L10.2694 9.60993L13 3.08901L15.7306 9.60993L15.9644 10.1682L16.5674 10.22L23.5759 10.8218L18.2427 15.4981L17.7933 15.8922L17.9275 16.4746L19.5253 23.4065L13.5213 19.7387Z" stroke="#BBBBBB" stroke-width="2"/>
+                                            </svg>                                                                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback">
+                                <span>Очень удобная вещь. Но немного сркипит при складывании.</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item3"></div>
+                                </div>
+                                <div class="right">
+                                    <span class="title">Мышь Bloody Bloody W95 Max Naraka белый</span>
+                                    <div class="summa">
+                                        <span class="sum">23 995 ₸</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characters">
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Артикул:</span>
+                                    <span class="chrctr_value">152239</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Покупатель:</span>
+                                    <span class="chrctr_value">Саматов Сапар Саяжанов</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Дата продажи:</span>
+                                    <span class="chrctr_value">14.10.2024</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Количество товара:</span>
+                                    <span class="chrctr_value">4 шт</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Итого:</span>
+                                    <span class="chrctr_value summa">27 932 ₸</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Оценка покупателя:</span>
+                                    
+                                    <div class="stars">
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5213 19.7387L13 19.4203L12.4787 19.7387L6.47474 23.4065L8.07245 16.4746L8.2067 15.8922L7.75728 15.4981L2.42408 10.8218L9.43256 10.22L10.0356 10.1682L10.2694 9.60993L13 3.08901L15.7306 9.60993L15.9644 10.1682L16.5674 10.22L23.5759 10.8218L18.2427 15.4981L17.7933 15.8922L17.9275 16.4746L19.5253 23.4065L13.5213 19.7387Z" stroke="#BBBBBB" stroke-width="2"/>
+                                            </svg>                                                                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback">
+                                <span>Очень удобная вещь. Но немного сркипит при складывании.</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item4"></div>
+                                </div>
+                                <div class="right">
+                                    <span class="title">Мышь Bloody Bloody W95 Max Naraka белый</span>
+                                    <div class="summa">
+                                        <span class="sum">23 995 ₸</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characters">
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Артикул:</span>
+                                    <span class="chrctr_value">152239</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Дата продажи:</span>
+                                    <span class="chrctr_value">14.10.2024</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Количество товара:</span>
+                                    <span class="chrctr_value">4 шт</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Покупатель:</span>
+                                    <span class="chrctr_value">Саматов Сапар Саяжанов</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Итого:</span>
+                                    <span class="chrctr_value summa">27 932 ₸</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Оценка покупателя:</span>
+                                    
+                                    <div class="stars">
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5213 19.7387L13 19.4203L12.4787 19.7387L6.47474 23.4065L8.07245 16.4746L8.2067 15.8922L7.75728 15.4981L2.42408 10.8218L9.43256 10.22L10.0356 10.1682L10.2694 9.60993L13 3.08901L15.7306 9.60993L15.9644 10.1682L16.5674 10.22L23.5759 10.8218L18.2427 15.4981L17.7933 15.8922L17.9275 16.4746L19.5253 23.4065L13.5213 19.7387Z" stroke="#BBBBBB" stroke-width="2"/>
+                                            </svg>                                                                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback">
+                                <span>Очень удобная вещь. Но немного сркипит при складывании.</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item5"></div>
+                                </div>
+                                <div class="right">
+                                    <span class="title">Мышь Bloody Bloody W95 Max Naraka белый</span>
+                                    <div class="summa">
+                                        <span class="sum">23 995 ₸</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characters">
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Артикул:</span>
+                                    <span class="chrctr_value">152239</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Дата продажи:</span>
+                                    <span class="chrctr_value">14.10.2024</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Количество товара:</span>
+                                    <span class="chrctr_value">4 шт</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Покупатель:</span>
+                                    <span class="chrctr_value">Саматов Сапар Саяжанов</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Итого:</span>
+                                    <span class="chrctr_value summa">27 932 ₸</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Оценка покупателя:</span>
+                                    
+                                    <div class="stars">
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5213 19.7387L13 19.4203L12.4787 19.7387L6.47474 23.4065L8.07245 16.4746L8.2067 15.8922L7.75728 15.4981L2.42408 10.8218L9.43256 10.22L10.0356 10.1682L10.2694 9.60993L13 3.08901L15.7306 9.60993L15.9644 10.1682L16.5674 10.22L23.5759 10.8218L18.2427 15.4981L17.7933 15.8922L17.9275 16.4746L19.5253 23.4065L13.5213 19.7387Z" stroke="#BBBBBB" stroke-width="2"/>
+                                            </svg>                                                                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback">
+                                <span>Очень удобная вещь. Но немного сркипит при складывании.</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="info">
+                                <div class="left">
+                                    <div class="photo item6"></div>
+                                </div>
+                                <div class="right">
+                                    <span class="title">Мышь Bloody Bloody W95 Max Naraka белый</span>
+                                    <div class="summa">
+                                        <span class="sum">23 995 ₸</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="characters">
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Артикул:</span>
+                                    <span class="chrctr_value">152239</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Дата продажи:</span>
+                                    <span class="chrctr_value">14.10.2024</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Количество товара:</span>
+                                    <span class="chrctr_value">4 шт</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Покупатель:</span>
+                                    <span class="chrctr_value">Саматов Сапар Саяжанов</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Итого:</span>
+                                    <span class="chrctr_value summa">27 932 ₸</span>
+                                </div>
+                                <div class="chrctr">
+                                    <span class="chrctr_title">Оценка покупателя:</span>
+                                    
+                                    <div class="stars">
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1384 20.0921L21.2576 25L19.103 15.75L26.2763 9.52632L16.8301 8.72368L13.1384 0L9.44658 8.72368L0.000366211 9.52632L7.17371 15.75L5.01908 25L13.1384 20.0921Z" fill="#E7FE55"/>
+                                            </svg>
+                                        </div>
+                                        <div class="star">
+                                            <svg width="14" height="12" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5213 19.7387L13 19.4203L12.4787 19.7387L6.47474 23.4065L8.07245 16.4746L8.2067 15.8922L7.75728 15.4981L2.42408 10.8218L9.43256 10.22L10.0356 10.1682L10.2694 9.60993L13 3.08901L15.7306 9.60993L15.9644 10.1682L16.5674 10.22L23.5759 10.8218L18.2427 15.4981L17.7933 15.8922L17.9275 16.4746L19.5253 23.4065L13.5213 19.7387Z" stroke="#BBBBBB" stroke-width="2"/>
+                                            </svg>                                                                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback">
+                                <span>Очень удобная вещь. Но немного сркипит при складывании.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
