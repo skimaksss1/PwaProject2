@@ -8,7 +8,7 @@
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-        <link rel="stylesheet/less" type="text/less" href="realQRScan.less" />
+        <link rel="stylesheet/less" type="text/less" href="realQRScanRefund.less" />
         <!-- Скрипты не трогать -->
         <script src="https://cdn.jsdelivr.net/npm/less"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
@@ -39,15 +39,18 @@
                     </div>
                 </div>
                 <div class="order_info">
-                    <span class="order">№562324</span>
-                    <div class="order_name">Алексей Н.</div>
+                    <!-- <span class="order">№562324</span> -->
+                    <div class="chrctr">
+                        <span class="chrctr_title">Количество:</span>
+                        <span class="chrctr_value">4 шт</span>
+                    </div>
                     <span class="sum">Сумма заказа: 27 932 ₸</span>
                 </div>
                 
                 <div class="btn_group"> 
                     <a href="waitShop.html">
                         <div class="yellowBtn">
-                            Принять оплату
+                            Оформить возврат
                         </div>
                     </a>
                     <a href="">    

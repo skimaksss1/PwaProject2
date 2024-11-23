@@ -54,7 +54,7 @@
             <div class="amount">
                 <div class="container">
                     <div class="amount_flex">
-                        <span class="input_header">Введите наименование товара или артикул</span>
+                        <!-- <span class="input_header">Введите наименование товара или артикул</span>
                         <div class="input_dropdown">
                             <div class="input">
                                 <input type="text" placeholder="Поиск...">
@@ -127,7 +127,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="amountInput">
                             <span>{{tr('Введите сумму')}}</span>
@@ -147,9 +147,24 @@
                             <div class="btn">0</div>
                             <div class="btn"><img src="img/union.svg" alt=""></div>
                         </div>
-                        <div class="yellowBtn">
-                            {{tr('Подтвердить')}}
+                        <div class="btn_group">
+
+                            <a href="qrscan.html">
+                                <div class="yellowBtn">
+                                    {{tr('Подтвердить')}}
+                                </div>
+                            </a>
+                            <a href="realQR.html">
+                                <div class="whiteBtn">
+                                    {{tr('Сканировать QR')}}
+                                </div>
+                            </a>
                         </div>
+                        <script>
+                            setTimeout(function() { 
+                                window.location.href = "doneShop.html"; 
+                                }, 5000); 
+                        </script>
                     </div>
                 </div>
             </div>

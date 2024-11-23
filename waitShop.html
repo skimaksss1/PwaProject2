@@ -8,7 +8,7 @@
     
         <link rel="stylesheet/less" type="text/less" href="common.less" />
         <!-- для каждой страницы свой less файл. -->
-    <link rel="stylesheet/less" type="text/less" href="doneShop.less" />
+    <link rel="stylesheet/less" type="text/less" href="waitShop.less" />
     <!-- Скрипты не трогать -->
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
@@ -37,16 +37,16 @@
                     </div>
                     <div class="content">
                         <div class="center">
-                            <span class="done">Готово!</span>
                             <div class="doneCircle">
-                                <img src="img/done.svg" alt="">
+                                <!-- <img src="img/done.svg" alt=""> -->
+                                <div class="spinner"> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> </div>
                             </div>
-                            <span class="desc">Оплата произведена!</span>
-                            <a href="historySale.html">
-                                <div class="inMain">
-                                    {{tr('История продаж')}}
-                                </div>
-                            </a>
+                            <span class="desc">Ожидание подтверждения оплаты</span>
+                            <script> // Перенаправление через 5 секунд 
+                            setTimeout(function() { 
+                                window.location.href = "doneShop.html"; 
+                                }, 5000); 
+                            </script>
                         </div>
                     </div>
                 </div>
