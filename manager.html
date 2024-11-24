@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="windows-1251" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>Document</title>
+    
+        <link rel="stylesheet/less" type="text/less" href="common.less" />
+        <!-- для каждой страницы свой less файл. -->
+        <link rel="stylesheet/less" type="text/less" href="manager.less" />
+        <!-- Скрипты не трогать -->
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+        <script>
+        //скрипты не трограть.
+        window.addEventListener("load", () => {
+            const app = Vue.createApp({
+            methods: {
+                tr(k) {
+                return k;
+                },
+            },
+            });
+            app.mount("#dont_use_this_id_in_style");
+        });
+        </script>
+    </head>
+    <body>
+        <div class="page" id="dont_use_this_id_in_style">
+            <!-- <div class="brow_empty"></div> -->
+            <section class="main">
+                <div class="container">
+                    <div class="mainLine">
+                        <div class="pageTitle">
+                            <p>{{tr('Менеджер')}}</p>
+                        </div>
+                        <!-- <div class="leftBtn-mainLine">      
+                        </div> -->
+                        <!-- <div class="leftBtn-mainLine">
+                            <img src="img/close.svg" alt="">             
+                        </div> -->
+                        <!-- <div class="lang">
+                            <span>KZ</span>
+                        </div> -->
+                        <!-- <div class="rightBtn-mainLine">
+                            <img src="img/sorting.svg" alt="">
+                            <img src="img/filtering.svg" alt="">      
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            
+            <div class="content">
+
+                <div class="container">
+                    <div class="managers">
+                        <div class="manager login">
+                            <span>{{tr('Логин')}}</span>
+                            <div class="inputPhone">
+                                <input disabled  type="text" placeholder="+7" value="+7 777 111 22 33" class="">
+                            </div>
+                        </div>
+                        <div class="manager">
+                            <span>{{tr('Пароль')}}</span>
+                            <div class="inputPhone">
+                                <input type="text" placeholder="Введите пароль" class="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_group">
+                        <a href="doneShop.html">
+                            <div class="yellowBtn">
+                                {{tr('Сохранить')}}
+                            </div>
+                        </a>
+                        <a href="cancelShop.html">
+                            <div class="redBtn">
+                                {{tr('Сбросить пароль')}}
+                            </div>
+                        </a>
+                    </div>
+                    <div class="important">
+                        <span>Назначая менеджера вы предоставляете права на управление контентом и взаимодействие с покупателями.
+                            <br>
+                            Логин не является редактируемым. Придумайте праоль для менеджера</span>
+                    </div>
+                </div>
+
+            </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>

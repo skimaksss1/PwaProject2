@@ -1,0 +1,180 @@
+@import url(common.less);
+
+// .brow_empty{
+//     height: 50px;
+//     width: 100%;
+// }
+.main{
+    margin: 12px 0 16px 0;
+    height: 35px;
+    .mainLine{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 35px;
+        .rightBtn-mainLine{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .lang{
+            font-size: 20px;
+        }
+        .pageTitle{
+          margin-right: auto;
+          width: 100%;
+            position: relative;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+    }
+}
+
+
+.content{
+ 
+  
+.managers {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+  .manager{
+    margin-bottom: 12px;
+    &:nth-last-child(1){
+      margin-bottom: 0;
+    }
+    span{
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      margin-left: 20px;
+    }
+    .inputDescription{
+      font-size: 13px;
+      color: #7D7D7D;
+      margin-top: 10px;
+      margin-bottom: 16px;
+    }
+      input{
+        background-color: @common-color3;
+        width: 100%;
+        height: 50px;
+        border-radius: 26px;
+        border: none;
+        outline: none;
+        padding: 21px;
+        color: #fff;
+        font-size: 24px;
+      }
+      .fullWidth{
+        width: 100%;
+      }
+      .iconLeftInput{
+        padding-left: 50px;
+      }
+      img{
+        position: absolute;
+        top: 11.5px;
+        left: 16px;
+      }
+      .contactBtns{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        .btnMinus, .btnPlus{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 50px;
+          background-color: #262626;
+          border-radius: 100%;
+          img{
+            position: relative;
+            top: auto;
+            left: auto;
+          }
+        }
+      }
+  }
+  .login{
+    input{
+      color: #6d6d6d;
+    }
+  }
+}
+.btn_group{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .yellowBtn{
+    width: 100%;
+    height: 58px;
+    border-radius: 20px;
+    background-color: #E7FE55;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+  }
+  .whiteBtn{
+    width: 100%;
+    height: 58px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+  }
+  .redBtn{
+    width: 100%;
+    height: 58px;
+    border-radius: 20px;
+    background-color: #FE5555;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+  }
+}
+.important{
+  width: 100%;
+  height: auto;
+  background-color: #2C2C2C;
+  border-radius: 10px;
+  margin: 20px 0;
+  span{
+    text-align: center;
+    padding: 15px;
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+}
+
