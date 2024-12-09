@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="windows-1251" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>Document</title>
+    
+        <link rel="stylesheet/less" type="text/less" href="common.less" />
+        <!-- для каждой страницы свой less файл. -->
+        <link rel="stylesheet/less" type="text/less" href="archive.less" />
+        <!-- Скрипты не трогать -->
+        <script src="https://cdn.jsdelivr.net/npm/less"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3.2.21/dist/vue.global.js"></script>
+        <script>
+        //скрипты не трограть.
+        window.addEventListener("load", () => {
+            const app = Vue.createApp({
+            methods: {
+                tr(k) {
+                return k;
+                },
+            },
+            });
+            app.mount("#dont_use_this_id_in_style");
+        });
+        </script>
+    </head>
+    <body>
+        <div class="filtr">
+            <div class="container">
+                <div class="order_info">
+                    <span class="sum">Удалить архив</span>
+                </div>
+                
+                <div class="btn_group"> 
+                    <a href="waitShop.html">
+                        <div class="redBtn">
+                            Удалить
+                        </div>
+                    </a>
+                    <a href="">    
+                        <div class="whiteBtn">
+                            Отменить
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="dont_use_this_id_in_style">
+            <section class="main">
+                <div class="container">
+                    <div class="mainLine">
+                        <div class="leftBtn-mainLine">
+                            <img src="img/backpage.svg" alt="">             
+                        </div>
+                        <div class="pageTitle">
+                            <p>{{tr('Архив истории')}}</p>
+                        </div>
+                        <!-- <div class="lang">
+                            <span>KZ</span>
+                        </div> -->
+                        <!-- <div class="rightBtn-mainLine">
+                            <img src="img/sorting.svg" alt="">
+                            <img src="img/filtering.svg" alt="">      
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <div class="content">
+                <div class="container">
+                    <div class="grid_archive">
+                        <div class="grid_card">
+                            <div class="grid_image arc1">
+                            </div>
+                            <div class="grid_notificate">
+                                <div class="notification_block">
+                                    <img class="archive_img " src="img/status_clock.png" alt="">
+                                    <span class="notification_text">На модерации</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_card">
+                            <div class="grid_image arc2">
+                            </div>
+                            <div class="grid_date">
+                                <div class="grid_block">
+                                    <img class="date_img " src="img/status_clock.png" alt="">
+                                    <span class="date_text">4 часа назад</span>
+                                </div>
+                            </div>
+                            <div class="status_img status_close">
+                                <img src="img/status_close.png" alt="">
+                            </div>
+                        </div>
+                        <div class="grid_card">
+                            <div class="grid_image arc3">
+                            </div>
+                            <div class="grid_date">
+                                <div class="grid_block">
+                                    <img class="date_img " src="img/status_clock.png" alt="">
+                                    <span class="date_text">4 часа назад</span>
+                                </div>
+                            </div>
+                            <div class="status_img status_done">
+                                <img src="img/status_done.png" alt="">
+                            </div>
+                        </div>
+                        <div class="grid_card ">
+                            <div class="grid_image arc4">
+                            </div>
+                            <div class="grid_date">
+                                <div class="grid_block">
+                                    <img class="date_img " src="img/status_clock.png" alt="">
+                                    <span class="date_text">4 часа назад</span>
+                                </div>
+                            </div>
+                            <div class="status_img">
+                                <img src="img/status_clock.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
