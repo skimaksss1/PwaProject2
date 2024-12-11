@@ -28,171 +28,319 @@
   </head>
     <body>
         <div class="page" id="dont_use_this_id_in_style">
-            <div class="brow_empty"></div>
-            <section class="main">
-                <div class="container">
-                    <div class="mainLine">
-                        <div class="leftBtn-mainLine">
-                            <img src="img/backpage.svg" alt="">             
-                        </div>
-                        <div class="pageTitle">
-                            <p>{{tr('Лента')}}</p>
-                        </div>
-                        <!-- <div class="rightBtn-mainLine">
-                            <img src="img/sorting.svg" alt="">
-                            <img src="img/filtering.svg" alt="">      
-                        </div> -->
-                    </div>
-                </div>
-            </section>
-            <section class="history">
-                <div class="container">
-                    <div class="historyList">
-                        <div class="historyItem">
-                            <div class="historyCircle" style="background-image: url(img/adidas.png);"></div>
-                            <div class="historyName">Adidas</div>
-                        </div>
-                        <div class="historyItem">
-                            <div class="historyCircle" style="background-image: url(img/cola.png);"></div>
-                            <div class="historyName">Coca-Cola</div>
-                        </div>
-                        <div class="historyItem">
-                            <div class="historyCircle" style="background-image: url(img/qq.png);"></div>
-                            <div class="historyName">QR</div>
-                        </div>
-                        <div class="historyItem">
-                            <div class="historyCircle" style="background-image: url(img/adidas.png);"></div>
-                            <div class="historyName">Adidas</div>
-                        </div>
-                        <div class="historyItem">
-                            <div class="historyCircle" style="background-image: url(img/cola.png);"></div>
-                            <div class="historyName">Coca-Cola</div>
-                        </div>
-                        <div class="historyItem">
-                            <div class="historyCircle" style="background-image: url(img/qq.png);"></div>
-                            <div class="historyName">QR</div>
-                        </div>
-                        <div class="historyItem">
-                            <div class="historyCircle" style="background-image: url(img/adidas.png);"></div>
-                            <div class="historyName">Adidas</div>
-                        </div>
-                        <div class="historyItem">
-                            <div class="historyCircle" style="background-image: url(img/cola.png);"></div>
-                            <div class="historyName">Coca-Cola</div>
-                        </div>
-                        <div class="historyItem">
-                            <div class="historyCircle" style="background-image: url(img/qq.png);"></div>
-                            <div class="historyName">QR</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="separation">
-                <hr>
-            </section>
-            <section class="dropDown">
-                <div class="container">
-                    <!-- <dl class="dropdown">
-                        <dt><a><span>Партнеры</span></a></dt>
-                            <dd>
-                                <ul>
-                                    <li><a class="default">Партнеры</a></li>
-                                    <li><a>Акции</a></li>
-                                    <li><a>Магазин</a></li>
-                                    <li><a>Избранное</a></li>
-                                </ul>
-                            </dd>
-                    </dl> -->
-                    <div class="dropdownSelect">
-                        <div class="selctActive">
-                            <span>{{tr('Партнеры')}}</span>
-                        </div>
-                        <div class="selecting" style="display: none;">
-                            <ul>
-                                <li>{{tr('Партнеры')}}</li>
-                                <li>{{tr('Акции')}}</li>
-                                <li>{{tr('Магазиг')}}</li>
-                                <li>{{tr('Избранное')}}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="filter">
-                <div class="container">
-                    <div class="filterList">
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector1.svg);"></div>
-                            <div class="filterName">{{tr('Аптека')}}</div>
-                        </div>
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector2.svg);"></div>
-                            <div class="filterName">{{tr('Бытовая техника')}}</div>
-                        </div>
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector3.svg);"></div>
-                            <div class="filterName">{{tr('Красота и здоровье')}}</div>
-                        </div>
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector4.svg);"></div>
-                            <div class="filterName">{{tr('Одежда')}}</div>
-                        </div>
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector5.svg);"></div>
-                            <div class="filterName">{{tr('Аксессуары')}}</div>
-                        </div>
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector2.svg);"></div>
-                            <div class="filterName">{{tr('Аксессуары')}}</div>
-                        </div>
-                        <div class="filterItem">
-                            <div class="filterCircle" style="background-image: url(img/ctg/vector4.svg);"></div>
-                            <div class="filterName">{{tr('Аксессуары')}}</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="cards">
-                <div class="container">
-                    <div class="card">
-                        <!-- <div class="sale">25%</div> -->
-                        <div class="cardImg" style="background-image: url(img/cardImg.png);"></div>
-                        <div class="cardSlide-dots">
-                            <div class="slide-dot active"></div>
-                            <div class="slide-dot"></div>
-                            <div class="slide-dot"></div>
-                        </div>
-                        <div class="cardInfo">
-                            <div class="cardNameStar">
-                                <div class="cardName">ТОО App Trade</div>
-                                <div class="star fillStar">
-                                    <img src="img/Star_full.svg" alt="">                     
-                                </div>
-                            </div>
-                            <div class="cardDescription">{{tr('Системы обеспечения безопасности')}}</div>
-                            <div class="discounts">
-                                <div class="discount">
-                                    <p>{{tr('Скидка на оборудование')}}</p>
-                                    <div class="disc_procent">
-                                        <hr>
-                                        <span>10%</span>
+
+            
+            <div class="tabs">
+                <input type="radio" id="tab1" name="tab-control" >
+                <input type="radio" id="tab2" name="tab-control">
+                <input type="radio" id="tab3" name="tab-control" checked>
+
+                <div class="tab-labels">
+                    <label for="tab1">Партнеры</label>
+                    <label for="tab2">Магазин</label>
+                    <label for="tab3">Акции</label>
+                  </div>
+
+
+                  <div class="tab-content">
+                    <div class="content" id="content1">
+
+                        <section class="history">
+                            <div class="container">
+                                <div class="historyList">
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/adidas.png);"></div>
+                                        <div class="historyName">Adidas</div>
                                     </div>
-                                </div>
-                                <div class="discount">
-                                    <p>{{tr('Скидка на монтажные работы')}}</p>
-                                    <div class="disc_procent">
-                                        <hr>
-                                        <span>17%</span>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/cola.png);"></div>
+                                        <div class="historyName">Coca-Cola</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/qq.png);"></div>
+                                        <div class="historyName">QR</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/adidas.png);"></div>
+                                        <div class="historyName">Adidas</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/cola.png);"></div>
+                                        <div class="historyName">Coca-Cola</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/qq.png);"></div>
+                                        <div class="historyName">QR</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/adidas.png);"></div>
+                                        <div class="historyName">Adidas</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/cola.png);"></div>
+                                        <div class="historyName">Coca-Cola</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/qq.png);"></div>
+                                        <div class="historyName">QR</div>
                                     </div>
                                 </div>
                             </div>
+                        </section>
+                        <section class="separation">
+                            <hr>
+                        </section>
+                        <div class="bnr">
+                            <div class="container">
+                                <div class="crsl"></div>
+                            </div>
                         </div>
-                        <div class="nextBtn">
-                            <img src="img/next_arrow.svg" alt="">
+                        <div class="container">
+                                <section class="cards">
+                                <div class="card">
+                                    <!-- <div class="sale">25%</div> -->
+                                    <div class="cardImg" style="background-image: url(img/cardImg.png);"></div>
+                                    <div class="cardSlide-dots">
+                                        <div class="slide-dot active"></div>
+                                        <div class="slide-dot"></div>
+                                        <div class="slide-dot"></div>
+                                    </div>
+                                    <div class="cardInfo">
+                                        <div class="cardNameStar">
+                                            <div class="cardName">ТОО App Trade</div>
+                                            <div class="star fillStar">
+                                                <img src="img/Star_full.svg" alt="">                     
+                                            </div>
+                                        </div>
+                                        <div class="cardDescription">{{tr('Системы обеспечения безопасности')}}</div>
+                                        <div class="discounts">
+                                            <div class="discount">
+                                                <p>{{tr('Скидка на оборудование')}}</p>
+                                                <div class="disc_procent">
+                                                    <hr>
+                                                    <span>10%</span>
+                                                </div>
+                                            </div>
+                                            <div class="discount">
+                                                <p>{{tr('Скидка на монтажные работы')}}</p>
+                                                <div class="disc_procent">
+                                                    <hr>
+                                                    <span>17%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nextBtn">
+                                        <img src="img/next_arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <!-- <div class="sale">25%</div> -->
+                                    <div class="cardImg" style="background-image: url(img/cardImg.png);"></div>
+                                    <div class="cardSlide-dots">
+                                        <div class="slide-dot active"></div>
+                                        <div class="slide-dot"></div>
+                                        <div class="slide-dot"></div>
+                                    </div>
+                                    <div class="cardInfo">
+                                        <div class="cardNameStar">
+                                            <div class="cardName">ТОО App Trade</div>
+                                            <div class="star fillStar">
+                                                <img src="img/Star_full.svg" alt="">                     
+                                            </div>
+                                        </div>
+                                        <div class="cardDescription">{{tr('Системы обеспечения безопасности')}}</div>
+                                        <div class="discounts">
+                                            <div class="discount">
+                                                <p>{{tr('Скидка на оборудование')}}</p>
+                                                <div class="disc_procent">
+                                                    <hr>
+                                                    <span>10%</span>
+                                                </div>
+                                            </div>
+                                            <div class="discount">
+                                                <p>{{tr('Скидка на монтажные работы')}}</p>
+                                                <div class="disc_procent">
+                                                    <hr>
+                                                    <span>17%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nextBtn">
+                                        <img src="img/next_arrow.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="content" id="content2">
+                        <div class="container">
+                            <p>Здесь скоро будет Магазин</p>
                         </div>
                     </div>
-                </div>
-            </section>
+                    <div class="content" id="content3">
+                        <section class="history">
+                            <div class="container">
+                                <div class="historyList">
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/adidas.png);"></div>
+                                        <div class="historyName">Adidas</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/cola.png);"></div>
+                                        <div class="historyName">Coca-Cola</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/qq.png);"></div>
+                                        <div class="historyName">QR</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/adidas.png);"></div>
+                                        <div class="historyName">Adidas</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/cola.png);"></div>
+                                        <div class="historyName">Coca-Cola</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/qq.png);"></div>
+                                        <div class="historyName">QR</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/adidas.png);"></div>
+                                        <div class="historyName">Adidas</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/cola.png);"></div>
+                                        <div class="historyName">Coca-Cola</div>
+                                    </div>
+                                    <div class="historyItem">
+                                        <div class="historyCircle" style="background-image: url(img/qq.png);"></div>
+                                        <div class="historyName">QR</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="separation">
+                            <hr>
+                        </section>
+                        <div class="container">
+                            <div class="line_tabs">
+                                <input type="radio" id="tab4" name="tab-control2" checked>
+                                <input type="radio" id="tab5" name="tab-control2">
+                                <div class="tab-labels2">
+                                    <label for="tab4">Партнеры</label>
+                                    <label for="tab5">Избранные</label>
+                                </div>
+                                <div class="tab-content2">
+                                    <div class="content" id="content4">
+                                        <div class="partner_cards">
+                                            <div class="partner_card">
+                                                
+                                                <div class="favorites">
+                                                    <img src="img/star_empty.svg" alt="">
+                                                </div>
+                                                <div class="head_line">
+                                                    <img src="img/cardImg.png" alt="">
+                                                    <div class="head_text">
+                                                        <span class="header">ТОО App Trade</span>
+                                                        <span class="descriptions">Системы обеспечения безопасности</span>
+                                                    </div>
+                                                </div>
+                                                <div class="body_line">
+                                                    <div class="info">
+                                                        <img src="img/location.png" alt="">
+                                                        <span class="info_text">РК, г.Нур-Султан, пр.Кенесары 40, БЦ «7 континент»</span>
+                                                    </div>
+                                                    <div class="info">
+                                                        <img src="img/phone.png" alt="">
+                                                        <span class="info_text">8 700 800 1234</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="partner_card">
+                                                
+                                                <div class="favorites">
+                                                    <img src="img/star_empty.svg" alt="">
+                                                </div>
+                                                <div class="head_line">
+                                                    <img src="img/cardImg.png" alt="">
+                                                    <div class="head_text">
+                                                        <span class="header">ТОО App Trade</span>
+                                                        <span class="descriptions">Системы обеспечения безопасности</span>
+                                                    </div>
+                                                </div>
+                                                <div class="body_line">
+                                                    <div class="info">
+                                                        <img src="img/location.png" alt="">
+                                                        <span class="info_text">РК, г.Нур-Султан, пр.Кенесары 40, БЦ «7 континент»</span>
+                                                    </div>
+                                                    <div class="info">
+                                                        <img src="img/phone.png" alt="">
+                                                        <span class="info_text">8 700 800 1234</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="partner_card">
+                                                
+                                                <div class="favorites">
+                                                    <img src="img/star_empty.svg" alt="">
+                                                </div>
+                                                <div class="head_line">
+                                                    <img src="img/cardImg.png" alt="">
+                                                    <div class="head_text">
+                                                        <span class="header">ТОО App Trade</span>
+                                                        <span class="descriptions">Системы обеспечения безопасности</span>
+                                                    </div>
+                                                </div>
+                                                <div class="body_line">
+                                                    <div class="info">
+                                                        <img src="img/location.png" alt="">
+                                                        <span class="info_text">РК, г.Нур-Султан, пр.Кенесары 40, БЦ «7 континент»</span>
+                                                    </div>
+                                                    <div class="info">
+                                                        <img src="img/phone.png" alt="">
+                                                        <span class="info_text">8 700 800 1234</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content" id="content5">
+                                        
+                                        <div class="partner_cards">
+                                            <div class="partner_card">
+                                                <div class="favorites">
+                                                    <img src="img/star_full.svg" alt="">
+                                                </div>
+                                                <div class="head_line">
+                                                    <img src="img/cardImg.png" alt="">
+                                                    <div class="head_text">
+                                                        <span class="header">ТОО App Trade</span>
+                                                        <span class="descriptions">Системы обеспечения безопасности</span>
+                                                    </div>
+                                                </div>
+                                                <div class="body_line">
+                                                    <div class="info">
+                                                        <img src="img/location.png" alt="">
+                                                        <span class="info_text">РК, г.Нур-Султан, пр.Кенесары 40, БЦ «7 континент»</span>
+                                                    </div>
+                                                    <div class="info">
+                                                        <img src="img/phone.png" alt="">
+                                                        <span class="info_text">8 700 800 1234</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
             <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
             <script src="script.js"></script>
         </div>
