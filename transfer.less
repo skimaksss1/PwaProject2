@@ -1,0 +1,278 @@
+@import url(common.less);
+
+.brow_empty{
+    height: 50px;
+    width: 100%;
+}
+.main{
+    margin: 12px 0 16px 0;
+    height: 35px;
+    .mainLine{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 35px;
+        .rightBtn-mainLine{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .lang{
+            font-size: 20px;
+        }
+        .pageTitle{
+          margin-right: auto;
+          width: 100%;
+            position: absolute;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+    }
+}
+.amount{
+  .amount_flex{
+    height: calc(100vh - 113px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .amountInput{
+      span{
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 22px;
+        color: @common-color1;
+      }
+      input{
+        width: 329px;
+        height: 90px;
+        border-radius: 23px;
+        background-color: #2d2d2d;
+        color: #fff;
+        font-size: 52px;
+        text-align: center;
+        font-weight: 600;
+        border: none;
+        outline: none;
+      }
+    }
+    .amountBtn{
+      display: grid;
+      grid-template-columns: repeat(3, 104px);
+      grid-template-rows: repeat(4, 50px);
+      grid-gap: 9px;
+      margin: 30px 0;
+      .btn{
+        text-align: center;
+        background-color: #6F6F70;
+        color: #fff;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        &:nth-child(10){
+          background-color: transparent;
+        }
+        &:nth-child(12){
+          background-color: transparent;
+        }
+      }
+    }
+    .btn_group{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 330px;
+      .yellowBtn{
+        width: 100%;
+        height: 58px;
+        border-radius: 20px;
+        background-color: #E7FE55;
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 50px;
+        position: relative;
+      }
+      
+      .whiteBtn{
+        width: 100%;
+        height: 58px;
+        background-color: #fff;
+        color: #000;
+        font-size: 20px;
+        display: flex;
+        font-weight: 600;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 7px;
+      }
+    }
+    .input_header{
+      display: block;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .input_dropdown{
+      width: 329px;
+      margin-bottom: 25px;
+      position: relative;
+      .input{
+        width: 100%;
+        z-index: 9;
+        position: relative;
+        input{
+          width: 100%;
+          height: 50px;
+          background-color: #3E3E3E;
+          border-radius: 10px;
+          padding: 13px 20px;
+          outline: none;
+          border: none;
+          font-size: 20px;
+          color: #fff;
+        }
+        .arrow_down{
+          position: absolute;
+          right: 20px;
+          top: calc(50% - 5px);
+        }
+      }
+
+      .dropdown{
+        display: none;
+        background-color: #262626;
+        width: 100%;
+        height: 250px;
+        clip-path: border-box;
+        overflow: scroll;
+        padding: 20px;
+        padding-top: 30px;
+        top: 40px;
+        position: absolute;
+        border-radius: 10px;
+        z-index: 1;
+        .list{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .item{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .item_photo{
+              width: 50px;
+              height: 37px;
+              border-radius: 5px;
+              background-position: center center;
+              background-size: cover;
+            }
+            .ip1{
+              background-image: url(img/item1.png);
+            }
+            .ip2{
+              background-image: url(img/item2.png);
+            }
+            .ip3{
+              background-image: url(img/item3.png);
+            }
+            .ip4{
+              background-image: url(img/item4.png);
+            }
+            .ip5{
+              background-image: url(img/item5.png);
+            }
+            .ip6{
+              background-image: url(img/item6.png);
+            }
+            .ip7{
+              background-image: url(img/item7.png);
+            }
+            .ip8{
+              background-image: url(img/item8.png);
+            }
+            .ip9{
+              background-image: url(img/item9.png);
+            }
+            .item_name{
+              display: block;
+              font-size: 16px;
+              font-weight: 600;
+              margin-bottom: 5px;
+            }
+            .item_article{
+              display: block;
+              color: #747474;
+              font-size: 10px;
+            }
+          }
+        }
+      }    
+      .dropdown.show {
+        display: block;
+      }
+    }
+
+    .balance{
+      margin-bottom: 5px;
+      .yBalance{
+        display: block;
+        font-size: 12px;
+        color: #E7FE55;
+        text-align: center;
+      }
+      .sumBalance{
+        display: block;
+        font-size: 32px;
+        font-weight: 700;
+        color: #E7FE55;
+        text-align: center;
+      }
+    }
+    .available{
+      text-align: center;
+      line-height: 14px;
+      margin-bottom: 20px;
+      .availableText{
+        font-size: 12px;
+        font-weight: 500;
+        .sum_value{
+          color: #E7FE55;
+        }
+      }
+    }
+    .notification{
+      font-size: 12px;
+      font-style: italic;
+      text-align: center;
+      width: 330px;
+      margin-bottom: 30px;
+    }
+    .totalAmount{
+      text-align: center;
+      margin-bottom: 10px;
+      .totalText{
+        font-size: 12px;
+        font-weight: 600;
+        display: block;
+      }
+      .totalValue{
+        font-size: 48px;
+        font-weight: 700;
+        color: #E7FE55;
+      }
+    }
+  }
+}
+
